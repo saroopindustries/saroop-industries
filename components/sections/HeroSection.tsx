@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Download, ArrowRight, Play, ChevronDown, Zap, Shield, Award } from "lucide-react";
 import Link from "next/link";
 import { useRef } from "react";
+import { siteConfig } from "@/config/site.config";
 import styles from "./HeroSection.module.scss";
 
 const features = [
@@ -106,10 +107,15 @@ export default function HeroSection() {
                   <span>Explore Products</span>
                   <ArrowRight className="h-5 w-5" />
                 </Link>
-                <Link href="/contact" className={styles.secondaryCta}>
+                <a 
+                  href={siteConfig.brochureUrl} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className={styles.secondaryCta}
+                >
                   <Download className="h-5 w-5" />
                   <span>Download Brochure</span>
-                </Link>
+                </a>
               </motion.div>
 
               {/* Trust Indicators */}

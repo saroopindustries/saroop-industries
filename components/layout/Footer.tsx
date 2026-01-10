@@ -122,10 +122,10 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact">
+                  <a href={siteConfig.brochureUrl} target="_blank" rel="noopener noreferrer">
                     <ArrowRight className="h-3.5 w-3.5" />
                     Download Brochure
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>

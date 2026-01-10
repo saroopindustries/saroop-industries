@@ -4,12 +4,20 @@ export const siteConfig = {
   url: "https://saroopindustries.com",
   email: "saroopindustries@gmail.com",
   phone: "+91-9891169000",
+  tollFree: "1800 8913 205",
   address: "B-15, Mangolpuri Industrial Area Phase-II, New Delhi- 110034 India",
   yearEstablished: 2015,
+  brochureUrl: "https://saroopindustries.com/wp-content/uploads/2025/02/saroop_new_catalog.pdf",
   social: {
-    facebook: "#",
-    instagram: "#",
-    linkedin: "#",
+    facebook: "https://www.facebook.com/saroopindustries",
+    instagram: "https://www.instagram.com/saroopindustries",
+    linkedin: "https://www.linkedin.com/company/saroop-industries/",
+  },
+  // Branch Office
+  branchOffice: {
+    address: "579 Candlestick Circle, Mississauga, Ontario, Canada, L4Z0B3",
+    phone: "+1 (647) 568-3866",
+    email: "saroopindustries.ca@gmail.com",
   },
 } as const;
 
