@@ -1,84 +1,288 @@
 .features {
+  position: relative;
+  padding: 6rem 0;
   background: white;
-  padding: 5rem 0;
-}
-
-.header {
-  text-align: center;
-  margin-bottom: 4rem;
-}
-
-.title {
-  font-size: 2.5rem;
-  font-weight: 800;
-  color: hsl(var(--foreground));
-  margin-bottom: 1rem;
+  overflow: hidden;
 
   @media (min-width: 768px) {
-    font-size: 3rem;
+    padding: 8rem 0;
   }
 }
 
-.description {
-  font-size: 1.125rem;
-  color: hsl(var(--muted-foreground));
-  max-width: 600px;
+.container {
+  position: relative;
+  z-index: 10;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
+// Header
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.label {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, hsl(222 47% 11%) 0%, hsl(222 47% 15%) 100%);
+  color: white;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  border-radius: 100px;
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: var(--font-outfit), sans-serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  color: hsl(var(--primary));
+  margin-bottom: 1.25rem;
+  line-height: 1.2;
+
+  span {
+    background: linear-gradient(135deg, hsl(var(--accent)) 0%, #fbbf24 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: hsl(var(--muted-foreground));
+  line-height: 1.7;
+}
+
+// Features Grid
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
 
-  @media (min-width: 768px) {
+  @media (min-width: 640px) {
     grid-template-columns: repeat(2, 1fr);
   }
 
   @media (min-width: 1024px) {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 .featureCard {
-  padding: 2rem;
+  position: relative;
   background: hsl(var(--muted));
-  border-radius: 1rem;
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.4s ease;
 
   &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+
+    .iconWrapper {
+      background: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(25 95% 45%) 100%);
+      color: white;
+      transform: scale(1.1);
+    }
+
+    .cardHover {
+      transform: translateY(0);
+    }
   }
 }
 
-.iconWrapper {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  background: hsl(var(--primary));
-  color: white;
-  margin-bottom: 1.5rem;
+.cardContent {
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
 }
 
-.icon {
-  width: 32px;
-  height: 32px;
+.iconWrapper {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  color: hsl(var(--accent));
+  margin-bottom: 1.25rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.highlight {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: rgba(249, 115, 22, 0.1);
+  color: hsl(var(--accent));
+  font-weight: 600;
+  font-size: 0.75rem;
+  border-radius: 100px;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .featureTitle {
-  font-size: 1.25rem;
+  font-family: var(--font-outfit), sans-serif;
   font-weight: 600;
-  color: hsl(var(--foreground));
+  font-size: 1.25rem;
+  color: hsl(var(--primary));
   margin-bottom: 0.75rem;
 }
 
 .featureDescription {
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   color: hsl(var(--muted-foreground));
   line-height: 1.6;
+}
+
+.cardHover {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, hsl(var(--accent)) 0%, #fbbf24 100%);
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+// Bottom Visual
+.bottomVisual {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.visualCard {
+  position: relative;
+  background: linear-gradient(135deg, hsl(222 47% 11%) 0%, hsl(222 47% 18%) 100%);
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.visualContent {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 2rem;
+  gap: 1.5rem;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    text-align: left;
+    padding: 2.5rem 3rem;
+  }
+}
+
+.visualIcon {
+  width: 72px;
+  height: 72px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(25 95% 45%) 100%);
+  color: white;
+  flex-shrink: 0;
+  box-shadow: 0 10px 30px rgba(249, 115, 22, 0.3);
+}
+
+.visualText {
+  flex: 1;
+
+  h3 {
+    font-family: var(--font-outfit), sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.5;
+  }
+}
+
+.visualCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background: white;
+  color: hsl(var(--primary));
+  font-weight: 600;
+  font-size: 0.9375rem;
+  border-radius: 12px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  svg {
+    transition: transform 0.3s ease;
+  }
+
+  &:hover svg {
+    transform: translateX(4px);
+  }
+}
+
+.visualGlow {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(249, 115, 22, 0.2) 0%, transparent 70%);
+  filter: blur(40px);
+  pointer-events: none;
+}
+
+// Background Decorations
+.backgroundDecor {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.decorCircle1 {
+  position: absolute;
+  top: 10%;
+  left: -5%;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(249, 115, 22, 0.05) 0%, transparent 70%);
+}
+
+.decorCircle2 {
+  position: absolute;
+  bottom: 10%;
+  right: -5%;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.05) 0%, transparent 70%);
 }

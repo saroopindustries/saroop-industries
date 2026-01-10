@@ -1,99 +1,323 @@
 .testimonials {
-  background: hsl(var(--muted));
-  padding: 5rem 0;
+  position: relative;
+  padding: 6rem 0;
+  overflow: hidden;
+
+  @media (min-width: 768px) {
+    padding: 8rem 0;
+  }
 }
 
+// Background
+.background {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, hsl(222 47% 8%) 0%, hsl(222 47% 15%) 50%, hsl(222 47% 11%) 100%);
+}
+
+.gradientOrb1 {
+  position: absolute;
+  top: 0;
+  left: -10%;
+  width: 50%;
+  height: 50%;
+  background: radial-gradient(circle, rgba(249, 115, 22, 0.15) 0%, transparent 70%);
+  filter: blur(60px);
+}
+
+.gradientOrb2 {
+  position: absolute;
+  bottom: 0;
+  right: -10%;
+  width: 50%;
+  height: 50%;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
+  filter: blur(60px);
+}
+
+.pattern {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+.container {
+  position: relative;
+  z-index: 10;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+// Header
 .header {
   text-align: center;
   margin-bottom: 4rem;
+  color: white;
+}
+
+.label {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: rgba(249, 115, 22, 0.2);
+  color: hsl(var(--accent));
+  font-weight: 600;
+  font-size: 0.8125rem;
+  border-radius: 100px;
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 .title {
-  font-size: 2.5rem;
-  font-weight: 800;
-  color: hsl(var(--foreground));
+  font-family: var(--font-outfit), sans-serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
   margin-bottom: 1rem;
+  line-height: 1.2;
 
-  @media (min-width: 768px) {
-    font-size: 3rem;
+  span {
+    background: linear-gradient(135deg, hsl(var(--accent)) 0%, #fbbf24 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }
 
-.description {
+.subtitle {
   font-size: 1.125rem;
-  color: hsl(var(--muted-foreground));
-  max-width: 600px;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 500px;
   margin: 0 auto;
 }
 
+// Swiper
 .swiperWrapper {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 0 3rem;
 }
 
 .swiper {
-  padding-bottom: 3rem;
-
-  :global(.swiper-pagination-bullet) {
-    background: hsl(var(--primary));
-  }
+  padding-bottom: 2rem !important;
 }
 
+// Testimonial Card
 .testimonialCard {
-  background: white;
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
   padding: 2rem;
-  border-radius: 1rem;
   height: 100%;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: all 0.4s ease;
+  overflow: hidden;
 
   &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.15);
+
+    .cardAccent {
+      opacity: 1;
+    }
   }
+}
+
+.quoteIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(25 95% 45%) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-bottom: 1.5rem;
 }
 
 .stars {
   display: flex;
   gap: 0.25rem;
   margin-bottom: 1rem;
-  color: #fbbf24;
 }
 
 .star {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
+  color: #fbbf24;
 }
 
 .comment {
   font-size: 1rem;
-  line-height: 1.8;
-  color: hsl(var(--foreground));
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.85);
   margin-bottom: 1.5rem;
   flex-grow: 1;
 }
 
+// Author
 .author {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-top: auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.authorAvatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(25 95% 45%) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: var(--font-outfit), sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
 }
 
 .authorInfo {
-  flex-grow: 1;
+  flex: 1;
 }
 
 .authorName {
-  font-size: 1rem;
   font-weight: 600;
-  color: hsl(var(--foreground));
-  margin-bottom: 0.25rem;
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 0.125rem;
 }
 
 .authorLocation {
   font-size: 0.875rem;
-  color: hsl(var(--muted-foreground));
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.cardAccent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, hsl(var(--accent)) 0%, #fbbf24 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+// Navigation
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.navPrev,
+.navNext {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: hsl(var(--accent));
+    border-color: hsl(var(--accent));
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.customPagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  :global(.swiper-pagination-bullet) {
+    width: 8px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    opacity: 1;
+    transition: all 0.3s ease;
+
+    &:global(.swiper-pagination-bullet-active) {
+      width: 24px;
+      background: hsl(var(--accent));
+    }
+  }
+}
+
+// Trust Badges
+.trustBadges {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 4rem;
+  padding: 2rem 3rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  max-width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.badgeValue {
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  line-height: 1;
+}
+
+.badgeContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.badgeStars {
+  display: flex;
+  gap: 2px;
+  color: #fbbf24;
+}
+
+.badgeLabel {
+  font-size: 0.8125rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.badgeDivider {
+  width: 1px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
 }
