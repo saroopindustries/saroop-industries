@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { 
   Facebook, 
@@ -57,13 +58,13 @@ export default function Footer() {
             {/* Company Info */}
             <div className={styles.footerSection}>
               <Link href="/" className={styles.footerLogo}>
-                <div className={styles.logoIcon}>
-                  <span>S</span>
-                </div>
-                <div className={styles.logoText}>
-                  <span className={styles.logoName}>Saroop</span>
-                  <span className={styles.logoTagline}>Industries</span>
-                </div>
+                <Image 
+                  src="/logo.png" 
+                  alt="Saroop Industries" 
+                  width={160} 
+                  height={45} 
+                  className={styles.logoImage}
+                />
               </Link>
               <p className={styles.companyDescription}>
                 Leading manufacturer of precision-engineered automotive components. 

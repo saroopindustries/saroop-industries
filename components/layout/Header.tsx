@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Phone, Mail, ChevronDown, ArrowRight, MapPin, Globe } from "lucide-react";
@@ -100,13 +101,14 @@ export default function Header() {
         <div className={styles.navContent}>
           {/* Logo */}
           <Link href="/" className={styles.logo}>
-            <div className={styles.logoIcon}>
-              <span>S</span>
-            </div>
-            <div className={styles.logoText}>
-              <span className={styles.logoName}>Saroop</span>
-              <span className={styles.logoTagline}>Industries</span>
-            </div>
+            <Image 
+              src="/logo.png" 
+              alt="Saroop Industries" 
+              width={180} 
+              height={50} 
+              className={styles.logoImage}
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -232,10 +234,13 @@ export default function Header() {
             >
               <div className={styles.mobileMenuHeader}>
                 <Link href="/" className={styles.mobileLogo} onClick={() => setMobileMenuOpen(false)}>
-                  <div className={styles.logoIcon}>
-                    <span>S</span>
-                  </div>
-                  <span>Saroop Industries</span>
+                  <Image 
+                    src="/logo.png" 
+                    alt="Saroop Industries" 
+                    width={150} 
+                    height={42} 
+                    className={styles.logoImage}
+                  />
                 </Link>
                 <button
                   className={styles.closeButton}

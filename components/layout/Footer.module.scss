@@ -160,46 +160,23 @@
 
 // Logo
 .footerLogo {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
+  display: inline-block;
   text-decoration: none;
   margin-bottom: 1.5rem;
 }
 
-.logoIcon {
-  width: 48px;
-  height: 48px;
-  background: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(25 95% 45%) 100%);
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-family: var(--font-outfit), sans-serif;
-  font-weight: 700;
-  font-size: 1.5rem;
-}
+.logoImage {
+  height: auto;
+  width: auto;
+  max-height: 50px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  opacity: 0.95;
+  transition: opacity 0.2s ease;
 
-.logoText {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.1;
-}
-
-.logoName {
-  font-family: var(--font-outfit), sans-serif;
-  font-weight: 700;
-  font-size: 1.25rem;
-  color: white;
-}
-
-.logoTagline {
-  font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .companyDescription {
