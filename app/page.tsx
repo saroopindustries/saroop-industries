@@ -67,7 +67,7 @@ export default function Home() {
             We offer competitive pricing and reliable delivery worldwide.
           </p>
           <div className={styles.ctaButtons}>
-            <Link href="/inquiry" className={styles.ctaPrimary}>
+            <Link href="/contact" className={styles.ctaPrimary}>
               <span>Request a Quote</span>
               <ArrowRight className="h-5 w-5" />
             </Link>

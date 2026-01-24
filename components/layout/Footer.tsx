@@ -117,7 +117,7 @@ export default function Footer() {
                   </li>
                 ))}
                 <li>
-                  <Link href="/inquiry">
+                  <Link href="/contact">
                     <ArrowRight className="h-3.5 w-3.5" />
                     Request a Quote
                   </Link>

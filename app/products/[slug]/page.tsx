@@ -144,7 +144,7 @@ export default function ProductPage({ params }: PageProps) {
               <p>Contact us for bulk orders, custom specifications, or technical support.</p>
               <div className={styles.ctaButtons}>
                 <Button asChild>
-                  <Link href="/inquiry">
+                  <Link href="/contact">
                     Request Quote
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
@@ -264,7 +264,7 @@ export default function ProductPage({ params }: PageProps) {
                 {/* Actions */}
                 <div className={styles.actions}>
                   <Button size="lg" asChild>
-                    <Link href="/inquiry">
+                    <Link href="/contact">
                       Request Quote
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </Link>

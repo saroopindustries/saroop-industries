@@ -193,7 +193,7 @@ export default function Header() {
           {/* CTA Buttons */}
           <div className={styles.ctaButtons}>
             <CartButton />
-            <Link href="/inquiry" className={styles.ctaButton}>
+            <Link href="/contact" className={styles.ctaButton}>
               <span>Get Quote</span>
               <ArrowRight className="h-4 w-4" />
             </Link>
@@ -313,7 +313,7 @@ export default function Header() {
 
               <div className={styles.mobileMenuFooter}>
                 <Link
-                  href="/inquiry"
+                  href="/contact"
                   className={styles.mobileCta}
                   onClick={() => setMobileMenuOpen(false)}
                 >

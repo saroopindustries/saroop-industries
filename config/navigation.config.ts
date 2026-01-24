@@ -201,10 +201,6 @@ export const navigationConfig: NavItem[] = [
     href: "/gallery",
   },
   {
-    title: "Inquiry",
-    href: "/inquiry",
-  },
-  {
     title: "Contact",
     href: "/contact",
   },
