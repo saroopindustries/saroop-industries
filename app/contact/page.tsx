@@ -16,9 +16,9 @@ export default function ContactPage() {
         <div className={styles.heroOverlay} />
         <div className="container mx-auto px-4 py-8 sm:py-10 md:py-12 lg:py-16">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
             className={styles.heroContent}
           >
             <span className={styles.badge}>Contact Us</span>
@@ -36,10 +36,10 @@ export default function ContactPage() {
           <div className={styles.contactGrid}>
             {/* Contact Info */}
             <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-40px" }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
               className={styles.contactInfo}
             >
               <h2 className={styles.sectionTitle}>Contact Information</h2>
@@ -138,10 +138,10 @@ export default function ContactPage() {
 
             {/* Map Section with Tabs */}
             <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-40px" }}
+              transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
               className={styles.mapSection}
             >
               {/* Map Tabs */}
