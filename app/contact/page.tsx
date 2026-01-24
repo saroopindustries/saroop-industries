@@ -4,50 +4,17 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { siteConfig } from "@/config/site.config";
 import { MapPin, Phone, Mail, Clock, Download, Globe, PhoneCall } from "lucide-react";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
 import styles from "./page.module.scss";
 
 export default function ContactPage() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    subject: "",
-    message: "",
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission
-    console.log("Form submitted:", formData);
-    alert("Thank you for your message! We will get back to you soon.");
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      subject: "",
-      message: "",
-    });
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
+  const [activeTab, setActiveTab] = useState<'india' | 'canada'>('india');
 
   return (
     <div className={styles.contactPage}>
       {/* Hero Section */}
       <section className={styles.hero}>
-        <div className={styles.heroBackground}>
-          <div className={styles.gradientOrb1} />
-          <div className={styles.gradientOrb2} />
-        </div>
-        <div className="container mx-auto px-4 py-20">
+        <div className={styles.heroOverlay} />
+        <div className="container mx-auto px-4 py-8 sm:py-10 md:py-12 lg:py-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -65,7 +32,7 @@ export default function ContactPage() {
 
       {/* Contact Section */}
       <section className={styles.contact}>
-        <div className="container mx-auto px-4 py-20">
+        <div className="container mx-auto px-4 py-8 sm:py-10 md:py-12 lg:py-16">
           <div className={styles.contactGrid}>
             {/* Contact Info */}
             <motion.div
@@ -169,110 +136,71 @@ export default function ContactPage() {
               </div>
             </motion.div>
 
-            {/* Contact Form */}
+            {/* Map Section with Tabs */}
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className={styles.contactForm}
+              className={styles.mapSection}
             >
-              <h2 className={styles.formTitle}>Send us a Message</h2>
-              <form onSubmit={handleSubmit} className={styles.form}>
-                <div className={styles.formRow}>
-                  <div className={styles.formGroup}>
-                    <label htmlFor="name">Full Name *</label>
-                    <Input
-                      type="text"
-                      id="name"
-                      name="name"
-                      placeholder="Your Name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                  <div className={styles.formGroup}>
-                    <label htmlFor="email">Email Address *</label>
-                    <Input
-                      type="email"
-                      id="email"
-                      name="email"
-                      placeholder="your@email.com"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                </div>
-                <div className={styles.formRow}>
-                  <div className={styles.formGroup}>
-                    <label htmlFor="phone">Phone Number *</label>
-                    <Input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      placeholder="+91 XXXXX XXXXX"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                  <div className={styles.formGroup}>
-                    <label htmlFor="subject">Subject *</label>
-                    <Input
-                      type="text"
-                      id="subject"
-                      name="subject"
-                      placeholder="How can we help?"
-                      value={formData.subject}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                </div>
-                <div className={styles.formGroup}>
-                  <label htmlFor="message">Message *</label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    placeholder="Tell us about your requirements..."
-                    value={formData.message}
-                    onChange={handleChange}
-                    rows={6}
-                    required
+              {/* Map Tabs */}
+              <div className={styles.mapTabs}>
+                <button
+                  className={`${styles.mapTab} ${activeTab === 'india' ? styles.active : ''}`}
+                  onClick={() => setActiveTab('india')}
+                >
+                  <Globe className="h-4 w-4" />
+                  India Office
+                </button>
+                <button
+                  className={`${styles.mapTab} ${activeTab === 'canada' ? styles.active : ''}`}
+                  onClick={() => setActiveTab('canada')}
+                >
+                  <Globe className="h-4 w-4" />
+                  Canada Office
+                </button>
+              </div>
+
+              {/* Map Container */}
+              <div className={styles.mapContainer}>
+                {activeTab === 'india' && (
+                  <motion.iframe
+                    key="india-map"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.3 }}
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.7892145845!2d77.1103!3d28.7089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d013a5e9e9e9d%3A0x0!2sMangolpuri%20Industrial%20Area%20Phase%20II%2C%20New%20Delhi!5e0!3m2!1sen!2sin!4v1234567890"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Saroop Industries India Location"
                   />
-                </div>
-                <Button type="submit" size="lg" className={styles.submitButton}>
-                  Send Message
-                </Button>
-              </form>
+                )}
+                {activeTab === 'canada' && (
+                  <motion.iframe
+                    key="canada-map"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.3 }}
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.0123456789!2d-79.6234567!3d43.5890123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s579+Candlestick+Circle%2C+Mississauga%2C+Ontario!5e0!3m2!1sen!2sca!4v1234567890"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Saroop Industries Canada Location"
+                  />
+                )}
+              </div>
             </motion.div>
           </div>
-        </div>
-      </section>
-
-      {/* Map Section */}
-      <section className={styles.mapSection}>
-        <div className="container mx-auto px-4 py-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className={styles.mapWrapper}
-          >
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.7892145845!2d77.1103!3d28.7089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d013a5e9e9e9d%3A0x0!2sMangolpuri%20Industrial%20Area%20Phase%20II%2C%20New%20Delhi!5e0!3m2!1sen!2sin!4v1234567890"
-              width="100%"
-              height="400"
-              style={{ border: 0, borderRadius: "16px" }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Saroop Industries Location"
-            />
-          </motion.div>
         </div>
       </section>
     </div>
