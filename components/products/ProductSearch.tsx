@@ -270,9 +270,9 @@ export default function ProductSearch({
             {value.trim() && results.length === 0 && (
               <div className={styles.noResults}>
                 <Search className="h-8 w-8" />
-                <p>No products found for "{value}"</p>
+                <p>No products found for &quot;{value}&quot;</p>
                 <span className={styles.suggestion}>
-                  Try searching for categories like "terminals" or "cables"
+                  Try searching for categories like &quot;terminals&quot; or &quot;cables&quot;
                 </span>
               </div>
             )}

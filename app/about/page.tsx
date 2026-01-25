@@ -208,7 +208,7 @@ export default function AboutPage() {
         <motion.div className={styles.heroBackground} style={{ y }}>
           {/* Video Background */}
           {videoError ? (
-            <img
+            <Image
               className={styles.heroFallback}
               src="/gallery.jpg"
               alt="Saroop Industries Manufacturing"
@@ -229,7 +229,7 @@ export default function AboutPage() {
             </video>
           )}
           <noscript>
-            <img
+            <Image
               className={styles.heroFallback}
               src="/gallery.jpg"
               alt="Saroop Industries Manufacturing"
