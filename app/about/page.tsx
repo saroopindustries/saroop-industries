@@ -12,11 +12,23 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "./page.module.scss";
 
-// Lazy load heavy components
-const Lightbox = dynamic(() => import("yet-another-react-lightbox"), { ssr: false });
-const DottedMap = dynamic(() => import("@/components/ui/dotted-map").then(mod => mod.DottedMap), { ssr: false });
-const Marquee = dynamic(() => import("@/components/ui/marquee").then(mod => mod.Marquee), { ssr: false });
-const CountUp = dynamic(() => import("react-countup"), { ssr: false });
+// Lazy load heavy components with loading states
+const Lightbox = dynamic(() => import("yet-another-react-lightbox"), { 
+  ssr: false,
+  loading: () => null 
+});
+const DottedMap = dynamic(
+  () => import("@/components/ui/dotted-map").then(mod => mod.DottedMap), 
+  { ssr: false, loading: () => null }
+);
+const Marquee = dynamic(
+  () => import("@/components/ui/marquee").then(mod => mod.Marquee), 
+  { ssr: false, loading: () => <div className="h-20" /> }
+);
+const CountUp = dynamic(() => import("react-countup"), { 
+  ssr: false,
+  loading: () => <span>0</span>
+});
 
 // Regular imports for Swiper (needed for SSR)
 import { Swiper, SwiperSlide } from "swiper/react";
