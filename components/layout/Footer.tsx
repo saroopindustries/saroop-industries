@@ -26,7 +26,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       {/* Newsletter Section */}
-      <div className={styles.newsletter}>
+      {/* <div className={styles.newsletter}>
         <div className={styles.container}>
           <div className={styles.newsletterContent}>
             <div className={styles.newsletterText}>
@@ -49,7 +49,7 @@ export default function Footer() {
             </form>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Main Footer */}
       <div className={styles.mainFooter}>

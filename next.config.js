@@ -2,7 +2,18 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['saroopindustries.com', 'images.unsplash.com'],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "saroopindustries.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+        pathname: "/**",
+      },
+    ],
     unoptimized: false,
   },
   sassOptions: {

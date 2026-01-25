@@ -9,7 +9,8 @@ import {
   getProductBySlug,
 } from "@/config/products.config";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, ArrowRight, Package, Info, Phone } from "lucide-react";
+import { ArrowLeft, ArrowRight, Package, Phone } from "lucide-react";
+import ProductDetailView from "@/components/products/ProductDetailView";
 import styles from "./page.module.scss";
 
 interface PageProps {
@@ -25,6 +26,10 @@ export default function ProductPage({ params }: PageProps) {
   const category = getCategoryBySlug(slug);
   
   if (category) {
+    // Get featured products in this category
+    const featuredProducts = category.products.filter(p => p.featured).slice(0, 4);
+    const allApplications = Array.from(new Set(category.products.flatMap(p => p.applications || []))).slice(0, 8);
+    
     // Render category page with all its products
     return (
       <div className={styles.categoryPage}>
@@ -33,7 +38,7 @@ export default function ProductPage({ params }: PageProps) {
           <div className={styles.heroBackground}>
             <div className={styles.heroGlow} />
           </div>
-          <div className="container mx-auto px-4 py-16">
+          <div className="container mx-auto px-4 py-12">
             <Button variant="ghost" asChild className={styles.backButton}>
               <Link href="/products">
                 <ArrowLeft className="mr-2 h-4 w-4" />
@@ -49,32 +54,82 @@ export default function ProductPage({ params }: PageProps) {
               <span className={styles.categoryIcon}>{category.icon}</span>
               <h1 className={styles.title}>{category.name}</h1>
               <p className={styles.description}>{category.description}</p>
-              <div className={styles.productCount}>
-                <Package className="h-5 w-5" />
-                <span>{category.products.length} Products</span>
+              <div className={styles.stats}>
+                <div className={styles.stat}>
+                  <Package className="h-5 w-5" />
+                  <span>{category.products.length} Products</span>
+                </div>
+                <Button asChild size="lg" className={styles.viewAllBtn}>
+                  <Link href={`/products?category=${category.slug}`}>
+                    View All {category.products.length} Products
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Link>
+                </Button>
               </div>
             </motion.div>
           </div>
         </section>
 
-        {/* Subcategories if any */}
+        {/* Subcategories - Horizontal Scroll */}
         {category.subcategories && category.subcategories.length > 0 && (
-          <section className={styles.subcategories}>
-            <div className="container mx-auto px-4 py-12">
-              <h2 className={styles.sectionTitle}>Subcategories</h2>
-              <div className={styles.subcategoryGrid}>
+          <section className={styles.subcategoriesSection}>
+            <div className="container mx-auto px-4 py-8">
+              <div className={styles.subcategoriesHeader}>
+                <h2 className={styles.sectionTitle}>Browse by Subcategory</h2>
+              </div>
+              <div className={styles.subcategoriesScroll}>
                 {category.subcategories.map((sub, index) => (
-                  <motion.div
+                  <motion.a
                     key={sub.id}
+                    href={`/products?category=${category.slug}&subcategory=${sub.slug}`}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.3, delay: index * 0.05 }}
+                    className={styles.subcategoryChip}
+                  >
+                    <span className={styles.subcategoryName}>{sub.name}</span>
+                    <span className={styles.subcategoryCount}>{sub.products.length}</span>
+                  </motion.a>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* Featured Products */}
+        {featuredProducts.length > 0 && (
+          <section className={styles.featuredSection}>
+            <div className="container mx-auto px-4 py-12">
+              <h2 className={styles.sectionTitle}>⭐ Featured {category.name}</h2>
+              <div className={styles.featuredGrid}>
+                {featuredProducts.map((product, index) => (
+                  <motion.div
+                    key={product.id}
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.4, delay: index * 0.1 }}
-                    className={styles.subcategoryCard}
                   >
-                    <h3>{sub.name}</h3>
-                    <p>{sub.description}</p>
-                    <span className={styles.count}>{sub.products.length} items</span>
+                    <Link href={`/products/${product.slug}`} className={styles.featuredCard}>
+                      <div className={styles.featuredImage}>
+                        <span className={styles.productIcon}>📦</span>
+                        <span className={styles.featuredTag}>Featured</span>
+                      </div>
+                      <div className={styles.featuredContent}>
+                        <h3 className={styles.featuredName}>{product.name}</h3>
+                        {product.partNumber && (
+                          <p className={styles.featuredCode}>Code: {product.partNumber}</p>
+                        )}
+                        {product.variants && product.variants.length > 0 && (
+                          <div className={styles.variantInfo}>
+                            {product.variants.length} variants available
+                          </div>
+                        )}
+                        <Button variant="ghost" size="sm" className={styles.featuredBtn}>
+                          View Details <ArrowRight className="ml-1 h-4 w-4" />
+                        </Button>
+                      </div>
+                    </Link>
                   </motion.div>
                 ))}
               </div>
@@ -82,29 +137,65 @@ export default function ProductPage({ params }: PageProps) {
           </section>
         )}
 
-        {/* Products Grid */}
+        {/* Browse by Application */}
+        {allApplications.length > 0 && (
+          <section className={styles.applicationsSection}>
+            <div className="container mx-auto px-4 py-8">
+              <h2 className={styles.sectionTitle}>Browse by Application</h2>
+              <div className={styles.applicationTags}>
+                {allApplications.map((app) => (
+                  <Link
+                    key={app}
+                    href={`/products?category=${category.slug}&application=${app}`}
+                    className={styles.applicationTag}
+                  >
+                    {app}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* All Products Grid */}
         <section className={styles.products}>
-          <div className="container mx-auto px-4 py-16">
-            <h2 className={styles.sectionTitle}>All {category.name}</h2>
+          <div className="container mx-auto px-4 py-12">
+            <div className={styles.productsHeader}>
+              <h2 className={styles.sectionTitle}>All {category.name}</h2>
+              <Button asChild variant="outline">
+                <Link href={`/products?category=${category.slug}`}>
+                  View with Filters
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+            </div>
             {category.products.length > 0 ? (
               <div className={styles.productGrid}>
-                {category.products.map((product, index) => (
+                {category.products.slice(0, 12).map((product, index) => (
                   <motion.div
                     key={product.id}
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: index * 0.05 }}
+                    transition={{ duration: 0.4, delay: Math.min(index * 0.05, 0.4) }}
                   >
                     <Link href={`/products/${product.slug}`} className={styles.productCard}>
                       <div className={styles.productImage}>
                         <span className={styles.productIcon}>📦</span>
                         {product.featured && (
-                          <span className={styles.featuredBadge}>Featured</span>
+                          <span className={styles.featuredBadge}>⭐</span>
+                        )}
+                        {product.variants && product.variants.length > 0 && (
+                          <span className={styles.variantBadge}>
+                            {product.variants.length}
+                          </span>
                         )}
                       </div>
                       <div className={styles.productContent}>
                         <h3 className={styles.productName}>{product.name}</h3>
+                        {product.partNumber && (
+                          <p className={styles.partNumber}>Code: {product.partNumber}</p>
+                        )}
                         <p className={styles.productDescription}>
                           {product.description.length > 100 
                             ? `${product.description.slice(0, 100)}...` 
@@ -128,6 +219,16 @@ export default function ProductPage({ params }: PageProps) {
                 <p>Products coming soon...</p>
               </div>
             )}
+            {category.products.length > 12 && (
+              <div className={styles.viewAllFooter}>
+                <Button asChild size="lg">
+                  <Link href={`/products?category=${category.slug}`}>
+                    View All {category.products.length} Products
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Link>
+                </Button>
+              </div>
+            )}
           </div>
         </section>
 
@@ -143,13 +244,13 @@ export default function ProductPage({ params }: PageProps) {
               <h2>Need Custom {category.name}?</h2>
               <p>Contact us for bulk orders, custom specifications, or technical support.</p>
               <div className={styles.ctaButtons}>
-                <Button asChild>
-                  <Link href="/contact">
+                <Button asChild size="lg">
+                  <Link href="/inquiry">
                     Request Quote
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
-                <Button variant="outline" asChild>
+                <Button variant="outline" asChild size="lg">
                   <Link href="/contact">
                     <Phone className="mr-2 h-4 w-4" />
                     Contact Us
@@ -172,144 +273,18 @@ export default function ProductPage({ params }: PageProps) {
       cat => cat.products.some(p => p.id === product.id)
     );
 
+    // Get related products
+    const relatedProducts = productCategory
+      ? productCategory.products.filter(p => p.id !== product.id).slice(0, 4)
+      : [];
+
     return (
       <div className={styles.productPage}>
-        {/* Product Hero */}
-        <section className={styles.hero}>
-          <div className={styles.heroBackground}>
-            <div className={styles.heroGlow} />
-          </div>
-          <div className="container mx-auto px-4 py-12">
-            {/* Breadcrumb */}
-            <nav className={styles.breadcrumb}>
-              <Link href="/products">Products</Link>
-              <span>/</span>
-              {productCategory && (
-                <>
-                  <Link href={`/products/${productCategory.slug}`}>{productCategory.name}</Link>
-                  <span>/</span>
-                </>
-              )}
-              <span className={styles.current}>{product.name}</span>
-            </nav>
-            
-            <Button variant="ghost" asChild className={styles.backButton}>
-              <Link href={productCategory ? `/products/${productCategory.slug}` : "/products"}>
-                <ArrowLeft className="mr-2 h-4 w-4" />
-                Back to {productCategory?.name || "Products"}
-              </Link>
-            </Button>
-          </div>
-        </section>
-
-        {/* Product Details */}
-        <section className={styles.productDetails}>
-          <div className="container mx-auto px-4 py-12">
-            <div className={styles.productLayout}>
-              {/* Product Image */}
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6 }}
-                className={styles.imageSection}
-              >
-                <div className={styles.mainImage}>
-                  <span className={styles.productIconLarge}>📦</span>
-                  {product.featured && (
-                    <span className={styles.featuredBadge}>Featured Product</span>
-                  )}
-                </div>
-              </motion.div>
-
-              {/* Product Info */}
-              <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6 }}
-                className={styles.infoSection}
-              >
-                <div className={styles.productMeta}>
-                  <span className={styles.category}>{product.category}</span>
-                  {product.subcategory && (
-                    <span className={styles.subcategory}>{product.subcategory}</span>
-                  )}
-                </div>
-                
-                <h1 className={styles.productTitle}>{product.name}</h1>
-                
-                {product.partNumber && (
-                  <p className={styles.partNumber}>Part #: {product.partNumber}</p>
-                )}
-                
-                <p className={styles.productDesc}>{product.description}</p>
-
-                {/* Specifications */}
-                {product.specifications && Object.keys(product.specifications).length > 0 && (
-                  <div className={styles.specifications}>
-                    <h3>
-                      <Info className="h-5 w-5" />
-                      Specifications
-                    </h3>
-                    <div className={styles.specGrid}>
-                      {Object.entries(product.specifications).map(([key, value]) => (
-                        <div key={key} className={styles.specItem}>
-                          <span className={styles.specKey}>{key}</span>
-                          <span className={styles.specValue}>{value}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                )}
-
-                {/* Actions */}
-                <div className={styles.actions}>
-                  <Button size="lg" asChild>
-                    <Link href="/contact">
-                      Request Quote
-                      <ArrowRight className="ml-2 h-5 w-5" />
-                    </Link>
-                  </Button>
-                  <Button size="lg" variant="outline" asChild>
-                    <Link href="/contact">
-                      <Phone className="mr-2 h-5 w-5" />
-                      Contact Sales
-                    </Link>
-                  </Button>
-                </div>
-              </motion.div>
-            </div>
-          </div>
-        </section>
-
-        {/* Related Products */}
-        {productCategory && productCategory.products.length > 1 && (
-          <section className={styles.relatedProducts}>
-            <div className="container mx-auto px-4 py-16">
-              <h2 className={styles.sectionTitle}>Related Products</h2>
-              <div className={styles.relatedGrid}>
-                {productCategory.products
-                  .filter(p => p.id !== product.id)
-                  .slice(0, 4)
-                  .map((relatedProduct, index) => (
-                    <motion.div
-                      key={relatedProduct.id}
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.4, delay: index * 0.1 }}
-                    >
-                      <Link href={`/products/${relatedProduct.slug}`} className={styles.relatedCard}>
-                        <div className={styles.relatedImage}>
-                          <span>📦</span>
-                        </div>
-                        <h4>{relatedProduct.name}</h4>
-                      </Link>
-                    </motion.div>
-                  ))}
-              </div>
-            </div>
-          </section>
-        )}
+        <ProductDetailView
+          product={product}
+          productCategory={productCategory}
+          relatedProducts={relatedProducts}
+        />
       </div>
     );
   }
