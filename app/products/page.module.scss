@@ -544,6 +544,63 @@
 }
 
 @media (max-width: 768px) {
+  .productsPage {
+    padding-top: 96px;
+  }
+  
+  .productsSection {
+    padding-top: 0.5rem;
+    
+    .container {
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+  }
+  
+  .productGrid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 0.875rem;
+  }
+  
+  .productCard {
+    border-radius: 10px;
+  }
+  
+  .productImage {
+    height: 120px;
+  }
+  
+  .productContent {
+    padding: 0.875rem;
+  }
+  
+  .productName {
+    font-size: 0.875rem;
+    margin-bottom: 0.375rem;
+  }
+  
+  .partNumber {
+    font-size: 0.75rem;
+    margin-bottom: 0.375rem;
+  }
+  
+  .productDescription {
+    font-size: 0.8125rem;
+    line-height: 1.5;
+  }
+  
+  .productFooter {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: stretch;
+  }
+  
+  .addToCartBtn {
+    width: 100%;
+    font-size: 0.8125rem;
+    padding: 0.5rem 0.875rem;
+  }
+  
   .toolbarLeft,
   .toolbarRight {
     width: 100%;
@@ -553,5 +610,30 @@
   .sortButton {
     flex: 1;
     justify-content: space-between;
+  }
+  
+  .activeFilterPills {
+    padding: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .filterPill {
+    font-size: 0.75rem;
+    padding: 0.375rem 0.625rem;
+  }
+  
+  .imageSwiper {
+    :global(.swiper-pagination) {
+      bottom: 6px !important;
+    }
+    
+    :global(.swiper-pagination-bullet) {
+      width: 5px;
+      height: 5px;
+    }
+    
+    :global(.swiper-pagination-bullet-active) {
+      width: 16px;
+    }
   }
 }

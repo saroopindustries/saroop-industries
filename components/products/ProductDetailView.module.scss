@@ -52,6 +52,11 @@
   position: sticky;
   top: 106px;
   height: fit-content;
+  
+  @media (max-width: 768px) {
+    position: relative;
+    top: 0;
+  }
 }
 
 .imageSwiper {
@@ -94,6 +99,15 @@
     &:hover {
       background: rgba(0, 0, 0, 0.5);
     }
+    
+    @media (max-width: 768px) {
+      width: 32px;
+      height: 32px;
+      
+      &::after {
+        font-size: 14px;
+      }
+    }
   }
 }
 
@@ -119,6 +133,10 @@
 .productIconLarge {
   font-size: 8rem;
   opacity: 0.9;
+  
+  @media (max-width: 768px) {
+    font-size: 5rem;
+  }
 }
 
 .infoSection {
@@ -409,12 +427,25 @@
 }
 
 @media (max-width: 768px) {
+  .productPage {
+    padding-top: 96px;
+  }
+  
+  .productDetails {
+    .container {
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+  }
+  
   .productLayout {
     gap: 1.5rem;
+    padding-bottom: 1rem;
   }
 
   .actions {
     flex-direction: column;
+    padding-top: 1rem;
 
     button {
       width: 100%;
@@ -423,5 +454,37 @@
 
   .specGrid {
     grid-template-columns: 1fr;
+  }
+  
+  .specifications {
+    padding: 1rem;
+    
+    h3 {
+      font-size: 0.9375rem;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  .specItem {
+    padding: 0.875rem;
+  }
+  
+  .relatedGrid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .sectionTitle {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .ctaButtons {
+    flex-direction: column;
+    gap: 0.75rem;
+    
+    button, a {
+      width: 100%;
+    }
   }
 }

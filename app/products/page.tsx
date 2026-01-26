@@ -337,35 +337,49 @@ export default function ProductsPage() {
                         className={styles.productCard}
                       >
                         <div className={styles.productImageWrapper}>
-                          {product.images && product.images.length > 1 ? (
-                            <Swiper
-                              modules={[SwiperPagination]}
-                              pagination={{ clickable: true }}
-                              className={styles.imageSwiper}
-                              spaceBetween={0}
-                              slidesPerView={1}
-                            >
-                              {product.images.map((image, imgIndex) => (
-                                <SwiperSlide key={imgIndex}>
-                                  <div className={styles.productImage}>
-                                    <div className={styles.imagePattern}></div>
-                                    <img 
-                                      src={image} 
-                                      alt={`${product.name} - ${imgIndex + 1}`}
-                                      className={styles.productImageImg}
-                                    />
-                                  </div>
-                                </SwiperSlide>
-                              ))}
-                            </Swiper>
-                          ) : (
-                            <div className={styles.productImage}>
-                              <div className={styles.imagePattern}></div>
-                              <div className={styles.productIconWrapper}>
-                                <span className={styles.productIcon}>{getCategoryIcon(product.category)}</span>
+                          {(() => {
+                            // Handle both images array and single image
+                            const imageList = product.images || (product.image ? [product.image] : []);
+                            
+                            return imageList.length > 1 ? (
+                              <Swiper
+                                modules={[SwiperPagination]}
+                                pagination={{ clickable: true }}
+                                className={styles.imageSwiper}
+                                spaceBetween={0}
+                                slidesPerView={1}
+                              >
+                                {imageList.map((image, imgIndex) => (
+                                  <SwiperSlide key={imgIndex}>
+                                    <div className={styles.productImage}>
+                                      <div className={styles.imagePattern}></div>
+                                      <img 
+                                        src={image} 
+                                        alt={`${product.name} - ${imgIndex + 1}`}
+                                        className={styles.productImageImg}
+                                      />
+                                    </div>
+                                  </SwiperSlide>
+                                ))}
+                              </Swiper>
+                            ) : imageList.length === 1 ? (
+                              <div className={styles.productImage}>
+                                <div className={styles.imagePattern}></div>
+                                <img 
+                                  src={imageList[0]} 
+                                  alt={product.name}
+                                  className={styles.productImageImg}
+                                />
                               </div>
-                            </div>
-                          )}
+                            ) : (
+                              <div className={styles.productImage}>
+                                <div className={styles.imagePattern}></div>
+                                <div className={styles.productIconWrapper}>
+                                  <span className={styles.productIcon}>{getCategoryIcon(product.category)}</span>
+                                </div>
+                              </div>
+                            );
+                          })()}
                           {product.variants && product.variants.length > 0 && (
                             <span className={styles.variantBadge}>
                               {product.variants.length} variants

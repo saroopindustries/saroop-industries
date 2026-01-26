@@ -58,32 +58,36 @@ export default function ProductDetailView({
               transition={{ duration: 0.6 }}
               className={styles.imageSection}
             >
-              {product.images && product.images.length > 0 ? (
-                <Swiper
-                  modules={[SwiperPagination, Navigation]}
-                  pagination={{ clickable: true }}
-                  navigation={product.images.length > 1}
-                  className={styles.imageSwiper}
-                  spaceBetween={0}
-                  slidesPerView={1}
-                >
-                  {product.images.map((image, imgIndex) => (
-                    <SwiperSlide key={imgIndex}>
-                      <div className={styles.mainImage}>
-                        <img 
-                          src={image} 
-                          alt={`${product.name} - ${imgIndex + 1}`}
-                          className={styles.productImage}
-                        />
-                      </div>
-                    </SwiperSlide>
-                  ))}
-                </Swiper>
-              ) : (
-                <div className={styles.mainImage}>
-                  <span className={styles.productIconLarge}>📦</span>
-                </div>
-              )}
+              {/* Handle both images array and single image */}
+              {(() => {
+                const imageList = product.images || (product.image ? [product.image] : []);
+                return imageList.length > 0 ? (
+                  <Swiper
+                    modules={[SwiperPagination, Navigation]}
+                    pagination={{ clickable: true }}
+                    navigation={imageList.length > 1}
+                    className={styles.imageSwiper}
+                    spaceBetween={0}
+                    slidesPerView={1}
+                  >
+                    {imageList.map((image, imgIndex) => (
+                      <SwiperSlide key={imgIndex}>
+                        <div className={styles.mainImage}>
+                          <img 
+                            src={image} 
+                            alt={`${product.name} - ${imgIndex + 1}`}
+                            className={styles.productImage}
+                          />
+                        </div>
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
+                ) : (
+                  <div className={styles.mainImage}>
+                    <span className={styles.productIconLarge}>📦</span>
+                  </div>
+                );
+              })()}
             </motion.div>
 
             {/* Product Info */}

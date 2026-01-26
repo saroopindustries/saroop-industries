@@ -3,6 +3,8 @@
 import { notFound } from "next/navigation";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination as SwiperPagination } from "swiper/modules";
 import { 
   productCategories, 
   getCategoryBySlug,
@@ -13,6 +15,10 @@ import { ArrowLeft, ArrowRight, Package, Phone } from "lucide-react";
 import ProductDetailView from "@/components/products/ProductDetailView";
 import { TypingAnimation } from "@/components/ui/typing-animation";
 import styles from "./page.module.scss";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
 
 interface PageProps {
   params: {
@@ -175,8 +181,45 @@ export default function ProductPage({ params }: PageProps) {
                     transition={{ duration: 0.4, delay: Math.min(index * 0.05, 0.4) }}
                   >
                     <Link href={`/products/${product.slug}`} className={styles.productCard}>
-                      <div className={styles.productImage}>
-                        <span className={styles.productIcon}>📦</span>
+                      <div className={styles.productImageWrapper}>
+                        {(() => {
+                          // Handle both images array and single image
+                          const imageList = product.images || (product.image ? [product.image] : []);
+                          
+                          return imageList.length > 1 ? (
+                            <Swiper
+                              modules={[SwiperPagination]}
+                              pagination={{ clickable: true }}
+                              className={styles.categoryImageSwiper}
+                              spaceBetween={0}
+                              slidesPerView={1}
+                            >
+                              {imageList.map((image, imgIndex) => (
+                                <SwiperSlide key={imgIndex}>
+                                  <div className={styles.productImage}>
+                                    <img 
+                                      src={image} 
+                                      alt={`${product.name} - ${imgIndex + 1}`}
+                                      className={styles.productImageImg}
+                                    />
+                                  </div>
+                                </SwiperSlide>
+                              ))}
+                            </Swiper>
+                          ) : imageList.length === 1 ? (
+                            <div className={styles.productImage}>
+                              <img 
+                                src={imageList[0]} 
+                                alt={product.name}
+                                className={styles.productImageImg}
+                              />
+                            </div>
+                          ) : (
+                            <div className={styles.productImage}>
+                              <span className={styles.productIcon}>📦</span>
+                            </div>
+                          );
+                        })()}
                         {product.featured && (
                           <span className={styles.featuredBadge}>⭐</span>
                         )}

@@ -3,11 +3,16 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination as SwiperPagination } from "swiper/modules";
 import { Product } from "@/config/products.config";
 import { ArrowRight, ArrowUpRight, Package, ShoppingBag, Check, Sparkles, TrendingUp } from "lucide-react";
 import { useCart } from "@/contexts/CartContext";
 import styles from "./ProductGrid.module.scss";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
 
 // Icon mapping for product categories
 const categoryIcons: Record<string, string> = {
@@ -188,11 +193,42 @@ function ProductCard({
           {/* Image Area with Gradient Overlay */}
           <div className={styles.imageWrapper}>
             <div className={styles.imageGradient} />
-            <div className={styles.imagePlaceholder}>
-              <span className={styles.productIcon}>
-                {categoryIcons[product.name] || "📦"}
-              </span>
-            </div>
+            {(() => {
+              // Handle both images array and single image
+              const imageList = product.images || (product.image ? [product.image] : []);
+              
+              return imageList.length > 1 ? (
+                <Swiper
+                  modules={[SwiperPagination]}
+                  pagination={{ clickable: true }}
+                  className={styles.imageSwiper}
+                  spaceBetween={0}
+                  slidesPerView={1}
+                >
+                  {imageList.map((image, imgIndex) => (
+                    <SwiperSlide key={imgIndex}>
+                      <img 
+                        src={image} 
+                        alt={`${product.name} - ${imgIndex + 1}`}
+                        className={styles.productImage}
+                      />
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+              ) : imageList.length === 1 ? (
+                <img 
+                  src={imageList[0]} 
+                  alt={product.name}
+                  className={styles.productImage}
+                />
+              ) : (
+                <div className={styles.imagePlaceholder}>
+                  <span className={styles.productIcon}>
+                    {categoryIcons[product.name] || "📦"}
+                  </span>
+                </div>
+              );
+            })()}
             
             {/* Hover Overlay */}
             <motion.div 
