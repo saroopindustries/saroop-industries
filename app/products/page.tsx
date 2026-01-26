@@ -19,7 +19,7 @@ import {
 import "swiper/css";
 import "swiper/css/pagination";
 import { ArrowRight, Filter, SlidersHorizontal, X, ChevronDown } from "lucide-react";
-import { useState, useMemo, useTransition, useEffect } from "react";
+import { useState, useMemo, useTransition, useEffect, Suspense } from "react";
 import ProductFilters, { FilterState } from "@/components/products/ProductFilters";
 import ProductSearch from "@/components/products/ProductSearch";
 import ProductCardSkeleton from "@/components/products/ProductCardSkeleton";
@@ -47,7 +47,7 @@ function getCategoryIcon(category: string): string {
   return icons[category] || "📦";
 }
 
-export default function ProductsPage() {
+function ProductsPageContent() {
   const searchParams = useSearchParams();
   const [searchQuery, setSearchQuery] = useState("");
   const [sortBy, setSortBy] = useState<SortOption>("featured");
@@ -474,5 +474,25 @@ export default function ProductsPage() {
         </div>
       )}
     </div>
+  );
+}
+
+export default function ProductsPage() {
+  return (
+    <Suspense fallback={
+      <div className={styles.productsPage}>
+        <section className={styles.productsSection}>
+          <div className="container mx-auto px-4 py-8">
+            <div className={styles.productGrid}>
+              {Array.from({ length: 12 }).map((_, index) => (
+                <ProductCardSkeleton key={index} />
+              ))}
+            </div>
+          </div>
+        </section>
+      </div>
+    }>
+      <ProductsPageContent />
+    </Suspense>
   );
 }
