@@ -1,0 +1,145 @@
+.legalPage {
+  min-height: 100vh;
+  padding: 120px 0 4rem;
+  background: linear-gradient(180deg, #f8fafb 0%, #ffffff 100%);
+
+  @media (max-width: 768px) {
+    padding: 100px 0 3rem;
+  }
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #e2e8f0;
+
+  h1 {
+    font-family: var(--font-outfit), sans-serif;
+    font-size: clamp(2rem, 5vw, 2.75rem);
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 0.75rem;
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+.lastUpdated {
+  font-size: 0.9375rem;
+  color: #64748b;
+}
+
+.content {
+  background: white;
+  border-radius: 16px;
+  padding: 3rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+
+  @media (max-width: 768px) {
+    padding: 2rem 1.5rem;
+  }
+}
+
+.section {
+  margin-bottom: 2.5rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    font-family: var(--font-outfit), sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #93c967;
+    display: inline-block;
+
+    @media (max-width: 768px) {
+      font-size: 1.25rem;
+    }
+  }
+
+  h3 {
+    font-family: var(--font-outfit), sans-serif;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #334155;
+    margin: 1.5rem 0 0.75rem;
+
+    @media (max-width: 768px) {
+      font-size: 1rem;
+    }
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #475569;
+    margin-bottom: 1rem;
+
+    @media (max-width: 768px) {
+      font-size: 0.9375rem;
+    }
+  }
+
+  ul {
+    margin: 1rem 0 1rem 1.5rem;
+    padding: 0;
+
+    li {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #475569;
+      margin-bottom: 0.5rem;
+      position: relative;
+
+      &::marker {
+        color: #93c967;
+      }
+
+      strong {
+        color: #1e293b;
+        font-weight: 600;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 0.9375rem;
+      }
+    }
+  }
+}
+
+.contactBox {
+  background: #f8fafb;
+  border-left: 4px solid #93c967;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+
+  p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9375rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    strong {
+      font-weight: 600;
+      color: #1e293b;
+    }
+  }
+}
