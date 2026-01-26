@@ -7,7 +7,7 @@ export const siteConfig = {
   tollFree: "1800 8913 205",
   address: "B-15, Mangolpuri Industrial Area Phase-II, New Delhi- 110034 India",
   yearEstablished: 2015,
-  brochureUrl: "https://saroopindustries.com/wp-content/uploads/2025/02/saroop_new_catalog.pdf",
+  brochureUrl: "/Catalouge.pdf",
   social: {
     facebook: "https://www.facebook.com/saroopindustries",
     instagram: "https://www.instagram.com/saroopindustries",
