@@ -412,7 +412,7 @@ export const productCategories: ProductCategory[] = [
       { id: "0312-caps", name: "0312 Series Caps", slug: "0312-series-caps", description: "Caps for 0312 terminals", products: terminal0312CapProducts },
       { id: "0110-0187-caps", name: "0110/0187 Series Caps", slug: "0110-0187-series-caps", description: "Caps for 0110 & 0187 terminals", products: terminal0110_0187CapProducts },
       { id: "vehicle-specific-caps", name: "Vehicle-Specific Caps", slug: "vehicle-specific-caps", description: "Battery & terminal caps for specific vehicles", products: vehicleSpecificCapProducts },
-      { id: "2w-housing-caps", name: "2-Wheeler Housing Caps", slug: "2wheeler-housing-caps", description: "Housing caps for motorcycles & scooters", products: twoWheelerHousingCapProducts },
+      { id: "2w-housing-caps", name: "2-Wheeler Housing Caps", slug: "2-wheeler-housing-caps", description: "Housing caps for motorcycles & scooters", products: twoWheelerHousingCapProducts },
       { id: "multi-wheeler-caps", name: "Multi-Wheeler Caps", slug: "multi-wheeler-caps", description: "Caps for 3-wheeler & 4-wheeler", products: multiWheelerCapProducts },
     ],
   },
@@ -617,6 +617,18 @@ export const productCategories: ProductCategory[] = [
 // ============================================
 // HELPER FUNCTIONS
 // ============================================
+
+/**
+ * Convert subcategory name to slug format
+ * Ensures consistent slug generation across the app
+ */
+export function subcategoryToSlug(subcategoryName: string): string {
+  return subcategoryName
+    .toLowerCase()
+    .replace(/\s+/g, "-")
+    .replace(/\//g, "-")
+    .replace(/&/g, "and");
+}
 
 /**
  * Get a product by its slug

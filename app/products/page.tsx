@@ -2,18 +2,23 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { allProducts, productCategories } from "@/config/products.config";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination as SwiperPagination } from "swiper/modules";
+import { allProducts, productCategories, subcategoryToSlug } from "@/config/products.config";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Filter, Grid, List, SlidersHorizontal, X } from "lucide-react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import { ArrowRight, Filter, SlidersHorizontal, X } from "lucide-react";
 import { useState, useMemo, useTransition } from "react";
 import ProductFilters, { FilterState } from "@/components/products/ProductFilters";
 import ProductSearch from "@/components/products/ProductSearch";
 import ProductCardSkeleton from "@/components/products/ProductCardSkeleton";
-import { Pagination } from "@/components/ui/pagination";
+import { Pagination as UIPagination } from "@/components/ui/pagination";
 import { useCart } from "@/contexts/CartContext";
 import styles from "./page.module.scss";
 
-type ViewMode = "grid" | "list" | "compact";
 type SortOption = "name" | "featured" | "category" | "newest";
 
 const PRODUCTS_PER_PAGE = 24;
@@ -36,7 +41,6 @@ function getCategoryIcon(category: string): string {
 
 export default function ProductsPage() {
   const [searchQuery, setSearchQuery] = useState("");
-  const [viewMode, setViewMode] = useState<ViewMode>("grid");
   const [sortBy, setSortBy] = useState<SortOption>("featured");
   const [showMobileFilters, setShowMobileFilters] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
@@ -79,13 +83,19 @@ export default function ProductsPage() {
     }
 
     if (filters.subcategories.length > 0) {
-      products = products.filter((p) =>
-        p.subcategory
-          ? filters.subcategories.includes(
-              p.subcategory.toLowerCase().replace(/\s+/g, "-")
-            )
-          : false
-      );
+      // Build a map of product IDs that belong to selected subcategories for performance
+      const subcategoryProductIds = new Set<string>();
+      productCategories.forEach((cat) => {
+        cat.subcategories?.forEach((sub) => {
+          if (filters.subcategories.includes(sub.slug)) {
+            sub.products.forEach((prod) => {
+              subcategoryProductIds.add(prod.id);
+            });
+          }
+        });
+      });
+      
+      products = products.filter((p) => subcategoryProductIds.has(p.id));
     }
 
     if (filters.featured) {
@@ -210,24 +220,6 @@ export default function ProductsPage() {
                     <option value="category">Category</option>
                     <option value="newest">Newest</option>
                   </select>
-
-                  {/* View Mode Toggle */}
-                  <div className={styles.viewToggle}>
-                    <button
-                      className={viewMode === "grid" ? styles.active : ""}
-                      onClick={() => setViewMode("grid")}
-                      title="Grid view"
-                    >
-                      <Grid className="h-4 w-4" />
-                    </button>
-                    <button
-                      className={viewMode === "list" ? styles.active : ""}
-                      onClick={() => setViewMode("list")}
-                      title="List view"
-                    >
-                      <List className="h-4 w-4" />
-                    </button>
-                  </div>
                 </div>
               </div>
 
@@ -282,14 +274,14 @@ export default function ProductsPage() {
 
               {/* Products Grid */}
               {isPending ? (
-                <div className={`${styles.productGrid} ${styles[viewMode]}`}>
+                <div className={styles.productGrid}>
                   {Array.from({ length: 12 }).map((_, index) => (
                     <ProductCardSkeleton key={index} />
                   ))}
                 </div>
               ) : paginatedProducts.length > 0 ? (
                 <>
-                  <div className={`${styles.productGrid} ${styles[viewMode]}`}>
+                  <div className={styles.productGrid}>
                     {paginatedProducts.map((product, index) => (
                     <motion.div
                       key={product.id}
@@ -303,14 +295,34 @@ export default function ProductsPage() {
                         className={styles.productCard}
                       >
                         <div className={styles.productImageWrapper}>
-                          <div className={styles.productImage}>
-                            <div className={styles.imagePattern}></div>
-                            <div className={styles.productIconWrapper}>
-                              <span className={styles.productIcon}>{getCategoryIcon(product.category)}</span>
+                          {product.images && product.images.length > 1 ? (
+                            <Swiper
+                              modules={[SwiperPagination]}
+                              pagination={{ clickable: true }}
+                              className={styles.imageSwiper}
+                              spaceBetween={0}
+                              slidesPerView={1}
+                            >
+                              {product.images.map((image, imgIndex) => (
+                                <SwiperSlide key={imgIndex}>
+                                  <div className={styles.productImage}>
+                                    <div className={styles.imagePattern}></div>
+                                    <img 
+                                      src={image} 
+                                      alt={`${product.name} - ${imgIndex + 1}`}
+                                      className={styles.productImageImg}
+                                    />
+                                  </div>
+                                </SwiperSlide>
+                              ))}
+                            </Swiper>
+                          ) : (
+                            <div className={styles.productImage}>
+                              <div className={styles.imagePattern}></div>
+                              <div className={styles.productIconWrapper}>
+                                <span className={styles.productIcon}>{getCategoryIcon(product.category)}</span>
+                              </div>
                             </div>
-                          </div>
-                          {product.featured && (
-                            <span className={styles.featuredBadge}>⭐ Featured</span>
                           )}
                           {product.variants && product.variants.length > 0 && (
                             <span className={styles.variantBadge}>
@@ -357,7 +369,7 @@ export default function ProductsPage() {
                 </div>
                 
                 {/* Pagination */}
-                <Pagination
+                <UIPagination
                   currentPage={currentPage}
                   totalPages={totalPages}
                   onPageChange={handlePageChange}

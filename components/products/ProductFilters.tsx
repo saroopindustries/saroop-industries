@@ -29,7 +29,10 @@ export default function ProductFilters({
   isMobile = false,
 }: ProductFiltersProps) {
   const [expandedSections, setExpandedSections] = useState<Set<string>>(
-    new Set(["categories", "featured"])
+    new Set(["categories"])
+  );
+  const [expandedCategories, setExpandedCategories] = useState<Set<string>>(
+    new Set()
   );
 
   const toggleSection = (section: string) => {
@@ -42,22 +45,90 @@ export default function ProductFilters({
     setExpandedSections(newExpanded);
   };
 
+  const toggleCategoryExpansion = (categorySlug: string) => {
+    const newExpanded = new Set(expandedCategories);
+    if (newExpanded.has(categorySlug)) {
+      newExpanded.delete(categorySlug);
+    } else {
+      newExpanded.add(categorySlug);
+    }
+    setExpandedCategories(newExpanded);
+  };
+
   const handleCategoryToggle = (categorySlug: string) => {
-    const newCategories = filters.categories.includes(categorySlug)
-      ? filters.categories.filter((c) => c !== categorySlug)
-      : [...filters.categories, categorySlug];
-    onFilterChange({ ...filters, categories: newCategories });
+    const category = productCategories.find((cat) => cat.slug === categorySlug);
+    const isCurrentlySelected = filters.categories.includes(categorySlug);
+    
+    let newCategories: string[];
+    let newSubcategories: string[];
+    
+    if (isCurrentlySelected) {
+      // Deselecting category - remove it and all its subcategories
+      newCategories = filters.categories.filter((c) => c !== categorySlug);
+      
+      // Remove all subcategories of this category
+      const subcategorySlugs = category?.subcategories?.map((sub) => sub.slug) || [];
+      newSubcategories = filters.subcategories.filter(
+        (sub) => !subcategorySlugs.includes(sub)
+      );
+    } else {
+      // Selecting category - add it and all its subcategories
+      newCategories = [...filters.categories, categorySlug];
+      
+      // Add all subcategories of this category
+      const subcategorySlugs = category?.subcategories?.map((sub) => sub.slug) || [];
+      newSubcategories = [
+        ...filters.subcategories,
+        ...subcategorySlugs.filter((slug) => !filters.subcategories.includes(slug))
+      ];
+      
+      // Auto-expand the category to show selected subcategories
+      if (category?.subcategories && category.subcategories.length > 0) {
+        setExpandedCategories(prev => new Set([...prev, categorySlug]));
+      }
+    }
+    
+    onFilterChange({ ...filters, categories: newCategories, subcategories: newSubcategories });
   };
 
   const handleSubcategoryToggle = (subcategorySlug: string) => {
-    const newSubcategories = filters.subcategories.includes(subcategorySlug)
-      ? filters.subcategories.filter((s) => s !== subcategorySlug)
-      : [...filters.subcategories, subcategorySlug];
-    onFilterChange({ ...filters, subcategories: newSubcategories });
-  };
-
-  const handleFeaturedToggle = () => {
-    onFilterChange({ ...filters, featured: !filters.featured });
+    const isCurrentlySelected = filters.subcategories.includes(subcategorySlug);
+    
+    // Find which category this subcategory belongs to
+    const parentCategory = productCategories.find((cat) =>
+      cat.subcategories?.some((sub) => sub.slug === subcategorySlug)
+    );
+    
+    let newSubcategories: string[];
+    let newCategories = [...filters.categories];
+    
+    if (isCurrentlySelected) {
+      // Deselecting subcategory
+      newSubcategories = filters.subcategories.filter((s) => s !== subcategorySlug);
+      
+      // Also deselect parent category if it was selected
+      if (parentCategory && filters.categories.includes(parentCategory.slug)) {
+        newCategories = filters.categories.filter((c) => c !== parentCategory.slug);
+      }
+    } else {
+      // Selecting subcategory
+      newSubcategories = [...filters.subcategories, subcategorySlug];
+      
+      // Check if all subcategories of parent are now selected
+      if (parentCategory) {
+        const allSubcategorySlugs = parentCategory.subcategories?.map((sub) => sub.slug) || [];
+        const allSelected = allSubcategorySlugs.every((slug) => 
+          slug === subcategorySlug || newSubcategories.includes(slug)
+        );
+        
+        // If all subcategories are selected, also select the parent
+        if (allSelected && !filters.categories.includes(parentCategory.slug)) {
+          newCategories = [...filters.categories, parentCategory.slug];
+        }
+      }
+    }
+    
+    onFilterChange({ ...filters, categories: newCategories, subcategories: newSubcategories });
   };
 
   const clearAllFilters = () => {
@@ -72,59 +143,26 @@ export default function ProductFilters({
 
   const hasActiveFilters =
     filters.categories.length > 0 ||
-    filters.subcategories.length > 0 ||
-    filters.featured ||
-    filters.tags.length > 0 ||
-    filters.applications.length > 0;
-
-  // Get all subcategories from selected categories
-  const availableSubcategories = productCategories
-    .filter((cat) => filters.categories.includes(cat.slug))
-    .flatMap((cat) => cat.subcategories || []);
-
-  // Get all unique applications
-  const allApplications = Array.from(
-    new Set(
-      productCategories.flatMap((cat) =>
-        cat.products.flatMap((p) => p.applications || [])
-      )
-    )
-  ).sort();
+    filters.subcategories.length > 0;
 
   return (
     <div className={`${styles.filters} ${isMobile ? styles.mobile : ""}`}>
       {/* Header */}
       <div className={styles.header}>
-        <h3 className={styles.title}>Filters</h3>
-        {isMobile && (
+        <h3 className={styles.title}>Filter Products</h3>
+        {isMobile ? (
           <button onClick={onClose} className={styles.closeButton}>
             <X className="h-5 w-5" />
+          </button>
+        ) : (
+          <button onClick={clearAllFilters} className={styles.clearAll}>
+            Clear All
           </button>
         )}
       </div>
 
-      {/* Active Filters Count */}
-      {hasActiveFilters && (
-        <div className={styles.activeFilters}>
-          <span className={styles.count}>
-            {filters.categories.length +
-              filters.subcategories.length +
-              (filters.featured ? 1 : 0)}{" "}
-            active
-          </span>
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={clearAllFilters}
-            className={styles.clearButton}
-          >
-            Clear All
-          </Button>
-        </div>
-      )}
-
       <div className={styles.sections}>
-        {/* Categories */}
+        {/* Categories with nested subcategories */}
         <div className={styles.section}>
           <button
             className={styles.sectionHeader}
@@ -147,159 +185,79 @@ export default function ProductFilters({
                 className={styles.sectionContent}
               >
                 {productCategories.map((category) => (
-                  <label key={category.id} className={styles.checkbox}>
-                    <input
-                      type="checkbox"
-                      checked={filters.categories.includes(category.slug)}
-                      onChange={() => handleCategoryToggle(category.slug)}
-                    />
-                    <span className={styles.checkboxLabel}>
-                      <span className={styles.icon}>{category.icon}</span>
-                      {category.name}
-                    </span>
-                    <span className={styles.count}>
-                      ({category.products.length})
-                    </span>
-                  </label>
+                  <div key={category.id} className={styles.categoryGroup}>
+                    <div className={styles.categoryRow}>
+                      {category.subcategories && category.subcategories.length > 0 && (
+                        <button
+                          className={styles.categoryExpander}
+                          onClick={() => toggleCategoryExpansion(category.slug)}
+                          aria-label={`${expandedCategories.has(category.slug) ? 'Collapse' : 'Expand'} ${category.name}`}
+                        >
+                          {expandedCategories.has(category.slug) ? (
+                            <ChevronDown className="h-3.5 w-3.5" />
+                          ) : (
+                            <ChevronUp className="h-3.5 w-3.5" />
+                          )}
+                        </button>
+                      )}
+                      <label className={styles.checkbox}>
+                        <input
+                          type="checkbox"
+                          checked={filters.categories.includes(category.slug)}
+                          onChange={() => handleCategoryToggle(category.slug)}
+                        />
+                        <span className={styles.checkboxLabel}>
+                          {category.name}
+                        </span>
+                        <span className={styles.count}>
+                          {category.products.length}
+                        </span>
+                      </label>
+                    </div>
+
+                    {/* Nested Subcategories */}
+                    {category.subcategories && category.subcategories.length > 0 && expandedCategories.has(category.slug) && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.2 }}
+                        className={styles.subcategoryList}
+                      >
+                        {category.subcategories.map((subcategory) => (
+                          <label key={subcategory.id} className={`${styles.checkbox} ${styles.nested}`}>
+                            <input
+                              type="checkbox"
+                              checked={filters.subcategories.includes(subcategory.slug)}
+                              onChange={() => handleSubcategoryToggle(subcategory.slug)}
+                            />
+                            <span className={styles.checkboxLabel}>
+                              {subcategory.name}
+                            </span>
+                            <span className={styles.count}>
+                              {subcategory.products.length}
+                            </span>
+                          </label>
+                        ))}
+                      </motion.div>
+                    )}
+                  </div>
                 ))}
               </motion.div>
             )}
           </AnimatePresence>
         </div>
 
-        {/* Subcategories (only show if categories are selected) */}
-        {availableSubcategories.length > 0 && (
-          <div className={styles.section}>
-            <button
-              className={styles.sectionHeader}
-              onClick={() => toggleSection("subcategories")}
-            >
-              <span className={styles.sectionTitle}>Subcategories</span>
-              {expandedSections.has("subcategories") ? (
-                <ChevronUp className="h-4 w-4" />
-              ) : (
-                <ChevronDown className="h-4 w-4" />
-              )}
-            </button>
-            <AnimatePresence>
-              {expandedSections.has("subcategories") && (
-                <motion.div
-                  initial={{ height: 0, opacity: 0 }}
-                  animate={{ height: "auto", opacity: 1 }}
-                  exit={{ height: 0, opacity: 0 }}
-                  transition={{ duration: 0.2 }}
-                  className={styles.sectionContent}
-                >
-                  {availableSubcategories.map((subcategory) => (
-                    <label key={subcategory.id} className={styles.checkbox}>
-                      <input
-                        type="checkbox"
-                        checked={filters.subcategories.includes(
-                          subcategory.slug
-                        )}
-                        onChange={() =>
-                          handleSubcategoryToggle(subcategory.slug)
-                        }
-                      />
-                      <span className={styles.checkboxLabel}>
-                        {subcategory.name}
-                      </span>
-                      <span className={styles.count}>
-                        ({subcategory.products.length})
-                      </span>
-                    </label>
-                  ))}
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </div>
-        )}
-
-        {/* Featured Products */}
-        <div className={styles.section}>
-          <button
-            className={styles.sectionHeader}
-            onClick={() => toggleSection("featured")}
-          >
-            <span className={styles.sectionTitle}>Product Type</span>
-            {expandedSections.has("featured") ? (
-              <ChevronUp className="h-4 w-4" />
-            ) : (
-              <ChevronDown className="h-4 w-4" />
-            )}
-          </button>
-          <AnimatePresence>
-            {expandedSections.has("featured") && (
-              <motion.div
-                initial={{ height: 0, opacity: 0 }}
-                animate={{ height: "auto", opacity: 1 }}
-                exit={{ height: 0, opacity: 0 }}
-                transition={{ duration: 0.2 }}
-                className={styles.sectionContent}
-              >
-                <label className={styles.checkbox}>
-                  <input
-                    type="checkbox"
-                    checked={filters.featured}
-                    onChange={handleFeaturedToggle}
-                  />
-                  <span className={styles.checkboxLabel}>
-                    ⭐ Featured Products
-                  </span>
-                </label>
-              </motion.div>
-            )}
-          </AnimatePresence>
-        </div>
-
-        {/* Applications */}
-        {allApplications.length > 0 && (
-          <div className={styles.section}>
-            <button
-              className={styles.sectionHeader}
-              onClick={() => toggleSection("applications")}
-            >
-              <span className={styles.sectionTitle}>Applications</span>
-              {expandedSections.has("applications") ? (
-                <ChevronUp className="h-4 w-4" />
-              ) : (
-                <ChevronDown className="h-4 w-4" />
-              )}
-            </button>
-            <AnimatePresence>
-              {expandedSections.has("applications") && (
-                <motion.div
-                  initial={{ height: 0, opacity: 0 }}
-                  animate={{ height: "auto", opacity: 1 }}
-                  exit={{ height: 0, opacity: 0 }}
-                  transition={{ duration: 0.2 }}
-                  className={styles.sectionContent}
-                >
-                  {allApplications.slice(0, 8).map((app) => (
-                    <label key={app} className={styles.checkbox}>
-                      <input
-                        type="checkbox"
-                        checked={filters.applications.includes(app)}
-                        onChange={() => {
-                          const newApps = filters.applications.includes(app)
-                            ? filters.applications.filter((a) => a !== app)
-                            : [...filters.applications, app];
-                          onFilterChange({ ...filters, applications: newApps });
-                        }}
-                      />
-                      <span className={styles.checkboxLabel}>{app}</span>
-                    </label>
-                  ))}
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </div>
-        )}
       </div>
 
-      {/* Apply Button (Mobile) */}
+      {/* Footer (Mobile) */}
       {isMobile && (
         <div className={styles.mobileFooter}>
+          {hasActiveFilters && (
+            <button onClick={clearAllFilters} className={styles.mobileClearAll}>
+              Clear All Filters
+            </button>
+          )}
           <Button onClick={onClose} className={styles.applyButton}>
             Apply Filters
           </Button>
