@@ -13,15 +13,8 @@ export const wireProducts: Product[] = [
     description: "Premium quality auto cables available in various sizes: 14/0.3mm (1.00sq mm), 28/0.3mm (1.50sq mm), 35/0.3mm (2.50sq mm), 44/0.3mm (3.00sq mm), 65/0.3mm (4.00sq mm), 120/0.3mm (10sq mm).",
     featured: true,
     partNumber: "GAC-30SWG",
-    // Single image (option 1):
-    // image: "/products/wire-cables/gold-auto-cables-30swg.png",
-    
-    // Multiple images (option 2) - will show as Swiper carousel:
     images: [
       "/products/wire-cables/gold-auto-cables-30swg.png",
-      // Add more images here when available:
-      // "/products/wire-cables/gold-auto-cables-30swg-2.png",
-      // "/products/wire-cables/gold-auto-cables-30swg-3.png",
     ],
     specifications: {
       "Wire Gauge": "30 SWG",
@@ -257,7 +250,7 @@ export const wireProducts: Product[] = [
     image: "/products/wire-cables/aftermarket-battery-cables.png",
     specifications: {
       "Variants": "220 Wire, 325 Wire, 440 Wire",
-      "Available Lengths": "25m, 50m, 100m",
+      "Available Lengths": "7.5m, 15m, 30m",
     },
   },
 ];
