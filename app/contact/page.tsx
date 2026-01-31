@@ -63,13 +63,11 @@ export default function ContactPage() {
                   <div className={styles.infoItem}>
                     <Phone className={styles.icon} />
                     <div>
-                      <a href={`tel:${siteConfig.phone}`}>{siteConfig.phone}</a>
-                    </div>
-                  </div>
-                  <div className={styles.infoItem}>
-                    <PhoneCall className={styles.icon} />
-                    <div>
-                      <span>Toll Free: {siteConfig.tollFree}</span>
+                      {siteConfig.phone.map((phone) => (
+                        <div key={phone}>
+                          <a href={`tel:${phone}`}>{phone}</a>,&nbsp;
+                        </div>
+                      ))}
                     </div>
                   </div>
                   <div className={styles.infoItem}>
