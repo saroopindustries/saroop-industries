@@ -3,7 +3,7 @@ export const siteConfig = {
   description: "Automotive Solutions: Driving Innovation, Powering Performance",
   url: "https://saroopindustries.com",
   email: "saroopindustries@gmail.com",
-  phone: "+91-9891169000",
+  phone: "+91-9810095059",
   tollFree: "1800 8913 205",
   address: "B-15, Mangolpuri Industrial Area Phase-II, New Delhi- 110034 India",
   yearEstablished: 2015,
