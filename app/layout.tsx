@@ -109,6 +109,15 @@ export const metadata: Metadata = {
     images: ["/og-image.jpg"],
   },
 
+  icons: {
+    icon: [
+      { url: "/favicon.png", type: "image/png" },
+      { url: "/icon.png", type: "image/png", sizes: "any" },
+    ],
+    apple: { url: "/apple-touch-icon.png", type: "image/png" },
+    shortcut: "/favicon.png",
+  },
+
   category: "Automotive Parts",
 };
 
