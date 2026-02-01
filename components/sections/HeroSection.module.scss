@@ -6,10 +6,6 @@
   overflow: hidden;
   background: linear-gradient(135deg, hsl(222 47% 8%) 0%, hsl(222 47% 15%) 50%, hsl(222 47% 11%) 100%);
   padding-top: 96px;
-
-  @media (min-width: 1024px) {
-    padding-top: 140px;
-  }
 }
 
 // Background Elements
@@ -67,7 +63,7 @@
   padding: 2rem 0 4rem;
 
   @media (min-width: 1024px) {
-    padding: 4rem 0 6rem;
+    padding: 2rem 0 4rem;
   }
 }
 
@@ -85,11 +81,11 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 3rem;
-  align-items: center;
+  align-items: start;
 
   @media (min-width: 1024px) {
     grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    gap: 2rem;
   }
 }
 
@@ -109,7 +105,7 @@
   font-size: 0.8125rem;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.9);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .badgeDot {
@@ -130,7 +126,7 @@
   font-size: clamp(2.5rem, 8vw, 4.5rem);
   font-weight: 700;
   line-height: 1.1;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   letter-spacing: -0.02em;
 }
 
@@ -146,14 +142,14 @@
 }
 
 .description {
-  font-size: 1.125rem;
-  line-height: 1.7;
+  font-size: 1rem;
+  line-height: 1.6;
   color: rgba(255, 255, 255, 0.7);
   max-width: 520px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 
   @media (min-width: 768px) {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
 }
 
@@ -162,7 +158,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
 }
 
 .featureItem {
@@ -186,7 +182,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .primaryCta {
@@ -273,13 +269,13 @@
 
   @media (min-width: 1024px) {
     display: block;
+    align-self: center;
   }
 }
 
 .visualWrapper {
   position: relative;
   width: 100%;
-  aspect-ratio: 1;
   max-width: 550px;
   margin-left: auto;
 }

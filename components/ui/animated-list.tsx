@@ -15,14 +15,12 @@ export const AnimatedList = React.memo(
     const childrenArray = React.Children.toArray(children);
 
     useEffect(() => {
-      // Only continue if we haven't shown all items yet
       if (index >= childrenArray.length - 1) {
         return;
       }
 
       const interval = setInterval(() => {
         setIndex((prevIndex) => {
-          // Stop at the last item
           if (prevIndex >= childrenArray.length - 1) {
             return prevIndex;
           }

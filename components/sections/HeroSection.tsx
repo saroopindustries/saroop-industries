@@ -1,11 +1,11 @@
 "use client";
 
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import { Download, ArrowRight, Play, ChevronDown, Zap, Shield, Award } from "lucide-react";
+import { Download, ArrowRight, ChevronDown, Zap, Shield, Award } from "lucide-react";
 import Link from "next/link";
 import { useRef } from "react";
 import { siteConfig } from "@/config/site.config";
+import { HeroVideoDialog } from "@/components/ui/hero-video-dialog";
 import styles from "./HeroSection.module.scss";
 
 const features = [
@@ -142,58 +142,19 @@ export default function HeroSection() {
               </motion.div>
             </motion.div>
 
-            {/* Right Column - Visual */}
+            {/* Right Column - Video */}
             <motion.div
               className={styles.visualColumn}
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.4, duration: 0.8, ease: "easeOut" }}
             >
-              <div className={styles.visualWrapper}>
-                {/* Main Visual Card */}
-                <div className={styles.mainVisual}>
-                  <div className={styles.visualGlow} />
-                  <div className={styles.visualContent}>
-                    <div className={styles.visualIcon}>
-                      <Zap className="h-12 w-12" />
-                    </div>
-                    <h3>BRASS TERMINALS</h3>
-                    <p>Precision-engineered for excellence</p>
-                  </div>
-                  
-                  {/* Floating Cards */}
-                  <motion.div
-                    className={`${styles.floatingCard} ${styles.card1}`}
-                    animate={{ y: [0, -10, 0] }}
-                    transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                  >
-                    <span className={styles.floatingIcon}>⚡</span>
-                    <span>High Conductivity</span>
-                  </motion.div>
-
-                  <motion.div
-                    className={`${styles.floatingCard} ${styles.card2}`}
-                    animate={{ y: [0, 10, 0] }}
-                    transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-                  >
-                    <span className={styles.floatingIcon}>🛡️</span>
-                    <span>ISO Certified</span>
-                  </motion.div>
-
-                  <motion.div
-                    className={`${styles.floatingCard} ${styles.card3}`}
-                    animate={{ y: [0, -8, 0] }}
-                    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                  >
-                    <span className={styles.floatingIcon}>🌍</span>
-                    <span>Global Export</span>
-                  </motion.div>
-                </div>
-
-                {/* Background Decorations */}
-                <div className={styles.decorCircle1} />
-                <div className={styles.decorCircle2} />
-              </div>
+              <HeroVideoDialog
+                animationStyle="from-center"
+                videoSrc="https://www.youtube.com/embed/-owsomxMyao"
+                thumbnailSrc="/hero-thumbnail.png"
+                thumbnailAlt="Swaroop Industries Manufacturing Video"
+              />
             </motion.div>
           </div>
         </div>

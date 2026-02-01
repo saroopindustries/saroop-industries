@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Phone, Mail, ArrowRight, MapPin, Globe, ChevronDown } from "lucide-react";
+import { X, Phone, Mail, ArrowRight, ChevronDown } from "lucide-react";
 import { navigationConfig } from "@/config/navigation.config";
 import { siteConfig } from "@/config/site.config";
 import CartButton from "@/components/cart/CartButton";
@@ -44,34 +44,6 @@ export default function Header() {
 
   return (
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
-      {/* Top Bar */}
-      <div className={styles.topBar}>
-        <div className={styles.topBarContent}>
-          <div className={styles.topBarLeft}>
-            <a href={`tel:${siteConfig.phone}`} className={styles.topBarLink}>
-              <Phone className="h-3.5 w-3.5" />
-              <span>{siteConfig.phone}</span>
-            </a>
-            <span className={styles.divider}>|</span>
-            <a href={`mailto:${siteConfig.email}`} className={styles.topBarLink}>
-              <Mail className="h-3.5 w-3.5" />
-              <span>{siteConfig.email}</span>
-            </a>
-          </div>
-          <div className={styles.topBarRight}>
-            <div className={styles.topBarLink}>
-              <MapPin className="h-3.5 w-3.5" />
-              <span>New Delhi, India</span>
-            </div>
-            <span className={styles.divider}>|</span>
-            <div className={styles.topBarLink}>
-              <Globe className="h-3.5 w-3.5" />
-              <span>EN</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Main Navigation */}
       <nav className={styles.nav}>
         <div className={styles.navContent}>

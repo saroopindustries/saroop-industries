@@ -7,6 +7,7 @@ import Footer from "@/components/layout/Footer";
 import CartDrawer from "@/components/cart/CartDrawer";
 import { CartProvider } from "@/contexts/CartContext";
 import { BackToTop } from "@/components/ui/back-to-top";
+import ContactSidebar from "@/components/ui/contact-sidebar";
 import { siteConfig } from "@/config/site.config";
 
 const dmSans = DM_Sans({
@@ -127,6 +128,7 @@ export default function RootLayout({
           <Footer />
           <CartDrawer />
           <BackToTop />
+          <ContactSidebar />
         </CartProvider>
       </body>
     </html>
