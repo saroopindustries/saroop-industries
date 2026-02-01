@@ -108,7 +108,7 @@ export default function ContactSidebar() {
             <div className={styles.header}>
               <div>
                 <h3>Get in Touch</h3>
-                <p>We're here to help you</p>
+                <p>We&apos;re here to help you</p>
               </div>
               <button
                 onClick={() => setIsOpen(false)}
