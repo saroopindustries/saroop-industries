@@ -14,6 +14,7 @@ export const standardFuseProducts: Product[] = [
     subcategory: "Standard Fuse",
     description: "Standard automotive blade fuse, 2 Amps rating. Color-coded for easy identification.",
     partNumber: "SI00000002",
+    image: "/products/fuses/standard-fuse/SI00000002.jpg",
     specifications: {
       "Type": "Standard Blade Fuse",
       "Rating": "2 AMPS",
@@ -30,6 +31,7 @@ export const standardFuseProducts: Product[] = [
     subcategory: "Standard Fuse",
     description: "Standard automotive blade fuse, 3 Amps rating.",
     partNumber: "SI00000003",
+    image: "/products/fuses/standard-fuse/SI00000003.jpg",
     specifications: {
       "Type": "Standard Blade Fuse",
       "Rating": "3 AMPS",
@@ -46,6 +48,7 @@ export const standardFuseProducts: Product[] = [
     subcategory: "Standard Fuse",
     description: "Standard automotive blade fuse, 5 Amps rating.",
     partNumber: "SI00000005",
+    image: "/products/fuses/standard-fuse/SI00000005.jpg",
     featured: true,
     specifications: {
       "Type": "Standard Blade Fuse",
@@ -63,6 +66,7 @@ export const standardFuseProducts: Product[] = [
     subcategory: "Standard Fuse",
     description: "Standard automotive blade fuse, 7.5 Amps rating.",
     partNumber: "SI00000007",
+    image: "/products/fuses/standard-fuse/SI00000007.jpg",
     specifications: {
       "Type": "Standard Blade Fuse",
       "Rating": "7.5 AMPS",
@@ -79,6 +83,7 @@ export const standardFuseProducts: Product[] = [
     subcategory: "Standard Fuse",
     description: "Standard automotive blade fuse, 10 Amps rating.",
     partNumber: "SI00000010",
+    image: "/products/fuses/standard-fuse/SI00000010.jpg",
     featured: true,
     specifications: {
       "Type": "Standard Blade Fuse",
@@ -96,6 +101,7 @@ export const standardFuseProducts: Product[] = [
     subcategory: "Standard Fuse",
     description: "Standard automotive blade fuse, 15 Amps rating.",
     partNumber: "SI00000015",
+    image: "/products/fuses/standard-fuse/SI00000015.jpg",
     featured: true,
     specifications: {
       "Type": "Standard Blade Fuse",
@@ -113,6 +119,7 @@ export const standardFuseProducts: Product[] = [
     subcategory: "Standard Fuse",
     description: "Standard automotive blade fuse, 20 Amps rating.",
     partNumber: "SI00000020",
+    image: "/products/fuses/standard-fuse/SI00000020.jpg",
     featured: true,
     specifications: {
       "Type": "Standard Blade Fuse",
@@ -130,6 +137,7 @@ export const standardFuseProducts: Product[] = [
     subcategory: "Standard Fuse",
     description: "Standard automotive blade fuse, 25 Amps rating.",
     partNumber: "SI00000025",
+    image: "/products/fuses/standard-fuse/SI00000025.jpg",
     specifications: {
       "Type": "Standard Blade Fuse",
       "Rating": "25 AMPS",
@@ -146,6 +154,7 @@ export const standardFuseProducts: Product[] = [
     subcategory: "Standard Fuse",
     description: "Standard automotive blade fuse, 30 Amps rating.",
     partNumber: "SI00000030",
+    image: "/products/fuses/standard-fuse/SI00000030.jpg",
     featured: true,
     specifications: {
       "Type": "Standard Blade Fuse",
@@ -163,6 +172,7 @@ export const standardFuseProducts: Product[] = [
     subcategory: "Standard Fuse",
     description: "Standard automotive blade fuse, 35 Amps rating.",
     partNumber: "SI00000035",
+    image: "/products/fuses/standard-fuse/SI00000035.jpg",
     specifications: {
       "Type": "Standard Blade Fuse",
       "Rating": "35 AMPS",
@@ -179,6 +189,7 @@ export const standardFuseProducts: Product[] = [
     subcategory: "Standard Fuse",
     description: "Standard automotive blade fuse, 40 Amps rating.",
     partNumber: "SI00000040",
+    image: "/products/fuses/standard-fuse/SI00000040.jpg",
     specifications: {
       "Type": "Standard Blade Fuse",
       "Rating": "40 AMPS",
@@ -199,6 +210,7 @@ export const miniFuseProducts: Product[] = [
     subcategory: "Mini Fuse",
     description: "Compact mini blade fuse, 1 Amp rating. Space-saving design for modern vehicles.",
     partNumber: "SI00001001",
+    image: "/products/fuses/mini-fuse/SI00001001.jpg",
     specifications: {
       "Type": "Mini Blade Fuse",
       "Rating": "1 AMP",
@@ -215,6 +227,7 @@ export const miniFuseProducts: Product[] = [
     subcategory: "Mini Fuse",
     description: "Compact mini blade fuse, 2 Amps rating.",
     partNumber: "SI00001002",
+    image: "/products/fuses/mini-fuse/SI00001002.jpg",
     specifications: {
       "Type": "Mini Blade Fuse",
       "Rating": "2 AMPS",
@@ -231,6 +244,7 @@ export const miniFuseProducts: Product[] = [
     subcategory: "Mini Fuse",
     description: "Compact mini blade fuse, 3 Amps rating.",
     partNumber: "SI00001003",
+    image: "/products/fuses/mini-fuse/SI00001003.jpg",
     specifications: {
       "Type": "Mini Blade Fuse",
       "Rating": "3 AMPS",
@@ -247,6 +261,7 @@ export const miniFuseProducts: Product[] = [
     subcategory: "Mini Fuse",
     description: "Compact mini blade fuse, 4 Amps rating.",
     partNumber: "SI00001004",
+    image: "/products/fuses/mini-fuse/SI00001004.jpg",
     specifications: {
       "Type": "Mini Blade Fuse",
       "Rating": "4 AMPS",
@@ -263,6 +278,7 @@ export const miniFuseProducts: Product[] = [
     subcategory: "Mini Fuse",
     description: "Compact mini blade fuse, 5 Amps rating.",
     partNumber: "SI00001005",
+    image: "/products/fuses/mini-fuse/SI00001005.jpg",
     featured: true,
     specifications: {
       "Type": "Mini Blade Fuse",
@@ -280,6 +296,7 @@ export const miniFuseProducts: Product[] = [
     subcategory: "Mini Fuse",
     description: "Compact mini blade fuse, 7.5 Amps rating.",
     partNumber: "SI00001007",
+    image: "/products/fuses/mini-fuse/SI00001007.jpg",
     specifications: {
       "Type": "Mini Blade Fuse",
       "Rating": "7.5 AMPS",
@@ -296,6 +313,7 @@ export const miniFuseProducts: Product[] = [
     subcategory: "Mini Fuse",
     description: "Compact mini blade fuse, 10 Amps rating.",
     partNumber: "SI00001010",
+    image: "/products/fuses/mini-fuse/SI00001010.jpg",
     featured: true,
     specifications: {
       "Type": "Mini Blade Fuse",
@@ -313,6 +331,7 @@ export const miniFuseProducts: Product[] = [
     subcategory: "Mini Fuse",
     description: "Compact mini blade fuse, 15 Amps rating.",
     partNumber: "SI00001015",
+    image: "/products/fuses/mini-fuse/SI00001015.jpg",
     featured: true,
     specifications: {
       "Type": "Mini Blade Fuse",
@@ -330,6 +349,7 @@ export const miniFuseProducts: Product[] = [
     subcategory: "Mini Fuse",
     description: "Compact mini blade fuse, 20 Amps rating.",
     partNumber: "SI00001020",
+    image: "/products/fuses/mini-fuse/SI00001020.jpg",
     featured: true,
     specifications: {
       "Type": "Mini Blade Fuse",
@@ -347,6 +367,7 @@ export const miniFuseProducts: Product[] = [
     subcategory: "Mini Fuse",
     description: "Compact mini blade fuse, 25 Amps rating.",
     partNumber: "SI00001025",
+    image: "/products/fuses/mini-fuse/SI00001025.jpg",
     specifications: {
       "Type": "Mini Blade Fuse",
       "Rating": "25 AMPS",
@@ -363,6 +384,7 @@ export const miniFuseProducts: Product[] = [
     subcategory: "Mini Fuse",
     description: "Compact mini blade fuse, 30 Amps rating.",
     partNumber: "SI00001030",
+    image: "/products/fuses/mini-fuse/SI00001030.jpg",
     specifications: {
       "Type": "Mini Blade Fuse",
       "Rating": "30 AMPS",
@@ -379,6 +401,7 @@ export const miniFuseProducts: Product[] = [
     subcategory: "Mini Fuse",
     description: "Compact mini blade fuse, 35 Amps rating.",
     partNumber: "SI00001035",
+    image: "/products/fuses/mini-fuse/SI00001035.jpg",
     specifications: {
       "Type": "Mini Blade Fuse",
       "Rating": "35 AMPS",
@@ -395,6 +418,7 @@ export const miniFuseProducts: Product[] = [
     subcategory: "Mini Fuse",
     description: "Compact mini blade fuse, 40 Amps rating.",
     partNumber: "SI00001040",
+    image: "/products/fuses/mini-fuse/SI00001040.jpg",
     specifications: {
       "Type": "Mini Blade Fuse",
       "Rating": "40 AMPS",
@@ -415,6 +439,7 @@ export const slowBlowFemaleFuseProducts: Product[] = [
     subcategory: "Slow Blow Female Fuse",
     description: "Slow blow female cartridge fuse, 20 Amps. Time-delay fuse for inductive loads.",
     partNumber: "SI00002020",
+    image: "/products/fuses/slow-blow-female-fuse/SI00002020.jpg",
     specifications: {
       "Type": "Slow Blow Female Cartridge",
       "Rating": "20 AMPS",
@@ -432,6 +457,7 @@ export const slowBlowFemaleFuseProducts: Product[] = [
     subcategory: "Slow Blow Female Fuse",
     description: "Slow blow female cartridge fuse, 30 Amps.",
     partNumber: "SI00002030",
+    image: "/products/fuses/slow-blow-female-fuse/SI00002030.jpg",
     featured: true,
     specifications: {
       "Type": "Slow Blow Female Cartridge",
@@ -450,6 +476,7 @@ export const slowBlowFemaleFuseProducts: Product[] = [
     subcategory: "Slow Blow Female Fuse",
     description: "Slow blow female cartridge fuse, 40 Amps.",
     partNumber: "SI00002040",
+    image: "/products/fuses/slow-blow-female-fuse/SI00002040.jpg",
     specifications: {
       "Type": "Slow Blow Female Cartridge",
       "Rating": "40 AMPS",
@@ -467,6 +494,7 @@ export const slowBlowFemaleFuseProducts: Product[] = [
     subcategory: "Slow Blow Female Fuse",
     description: "Slow blow female cartridge fuse, 50 Amps.",
     partNumber: "SI00002050",
+    image: "/products/fuses/slow-blow-female-fuse/SI00002050.jpg",
     specifications: {
       "Type": "Slow Blow Female Cartridge",
       "Rating": "50 AMPS",
@@ -484,6 +512,7 @@ export const slowBlowFemaleFuseProducts: Product[] = [
     subcategory: "Slow Blow Female Fuse",
     description: "Slow blow female cartridge fuse, 60 Amps.",
     partNumber: "SI00002060",
+    image: "/products/fuses/slow-blow-female-fuse/SI00002060.jpg",
     featured: true,
     specifications: {
       "Type": "Slow Blow Female Cartridge",
@@ -502,6 +531,7 @@ export const slowBlowFemaleFuseProducts: Product[] = [
     subcategory: "Slow Blow Female Fuse",
     description: "Slow blow female cartridge fuse, 70 Amps.",
     partNumber: "SI00002070",
+    image: "/products/fuses/slow-blow-female-fuse/SI00002070.jpg",
     specifications: {
       "Type": "Slow Blow Female Cartridge",
       "Rating": "70 AMPS",
@@ -519,6 +549,7 @@ export const slowBlowFemaleFuseProducts: Product[] = [
     subcategory: "Slow Blow Female Fuse",
     description: "Slow blow female cartridge fuse, 80 Amps.",
     partNumber: "SI00002080",
+    image: "/products/fuses/slow-blow-female-fuse/SI00002080.jpg",
     specifications: {
       "Type": "Slow Blow Female Cartridge",
       "Rating": "80 AMPS",
@@ -536,6 +567,7 @@ export const slowBlowFemaleFuseProducts: Product[] = [
     subcategory: "Slow Blow Female Fuse",
     description: "Slow blow female cartridge fuse, 100 Amps.",
     partNumber: "SI00002100",
+    image: "/products/fuses/slow-blow-female-fuse/SI00002100.jpg",
     featured: true,
     specifications: {
       "Type": "Slow Blow Female Cartridge",
@@ -558,6 +590,7 @@ export const glassFuseProducts: Product[] = [
     subcategory: "Glass Fuse",
     description: "Glass tube fuses for automotive and electronic applications. Available in ratings from 10A to 100A. Clear glass body for visual inspection.",
     partNumber: "SI00003010-SI00003100",
+    image: "/products/fuses/glass-fuse/SI00003010-SI00003100.jpg",
     featured: true,
     specifications: {
       "Type": "Glass Tube Fuse",
@@ -580,6 +613,7 @@ export const slowBlowMaleFuseProducts: Product[] = [
     subcategory: "Slow Blow Male Fuse",
     description: "Slow blow male cartridge fuse, 20 Amps. Time-delay protection.",
     partNumber: "SI00004020",
+    image: "/products/fuses/slow-blow-male-fuse/SI00004020.jpg",
     specifications: {
       "Type": "Slow Blow Male Cartridge",
       "Rating": "20 AMPS",
@@ -597,6 +631,7 @@ export const slowBlowMaleFuseProducts: Product[] = [
     subcategory: "Slow Blow Male Fuse",
     description: "Slow blow male cartridge fuse, 30 Amps.",
     partNumber: "SI00004030",
+    image: "/products/fuses/slow-blow-male-fuse/SI00004030.jpg",
     featured: true,
     specifications: {
       "Type": "Slow Blow Male Cartridge",
@@ -615,6 +650,7 @@ export const slowBlowMaleFuseProducts: Product[] = [
     subcategory: "Slow Blow Male Fuse",
     description: "Slow blow male cartridge fuse, 40 Amps.",
     partNumber: "SI00004040",
+    image: "/products/fuses/slow-blow-male-fuse/SI00004040.jpg",
     specifications: {
       "Type": "Slow Blow Male Cartridge",
       "Rating": "40 AMPS",
@@ -632,6 +668,7 @@ export const slowBlowMaleFuseProducts: Product[] = [
     subcategory: "Slow Blow Male Fuse",
     description: "Slow blow male cartridge fuse, 50 Amps.",
     partNumber: "SI00004050",
+    image: "/products/fuses/slow-blow-male-fuse/SI00004050.jpg",
     specifications: {
       "Type": "Slow Blow Male Cartridge",
       "Rating": "50 AMPS",
@@ -649,6 +686,7 @@ export const slowBlowMaleFuseProducts: Product[] = [
     subcategory: "Slow Blow Male Fuse",
     description: "Slow blow male cartridge fuse, 60 Amps.",
     partNumber: "SI00004060",
+    image: "/products/fuses/slow-blow-male-fuse/SI00004060.jpg",
     featured: true,
     specifications: {
       "Type": "Slow Blow Male Cartridge",
@@ -667,6 +705,7 @@ export const slowBlowMaleFuseProducts: Product[] = [
     subcategory: "Slow Blow Male Fuse",
     description: "Slow blow male cartridge fuse, 70 Amps.",
     partNumber: "SI00004070",
+    image: "/products/fuses/slow-blow-male-fuse/SI00004070.jpg",
     specifications: {
       "Type": "Slow Blow Male Cartridge",
       "Rating": "70 AMPS",
@@ -684,6 +723,7 @@ export const slowBlowMaleFuseProducts: Product[] = [
     subcategory: "Slow Blow Male Fuse",
     description: "Slow blow male cartridge fuse, 80 Amps.",
     partNumber: "SI00004080",
+    image: "/products/fuses/slow-blow-male-fuse/SI00004080.jpg",
     specifications: {
       "Type": "Slow Blow Male Cartridge",
       "Rating": "80 AMPS",
@@ -701,6 +741,7 @@ export const slowBlowMaleFuseProducts: Product[] = [
     subcategory: "Slow Blow Male Fuse",
     description: "Slow blow male cartridge fuse, 100 Amps.",
     partNumber: "SI00004100",
+    image: "/products/fuses/slow-blow-male-fuse/SI00004100.jpg",
     featured: true,
     specifications: {
       "Type": "Slow Blow Male Cartridge",
@@ -789,6 +830,7 @@ export const boltDownFuseProducts: Product[] = [
     subcategory: "Bolt-Down Fuse",
     description: "Heavy-duty bolt-down fuse, 20 Amps. Secure mounting for vibration-resistant applications.",
     partNumber: "SI00008020",
+    image: "/products/fuses/other-fuse/SI00008020.jpg",
     specifications: {
       "Type": "Bolt-Down",
       "Rating": "20 AMPS",
@@ -806,6 +848,7 @@ export const boltDownFuseProducts: Product[] = [
     subcategory: "Bolt-Down Fuse",
     description: "Heavy-duty bolt-down fuse, 25 Amps.",
     partNumber: "SI00008025",
+    image: "/products/fuses/other-fuse/SI00008025.jpg",
     specifications: {
       "Type": "Bolt-Down",
       "Rating": "25 AMPS",
@@ -823,6 +866,7 @@ export const boltDownFuseProducts: Product[] = [
     subcategory: "Bolt-Down Fuse",
     description: "Heavy-duty bolt-down fuse, 30 Amps.",
     partNumber: "SI00008030",
+    image: "/products/fuses/other-fuse/SI00008030.jpg",
     featured: true,
     specifications: {
       "Type": "Bolt-Down",
@@ -841,6 +885,7 @@ export const boltDownFuseProducts: Product[] = [
     subcategory: "Bolt-Down Fuse",
     description: "Heavy-duty bolt-down fuse, 40 Amps.",
     partNumber: "SI00008040",
+    image: "/products/fuses/other-fuse/SI00008040.jpg",
     specifications: {
       "Type": "Bolt-Down",
       "Rating": "40 AMPS",
@@ -858,6 +903,7 @@ export const boltDownFuseProducts: Product[] = [
     subcategory: "Bolt-Down Fuse",
     description: "Heavy-duty bolt-down fuse, 50 Amps.",
     partNumber: "SI00008050",
+    image: "/products/fuses/other-fuse/SI00008050.jpg",
     specifications: {
       "Type": "Bolt-Down",
       "Rating": "50 AMPS",
@@ -875,6 +921,7 @@ export const boltDownFuseProducts: Product[] = [
     subcategory: "Bolt-Down Fuse",
     description: "Heavy-duty bolt-down fuse, 60 Amps.",
     partNumber: "SI00008060",
+    image: "/products/fuses/other-fuse/SI00008060.jpg",
     specifications: {
       "Type": "Bolt-Down",
       "Rating": "60 AMPS",
@@ -896,6 +943,7 @@ export const maxiFuseProducts: Product[] = [
     subcategory: "Maxi Fuse",
     description: "Maxi blade fuse for high current circuits. Larger size for better heat dissipation. 30 Amps rating.",
     partNumber: "SI00009030",
+    image: "/products/fuses/maxi-fuse/SI00009030.jpg",
     specifications: {
       "Type": "Maxi Blade Fuse",
       "Rating": "30 AMPS",
@@ -913,6 +961,7 @@ export const maxiFuseProducts: Product[] = [
     subcategory: "Maxi Fuse",
     description: "Maxi blade fuse, 40 Amps rating.",
     partNumber: "SI00009040",
+    image: "/products/fuses/maxi-fuse/SI00009040.jpg",
     featured: true,
     specifications: {
       "Type": "Maxi Blade Fuse",
@@ -931,6 +980,7 @@ export const maxiFuseProducts: Product[] = [
     subcategory: "Maxi Fuse",
     description: "Maxi blade fuse, 50 Amps rating.",
     partNumber: "SI00009050",
+    image: "/products/fuses/maxi-fuse/SI00009050.jpg",
     specifications: {
       "Type": "Maxi Blade Fuse",
       "Rating": "50 AMPS",
@@ -948,6 +998,7 @@ export const maxiFuseProducts: Product[] = [
     subcategory: "Maxi Fuse",
     description: "Maxi blade fuse, 60 Amps rating.",
     partNumber: "SI00009060",
+    image: "/products/fuses/maxi-fuse/SI00009060.jpg",
     featured: true,
     specifications: {
       "Type": "Maxi Blade Fuse",
@@ -966,6 +1017,7 @@ export const maxiFuseProducts: Product[] = [
     subcategory: "Maxi Fuse",
     description: "Maxi blade fuse, 70 Amps rating.",
     partNumber: "SI00009070",
+    image: "/products/fuses/maxi-fuse/SI00009070.jpg",
     specifications: {
       "Type": "Maxi Blade Fuse",
       "Rating": "70 AMPS",
@@ -983,6 +1035,7 @@ export const maxiFuseProducts: Product[] = [
     subcategory: "Maxi Fuse",
     description: "Maxi blade fuse, 80 Amps rating.",
     partNumber: "SI00009080",
+    image: "/products/fuses/maxi-fuse/SI00009080.jpg",
     specifications: {
       "Type": "Maxi Blade Fuse",
       "Rating": "80 AMPS",

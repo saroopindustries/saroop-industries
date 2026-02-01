@@ -14,6 +14,7 @@ export const squareFuseBoxProducts: Product[] = [
     subcategory: "Square Fuse Box",
     description: "Square fuse box with 60 wire points (60 point) and 14 relay configuration (56 wire). Heavy duty for commercial vehicles. Made with Saroop Deluxe Wire.",
     partNumber: "SFB5101S",
+    image: "/products/fuse-boxes-complete/universal-fuse-box/SFB5101S.jpg",
     featured: true,
     specifications: {
       "Type": "Square Fuse Box",
@@ -33,6 +34,7 @@ export const squareFuseBoxProducts: Product[] = [
     subcategory: "Square Fuse Box",
     description: "Square fuse box with 36 wire points (36 point) and 5 relay configuration (21 wire). Made with Saroop Deluxe Wire.",
     partNumber: "SFB5106S",
+    image: "/products/fuse-boxes-complete/universal-fuse-box/SFB5106S.jpg",
     specifications: {
       "Type": "Square Fuse Box",
       "Wire Points": "36 Wire (36 Point)",
@@ -50,6 +52,7 @@ export const squareFuseBoxProducts: Product[] = [
     subcategory: "Square Fuse Box",
     description: "Square fuse box with 30 wire points (30 point) and 4 relay configuration (16 wire). Made with Saroop Deluxe Wire.",
     partNumber: "SFB5108S",
+    image: "/products/fuse-boxes-complete/universal-fuse-box/SFB5108S.jpg",
     specifications: {
       "Type": "Square Fuse Box",
       "Wire Points": "30 Wire (30 Point)",
@@ -84,6 +87,7 @@ export const squareFuseBoxProducts: Product[] = [
     subcategory: "Square Fuse Box",
     description: "Fuse box suitable for Eicher Canter 10.11 / 10.50 Pro / 10.59 / 10.69 / 10.75 / 10.90 / 10.95 / 11.10 / 30.25 Galaxy / Jumbo. Configuration: 30 wire + 20 point. BS II, BS III, BS IV compatible.",
     partNumber: "SFB5151C",
+    image: "/products/fuse-boxes-complete/universal-fuse-box/SFB5151C.jpg",
     featured: true,
     specifications: {
       "Type": "Universal Fuse Box",
@@ -103,6 +107,7 @@ export const squareFuseBoxProducts: Product[] = [
     subcategory: "Square Fuse Box",
     description: "Fuse box suitable for Ashok Leyland 3116 / 3516 / 1616 with 4 relay configuration. 40 wire + 28 point.",
     partNumber: "SFB5181M",
+    image: "/products/fuse-boxes-complete/universal-fuse-box/SFB5181M.jpg",
     specifications: {
       "Type": "Square Fuse Box",
       "Compatible": "Ashok Leyland 3116, 3516, 1616",
@@ -121,6 +126,7 @@ export const squareFuseBoxProducts: Product[] = [
     subcategory: "Square Fuse Box",
     description: "Fuse box suitable for Ashok Leyland 4018 / 3116. Configuration: 23 wire + 28 point + 3 relay (12 wire).",
     partNumber: "SFB5191M",
+    image: "/products/fuse-boxes-complete/universal-fuse-box/SFB5191M.jpg",
     specifications: {
       "Type": "Square Fuse Box",
       "Compatible": "Ashok Leyland 4018, 3116",
@@ -139,6 +145,7 @@ export const squareFuseBoxProducts: Product[] = [
     subcategory: "Square Fuse Box",
     description: "Fuse box suitable for Ashok Leyland 4018 / 2214. Configuration: 21 wire + 26 point with 5 socket.",
     partNumber: "SFB5196M",
+    image: "/products/fuse-boxes-complete/universal-fuse-box/SFB5196M.jpg",
     specifications: {
       "Type": "Square Fuse Box",
       "Compatible": "Ashok Leyland 4018, 2214",
@@ -160,6 +167,7 @@ export const marutiFuseBoxCarProducts: Product[] = [
     subcategory: "Maruti Car Fuse Box",
     description: "Fuse box suitable for Maruti Car Type I, Type II, Type III, and Gypsy King. With flasher. Configuration: 17 wire, 18 point. Made with Saroop Deluxe Wire.",
     partNumber: "SFB5401M",
+    image: "/products/fuse-boxes-complete/universal-fuse-box/SFB5401M.jpg",
     featured: true,
     specifications: {
       "Type": "Car Fuse Box",
@@ -180,6 +188,7 @@ export const marutiFuseBoxCarProducts: Product[] = [
     subcategory: "Universal Fuse Box",
     description: "Universal fuse box for Mahindra Bolero Camper MDI TC, BS II, BS III & BS IV. With flasher. Configuration: 18 wire, 24 point, 3 socket.",
     partNumber: "SFB5415M",
+    image: "/products/fuse-boxes-complete/universal-fuse-box/SFB5415M.jpg",
     featured: true,
     specifications: {
       "Type": "Universal Fuse Box",
@@ -201,6 +210,7 @@ export const marutiFuseBoxCarProducts: Product[] = [
     subcategory: "Universal Fuse Box",
     description: "Universal fuse box for Mahindra Jeep, Mahindra Bolero, Pick-up Utility Savari. BS II, BS III, BS IV compatible. Configuration: 17 wire, 24 point.",
     partNumber: "SFB5418M",
+    image: "/products/fuse-boxes-complete/universal-fuse-box/SFB5418M.jpg",
     specifications: {
       "Type": "Universal Fuse Box",
       "Compatible": "Mahindra Jeep, Mahindra Bolero, Pick-up Utility Savari",
@@ -220,6 +230,7 @@ export const marutiFuseBoxCarProducts: Product[] = [
     subcategory: "Universal Fuse Box",
     description: "Universal fuse box for Tata Sumo, Sumo Delux, Tata 1613 TC, 2515 TC, 2518 TC, 407, 709, 1109 Turbo. Configuration: 23 wire, 28 point.",
     partNumber: "SFB5422M",
+    image: "/products/fuse-boxes-complete/universal-fuse-box/SFB5422M.jpg",
     featured: true,
     specifications: {
       "Type": "Universal Fuse Box",
@@ -239,6 +250,7 @@ export const marutiFuseBoxCarProducts: Product[] = [
     subcategory: "Universal Fuse Box",
     description: "Universal fuse box for Tata Sumo 207 DI / 207 2005 DI / 207 DI Turbo / Sumo Spacio. BS II & BS III compatible. Configuration: 32 wire, 32 point, 2 Pcs AC fuse dibbi.",
     partNumber: "SFB5428M",
+    image: "/products/fuse-boxes-complete/universal-fuse-box/SFB5428M.jpg",
     featured: true,
     specifications: {
       "Type": "Universal Fuse Box",
@@ -259,6 +271,7 @@ export const marutiFuseBoxCarProducts: Product[] = [
     subcategory: "Universal Fuse Box",
     description: "Fuse box suitable for Tata ACE and Magic. BS II, BS III & BS IV compatible. Configuration: 20 wire, 26 point.",
     partNumber: "SFB5432M",
+    image: "/products/fuse-boxes-complete/universal-fuse-box/SFB5432M.jpg",
     featured: true,
     specifications: {
       "Type": "Universal Fuse Box",
@@ -279,6 +292,7 @@ export const marutiFuseBoxCarProducts: Product[] = [
     subcategory: "Universal Fuse Box",
     description: "Fuse box for Farm Trac 60. Configuration: 15 wire + 18 point, 2 Pcs Jack (8 pole 8 wire, 8 pole 7 wire).",
     partNumber: "SFB5436M",
+    image: "/products/fuse-boxes-complete/universal-fuse-box/SFB5436M.jpg",
     specifications: {
       "Type": "Universal Fuse Box",
       "Compatible": "Farm Trac 60",
@@ -298,6 +312,7 @@ export const marutiFuseBoxCarProducts: Product[] = [
     subcategory: "Universal Fuse Box",
     description: "Universal tractor fuse box for Mahindra Sarpanch, Arjun, John Deere, Sonalika. With flasher. Configuration: 27 wire, 28 point.",
     partNumber: "SFB5445M",
+    image: "/products/fuse-boxes-complete/universal-fuse-box/SFB5445M.jpg",
     featured: true,
     specifications: {
       "Type": "Universal Fuse Box",
@@ -322,6 +337,7 @@ export const marutiFuseBoxVanProducts: Product[] = [
     subcategory: "Maruti Van Fuse Box",
     description: "Fuse box for Maruti Van Type I, Type II, Type III. With flasher and AC fuse. Configuration: 14 wire, 12 point.",
     partNumber: "SFB5501V",
+    image: "/products/fuse-boxes-complete/universal-fuse-box/SFB5501V.jpg",
     featured: true,
     specifications: {
       "Type": "Van Fuse Box",
@@ -342,6 +358,7 @@ export const marutiFuseBoxVanProducts: Product[] = [
     subcategory: "Universal Fuse Box",
     description: "Universal fuse box for Mahindra Jeep Commander, Alfa, Sarpanch, Bhoomiputra, Eicher 380, John Deere, APE (Type I, II, III). Configuration: 11 wire, 12 point.",
     partNumber: "SFB5512V",
+    image: "/products/fuse-boxes-complete/universal-fuse-box/SFB5512V.jpg",
     specifications: {
       "Type": "Universal Fuse Box",
       "Compatible": "Mahindra Jeep Commander, Alfa, Sarpanch, Bhoomiputra, Eicher 380, John Deere, APE",
@@ -360,6 +377,7 @@ export const marutiFuseBoxVanProducts: Product[] = [
     subcategory: "Universal Fuse Box",
     description: "Fuse box for Mahindra Bhumiputra JCB type and Maruti Van. Configuration: 11 wire, 12 point. Also suitable for Sonalika Big / Farmtrack.",
     partNumber: "SFB5518V",
+    image: "/products/fuse-boxes-complete/universal-fuse-box/SFB5518V.jpg",
     specifications: {
       "Type": "Universal Fuse Box",
       "Compatible": "Mahindra Bhumiputra JCB Type, Maruti Van, Sonalika Big, Farmtrack",
@@ -378,6 +396,7 @@ export const marutiFuseBoxVanProducts: Product[] = [
     subcategory: "Universal Fuse Box",
     description: "Fuse box for Power Trac 60, Farm Trac 35, 45, 60. Configuration: 12 wire, 12 point, 1 Pcs Jack (12 pole, 12 wire).",
     partNumber: "SFB5524V",
+    image: "/products/fuse-boxes-complete/universal-fuse-box/SFB5524V.jpg",
     specifications: {
       "Type": "Universal Fuse Box",
       "Compatible": "Power Trac 60, Farm Trac 35, 45, 60",
@@ -420,6 +439,7 @@ export const glassFuseBoxProducts: Product[] = [
     subcategory: "Glass Fuse Box",
     description: "Universal 6 pole glass fuse box. Made with Saroop Deluxe Wire.",
     partNumber: "SFB9106",
+    image: "/products/fuse-boxes-complete/glass-fuse-box/SFB9106.jpg",
     specifications: {
       "Type": "Glass Fuse Box",
       "Poles": "6 Pole",
@@ -437,6 +457,7 @@ export const glassFuseBoxProducts: Product[] = [
     subcategory: "Glass Fuse Box",
     description: "Universal 8 pole glass fuse box. Made with Saroop Deluxe Wire.",
     partNumber: "SFB9108",
+    image: "/products/fuse-boxes-complete/glass-fuse-box/SFB9108.jpg",
     specifications: {
       "Type": "Glass Fuse Box",
       "Poles": "8 Pole",
@@ -454,6 +475,7 @@ export const glassFuseBoxProducts: Product[] = [
     subcategory: "Glass Fuse Box",
     description: "Universal 10 pole glass fuse box. Made with Saroop Deluxe Wire.",
     partNumber: "SFB9110",
+    image: "/products/fuse-boxes-complete/glass-fuse-box/SFB9110.jpg",
     specifications: {
       "Type": "Glass Fuse Box",
       "Poles": "10 Pole",
@@ -471,6 +493,7 @@ export const glassFuseBoxProducts: Product[] = [
     subcategory: "Glass Fuse Box",
     description: "Universal 12 pole glass fuse box. Made with Saroop Deluxe Wire.",
     partNumber: "SFB9112",
+    image: "/products/fuse-boxes-complete/glass-fuse-box/SFB9112.jpg",
     specifications: {
       "Type": "Glass Fuse Box",
       "Poles": "12 Pole",
@@ -488,6 +511,7 @@ export const glassFuseBoxProducts: Product[] = [
     subcategory: "Glass Fuse Box",
     description: "Glass fuse box suitable for Tata 407. 24 pole configuration. Made with Saroop Deluxe Wire.",
     partNumber: "SFB9124",
+    image: "/products/fuse-boxes-complete/glass-fuse-box/SFB9124.jpg",
     featured: true,
     specifications: {
       "Type": "Glass Fuse Box",
@@ -510,6 +534,7 @@ export const universalFuseBoxProducts: Product[] = [
     subcategory: "Universal Fuse Box",
     description: "Universal Tata Indica Diesel fuse box with 60 AMPS fuse. Configuration: 4 wire with 8mm & 10mm deluxe wire.",
     partNumber: "SFB9001",
+    image: "/products/fuse-boxes-complete/universal-fuse-box/SFB9001.jpg",
     specifications: {
       "Type": "Universal Fuse Box",
       "Compatible": "Tata Indica Diesel",
@@ -529,6 +554,7 @@ export const universalFuseBoxProducts: Product[] = [
     subcategory: "Universal Fuse Box",
     description: "Universal Tata Indica Diesel fuse box with 60 AMPS fuse. Configuration: 4 wire, 6 point with 8mm & 10mm deluxe wire.",
     partNumber: "SFB9002",
+    image: "/products/fuse-boxes-complete/universal-fuse-box/SFB9002.jpg",
     specifications: {
       "Type": "Universal Fuse Box",
       "Compatible": "Tata Indica Diesel",
@@ -548,6 +574,7 @@ export const universalFuseBoxProducts: Product[] = [
     subcategory: "Universal Fuse Box",
     description: "Universal fuse box with 60 AMPS fuse. Main wire long configuration with 8mm & 10mm deluxe wire.",
     partNumber: "SFB9003",
+    image: "/products/fuse-boxes-complete/universal-fuse-box/SFB9003.jpg",
     specifications: {
       "Type": "Universal Fuse Box",
       "Fuse Rating": "60 AMPS",
@@ -567,6 +594,7 @@ export const universalFuseBoxProducts: Product[] = [
     subcategory: "Universal Fuse Box",
     description: "Universal fuse box with 60 AMPS fuse. Configuration: 6 wire, 10 point. Main wire long with 8mm & 10mm deluxe wire.",
     partNumber: "SFB9005",
+    image: "/products/fuse-boxes-complete/universal-fuse-box/SFB9005.jpg",
     specifications: {
       "Type": "Universal Fuse Box",
       "Configuration": "6 Wire, 10 Point",
@@ -587,6 +615,7 @@ export const universalFuseBoxProducts: Product[] = [
     subcategory: "Universal Fuse Box",
     description: "Universal fuse box with both 60 AMPS & 80 AMPS fuse. Main wire long configuration with 8mm & 10mm deluxe wire.",
     partNumber: "SFB9007",
+    image: "/products/fuse-boxes-complete/universal-fuse-box/SFB9007.jpg",
     specifications: {
       "Type": "Universal Fuse Box",
       "Fuse Rating": "60 AMPS & 80 AMPS",
@@ -605,6 +634,7 @@ export const universalFuseBoxProducts: Product[] = [
     subcategory: "Universal Fuse Box",
     description: "Universal fuse box with 60 AMPS fuse. Standard configuration with 8mm & 10mm deluxe wire.",
     partNumber: "SFB9009",
+    image: "/products/fuse-boxes-complete/universal-fuse-box/SFB9009.jpg",
     specifications: {
       "Type": "Universal Fuse Box",
       "Fuse Rating": "60 AMPS",
@@ -622,6 +652,7 @@ export const universalFuseBoxProducts: Product[] = [
     subcategory: "Universal Fuse Box",
     description: "Mini fuse box for Mahindra Maximo. Configuration: 46 wire with 5mm & 6mm deluxe wire.",
     partNumber: "SFB9012",
+    image: "/products/fuse-boxes-complete/universal-fuse-box/SFB9012.jpg",
     specifications: {
       "Type": "Mini Fuse Box",
       "Compatible": "Mahindra Maximo",
@@ -640,6 +671,7 @@ export const universalFuseBoxProducts: Product[] = [
     subcategory: "Universal Fuse Box",
     description: "Mini fuse box for Mahindra Bolero Camper MDI TC, Alto. BS II, BS III, BS IV compatible. Configuration: 55 wire, 40 point with 4 relay.",
     partNumber: "SFB9021",
+    image: "/products/fuse-boxes-complete/universal-fuse-box/SFB9021.jpg",
     featured: true,
     specifications: {
       "Type": "Mini Fuse Box",

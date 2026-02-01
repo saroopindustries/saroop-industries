@@ -14,6 +14,7 @@ export const headLampSensorHolderProducts: Product[] = [
     subcategory: "Head Light Holders",
     description: "Head lamp and sensor 3 pole female holder with 5mm deluxe wire.",
     partNumber: "SH0300001",
+    image: "/products/sensor-lamp-holders/headlight-holder/SH0300001.jpg",
     featured: true,
     specifications: {
       "Poles": "3 Pole",
@@ -34,6 +35,7 @@ export const headLampSensorHolderProducts: Product[] = [
     subcategory: "Head Light Holders",
     description: "Head lamp and sensor 3 pole female holder with 5mm deluxe wire.",
     partNumber: "SH0300006",
+    image: "/products/sensor-lamp-holders/headlight-holder/SH0300006.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Female",
@@ -53,6 +55,7 @@ export const headLampSensorHolderProducts: Product[] = [
     subcategory: "Head Light Holders",
     description: "Head lamp and sensor ceramic 3 pole female holder with 5mm deluxe wire. Heat resistant ceramic holder.",
     partNumber: "SH0300009",
+    image: "/products/sensor-lamp-holders/headlight-holder/SH0300009.jpg",
     featured: true,
     specifications: {
       "Poles": "3 Pole",
@@ -74,6 +77,7 @@ export const headLampSensorHolderProducts: Product[] = [
     subcategory: "Head Light Holders",
     description: "Head lamp and sensor bakelite 3 pole female holder with 5mm deluxe wire. Heat resistant bakelite holder.",
     partNumber: "SH0300012",
+    image: "/products/sensor-lamp-holders/headlight-holder/SH0300012.jpg",
     featured: true,
     specifications: {
       "Poles": "3 Pole",
@@ -95,6 +99,7 @@ export const headLampSensorHolderProducts: Product[] = [
     subcategory: "Head Light Holders",
     description: "Head lamp and sensor 3 pole female holder with 5mm deluxe wire.",
     partNumber: "SH0300015",
+    image: "/products/sensor-lamp-holders/headlight-holder/SH0300015.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Female",
@@ -114,6 +119,7 @@ export const headLampSensorHolderProducts: Product[] = [
     subcategory: "Head Light Holders",
     description: "Head lamp and sensor Covernet 3 pole female holder with 5mm deluxe wire.",
     partNumber: "SH0300017",
+    image: "/products/sensor-lamp-holders/headlight-holder/SH0300017.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Female",
@@ -134,6 +140,7 @@ export const headLampSensorHolderProducts: Product[] = [
     subcategory: "Head Light Holders",
     description: "Head lamp and sensor Melamine 3 pole female holder with 5mm deluxe wire.",
     partNumber: "SH0300023",
+    image: "/products/sensor-lamp-holders/headlight-holder/SH0300023.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Female",
@@ -158,6 +165,7 @@ export const jptSensorProducts: Product[] = [
     subcategory: "JPT Sensor Holders",
     description: "JPT thermo switch for Tata Indica 2 pole female connector with 4mm deluxe wire.",
     partNumber: "SH0300201",
+    image: "/products/sensor-lamp-holders/jpt-sensor/SH0300201.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -178,6 +186,7 @@ export const jptSensorProducts: Product[] = [
     subcategory: "JPT Sensor Holders",
     description: "JPT injector 2 pole female connector with 4mm deluxe wire.",
     partNumber: "SH0300202",
+    image: "/products/sensor-lamp-holders/jpt-sensor/SH0300202.jpg",
     featured: true,
     specifications: {
       "Poles": "2 Pole",
@@ -199,6 +208,7 @@ export const jptSensorProducts: Product[] = [
     subcategory: "JPT Sensor Holders",
     description: "JPT injector for Ashok Leyland 2 pole female connector with special wire.",
     partNumber: "SH0300211",
+    image: "/products/sensor-lamp-holders/jpt-sensor/SH0300211.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -219,6 +229,7 @@ export const jptSensorProducts: Product[] = [
     subcategory: "JPT Sensor Holders",
     description: "JPT injector 2 pole female connector with 4mm deluxe wire.",
     partNumber: "SH0300212",
+    image: "/products/sensor-lamp-holders/jpt-sensor/SH0300212.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -239,6 +250,7 @@ export const jptSensorProducts: Product[] = [
     subcategory: "JPT Sensor Holders",
     description: "JPT injector 2 pole female connector with 4mm deluxe wire.",
     partNumber: "SH0300213",
+    image: "/products/sensor-lamp-holders/jpt-sensor/SH0300213.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -259,6 +271,7 @@ export const jptSensorProducts: Product[] = [
     subcategory: "JPT Sensor Holders",
     description: "JPT injector for Tata 3 pole female connector with special wire.",
     partNumber: "SH0300302",
+    image: "/products/sensor-lamp-holders/jpt-sensor/SH0300302.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Female",
@@ -279,6 +292,7 @@ export const jptSensorProducts: Product[] = [
     subcategory: "JPT Sensor Holders",
     description: "JPT distributor for Santro 4 pole female connector with special wire.",
     partNumber: "SH0300402",
+    image: "/products/sensor-lamp-holders/jpt-sensor/SH0300402.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Female",
@@ -299,6 +313,7 @@ export const jptSensorProducts: Product[] = [
     subcategory: "JPT Sensor Holders",
     description: "JPT connector for Tata ACE CNG 4 pole female with special wire.",
     partNumber: "SH0300403",
+    image: "/products/sensor-lamp-holders/jpt-sensor/SH0300403.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Female",
@@ -319,6 +334,7 @@ export const jptSensorProducts: Product[] = [
     subcategory: "JPT Sensor Holders",
     description: "JPT head lamp and sensor 5 pole female connector with special wire.",
     partNumber: "SH0300502",
+    image: "/products/sensor-lamp-holders/jpt-sensor/SH0300502.jpg",
     specifications: {
       "Poles": "5 Pole",
       "Gender": "Female",
@@ -339,6 +355,7 @@ export const jptSensorProducts: Product[] = [
     subcategory: "JPT Sensor Holders",
     description: "JPT head lamp and sensor 2 pole female connector with special wire.",
     partNumber: "SH0300602",
+    image: "/products/sensor-lamp-holders/jpt-sensor/SH0300602.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -359,6 +376,7 @@ export const jptSensorProducts: Product[] = [
     subcategory: "JPT Sensor Holders",
     description: "JPT injector for Tata Ace 2 pole female connector with special wire.",
     partNumber: "SH0300201",
+    image: "/products/sensor-lamp-holders/jpt-sensor/SH0300201.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -379,6 +397,7 @@ export const jptSensorProducts: Product[] = [
     subcategory: "JPT Sensor Holders",
     description: "JPT corner light & T-10 holder 2 pole female connector with special wire.",
     partNumber: "SH0310001",
+    image: "/products/sensor-lamp-holders/bulb-holder/SH0310001.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -399,6 +418,7 @@ export const jptSensorProducts: Product[] = [
     subcategory: "JPT Sensor Holders",
     description: "JPT Tata meter & T-10 holder 2 pole female connector with special wire.",
     partNumber: "SH0310002",
+    image: "/products/sensor-lamp-holders/bulb-holder/SH0310002.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -419,6 +439,7 @@ export const jptSensorProducts: Product[] = [
     subcategory: "JPT Sensor Holders",
     description: "JPT sensor wire 12 inch long with 4mm deluxe wire and Fevikwik. Set of 10 pcs.",
     partNumber: "SH0310005",
+    image: "/products/sensor-lamp-holders/bulb-holder/SH0310005.jpg",
     specifications: {
       "Type": "JPT Sensor Wire",
       "Wire Type": "4mm Deluxe",
@@ -441,6 +462,7 @@ export const superSealedConnectorProducts: Product[] = [
     subcategory: "Super Sealed",
     description: "Tata ACE, fog lamp, Mahindra Maximo 1 pole female super sealed connector with special wire.",
     partNumber: "SH0400101",
+    image: "/products/sensor-lamp-holders/super-sealed/SH0400101.jpg",
     featured: true,
     specifications: {
       "Poles": "1 Pole",
@@ -462,6 +484,7 @@ export const superSealedConnectorProducts: Product[] = [
     subcategory: "Super Sealed",
     description: "Tata ACE, Mahindra Maximo 1 pole male super sealed connector with special wire.",
     partNumber: "SH0400102",
+    image: "/products/sensor-lamp-holders/super-sealed/SH0400102.jpg",
     featured: true,
     specifications: {
       "Poles": "1 Pole",
@@ -483,6 +506,7 @@ export const superSealedConnectorProducts: Product[] = [
     subcategory: "Super Sealed",
     description: "Tata ACE, fog lamp, Mahindra Maximo 2 pole female super sealed connector with special wire.",
     partNumber: "SH0400201",
+    image: "/products/sensor-lamp-holders/super-sealed/SH0400201.jpg",
     featured: true,
     specifications: {
       "Poles": "2 Pole",
@@ -504,6 +528,7 @@ export const superSealedConnectorProducts: Product[] = [
     subcategory: "Super Sealed",
     description: "Tata 2 pole male super sealed connector with special wire.",
     partNumber: "SH0400202",
+    image: "/products/sensor-lamp-holders/super-sealed/SH0400202.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Male",
@@ -524,6 +549,7 @@ export const superSealedConnectorProducts: Product[] = [
     subcategory: "Super Sealed",
     description: "DSL, filter, Swift, speedometer Ritz, Tata Ace 3 pole female super sealed connector with special wire.",
     partNumber: "SH0400301",
+    image: "/products/sensor-lamp-holders/super-sealed/SH0400301.jpg",
     featured: true,
     specifications: {
       "Poles": "3 Pole",
@@ -545,6 +571,7 @@ export const superSealedConnectorProducts: Product[] = [
     subcategory: "Super Sealed",
     description: "Tata 3 pole male super sealed connector with special wire.",
     partNumber: "SH0400302",
+    image: "/products/sensor-lamp-holders/super-sealed/SH0400302.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Male",
@@ -565,6 +592,7 @@ export const superSealedConnectorProducts: Product[] = [
     subcategory: "Super Sealed",
     description: "Tata 4 pole female super sealed connector with special wire.",
     partNumber: "SH0400401",
+    image: "/products/sensor-lamp-holders/super-sealed/SH0400401.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Female",
@@ -585,6 +613,7 @@ export const superSealedConnectorProducts: Product[] = [
     subcategory: "Super Sealed",
     description: "Tata 4 pole male super sealed connector with special wire.",
     partNumber: "SH0400402",
+    image: "/products/sensor-lamp-holders/super-sealed/SH0400402.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Male",
@@ -605,6 +634,7 @@ export const superSealedConnectorProducts: Product[] = [
     subcategory: "Super Sealed",
     description: "Tata 5 pole female super sealed connector with special wire.",
     partNumber: "SH0400501",
+    image: "/products/sensor-lamp-holders/super-sealed/SH0400501.jpg",
     specifications: {
       "Poles": "5 Pole",
       "Gender": "Female",
@@ -625,6 +655,7 @@ export const superSealedConnectorProducts: Product[] = [
     subcategory: "Super Sealed",
     description: "Tata 5 pole male super sealed connector with special wire.",
     partNumber: "SH0400502",
+    image: "/products/sensor-lamp-holders/super-sealed/SH0400502.jpg",
     specifications: {
       "Poles": "5 Pole",
       "Gender": "Male",
@@ -645,6 +676,7 @@ export const superSealedConnectorProducts: Product[] = [
     subcategory: "Super Sealed",
     description: "Tata 6 pole female super sealed connector with special wire.",
     partNumber: "SH0400601",
+    image: "/products/sensor-lamp-holders/super-sealed/SH0400601.jpg",
     specifications: {
       "Poles": "6 Pole",
       "Gender": "Female",
@@ -665,6 +697,7 @@ export const superSealedConnectorProducts: Product[] = [
     subcategory: "Super Sealed",
     description: "Tata 6 pole male super sealed connector with special wire.",
     partNumber: "SH0400602",
+    image: "/products/sensor-lamp-holders/super-sealed/SH0400602.jpg",
     specifications: {
       "Poles": "6 Pole",
       "Gender": "Male",
@@ -689,6 +722,7 @@ export const sensorConnectorProducts: Product[] = [
     subcategory: "Sensor Connectors",
     description: "Mahindra Maximo 2 pole female sensor connector with special wire.",
     partNumber: "SH0410201",
+    image: "/products/sensor-lamp-holders/sensor-holder/SH0410201.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -709,6 +743,7 @@ export const sensorConnectorProducts: Product[] = [
     subcategory: "Sensor Connectors",
     description: "Ashok Leyland & Tata 2 pole female sensor connector with special wire.",
     partNumber: "SH0410202",
+    image: "/products/sensor-lamp-holders/sensor-holder/SH0410202.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -729,6 +764,7 @@ export const sensorConnectorProducts: Product[] = [
     subcategory: "Sensor Connectors",
     description: "Mahindra Maximo 2 pole female sensor connector with special wire.",
     partNumber: "SH0410203",
+    image: "/products/sensor-lamp-holders/sensor-holder/SH0410203.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -749,6 +785,7 @@ export const sensorConnectorProducts: Product[] = [
     subcategory: "Sensor Connectors",
     description: "Map sensor 2 pole female connector with special wire.",
     partNumber: "SH0410204",
+    image: "/products/sensor-lamp-holders/sensor-holder/SH0410204.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -769,6 +806,7 @@ export const sensorConnectorProducts: Product[] = [
     subcategory: "Sensor Connectors",
     description: "Mahindra Maximo 3 pole female sensor connector with special wire.",
     partNumber: "SH0410301",
+    image: "/products/sensor-lamp-holders/sensor-holder/SH0410301.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Female",
@@ -789,6 +827,7 @@ export const sensorConnectorProducts: Product[] = [
     subcategory: "Sensor Connectors",
     description: "Mahindra Maximo & Ashok Leyland 3 pole female sensor connector with special wire.",
     partNumber: "SH0410302",
+    image: "/products/sensor-lamp-holders/sensor-holder/SH0410302.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Female",
@@ -809,6 +848,7 @@ export const sensorConnectorProducts: Product[] = [
     subcategory: "Sensor Connectors",
     description: "Mahindra Maximo & Ashok Leyland 3 pole female sensor connector with special wire.",
     partNumber: "SH0410303",
+    image: "/products/sensor-lamp-holders/sensor-holder/SH0410303.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Female",
@@ -829,6 +869,7 @@ export const sensorConnectorProducts: Product[] = [
     subcategory: "Sensor Connectors",
     description: "Ashok Leyland & Tata 3 pole female sensor connector with special wire.",
     partNumber: "SH0410304",
+    image: "/products/sensor-lamp-holders/sensor-holder/SH0410304.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Female",
@@ -849,6 +890,7 @@ export const sensorConnectorProducts: Product[] = [
     subcategory: "Sensor Connectors",
     description: "Map sensor 4 pole female connector with special wire.",
     partNumber: "SH0410401",
+    image: "/products/sensor-lamp-holders/sensor-holder/SH0410401.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Female",
@@ -869,6 +911,7 @@ export const sensorConnectorProducts: Product[] = [
     subcategory: "Sensor Connectors",
     description: "Ashok Leyland & Tata 4 pole female sensor connector with special wire.",
     partNumber: "SH0410402",
+    image: "/products/sensor-lamp-holders/sensor-holder/SH0410402.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Female",
@@ -889,6 +932,7 @@ export const sensorConnectorProducts: Product[] = [
     subcategory: "Sensor Connectors",
     description: "Ashok Leyland 5 pole female sensor connector with special wire.",
     partNumber: "SH0410501",
+    image: "/products/sensor-lamp-holders/sensor-holder/SH0410501.jpg",
     specifications: {
       "Poles": "5 Pole",
       "Gender": "Female",
@@ -909,6 +953,7 @@ export const sensorConnectorProducts: Product[] = [
     subcategory: "Sensor Connectors",
     description: "Ashok Leyland sensor 5 pole female connector with special wire.",
     partNumber: "SH0410502",
+    image: "/products/sensor-lamp-holders/sensor-holder/SH0410502.jpg",
     specifications: {
       "Poles": "5 Pole",
       "Gender": "Female",
@@ -929,6 +974,7 @@ export const sensorConnectorProducts: Product[] = [
     subcategory: "Sensor Connectors",
     description: "Tata Marcopolo ACE paddle 6 pole female sensor connector with special wire.",
     partNumber: "SH0410601",
+    image: "/products/sensor-lamp-holders/sensor-holder/SH0410601.jpg",
     specifications: {
       "Poles": "6 Pole",
       "Gender": "Female",
@@ -953,6 +999,7 @@ export const singleFuseConnectorProducts: Product[] = [
     subcategory: "Single Fuse Holders",
     description: "MFT 2 pole female single fuse connector with 4mm deluxe wire. 6.4 (No. 18).",
     partNumber: "SH0500004",
+    image: "/products/sensor-lamp-holders/single-fuse-connector/SH0500004.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -973,6 +1020,7 @@ export const singleFuseConnectorProducts: Product[] = [
     subcategory: "Single Fuse Holders",
     description: "MFT 2 pole female single fuse connector with 5mm deluxe wire.",
     partNumber: "SH0500006",
+    image: "/products/sensor-lamp-holders/single-fuse-connector/SH0500006.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -992,6 +1040,7 @@ export const singleFuseConnectorProducts: Product[] = [
     subcategory: "Single Fuse Holders",
     description: "6.4 (No. 18) 2 pole female single fuse connector with 6mm deluxe wire.",
     partNumber: "SH0500014",
+    image: "/products/sensor-lamp-holders/single-fuse-connector/SH0500014.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -1012,6 +1061,7 @@ export const singleFuseConnectorProducts: Product[] = [
     subcategory: "Single Fuse Holders",
     description: "MFT 2 pole female single fuse connector with 6mm deluxe wire.",
     partNumber: "SH0500015",
+    image: "/products/sensor-lamp-holders/single-fuse-connector/SH0500015.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -1031,6 +1081,7 @@ export const singleFuseConnectorProducts: Product[] = [
     subcategory: "Single Fuse Holders",
     description: "6.4 (No. 18) 2 pole female single fuse connector with 4mm deluxe wire.",
     partNumber: "SH0500016",
+    image: "/products/sensor-lamp-holders/single-fuse-connector/SH0500016.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",

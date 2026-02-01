@@ -14,6 +14,7 @@ export const specialConnector3PoleProducts: Product[] = [
     subcategory: "3 Pole Connectors",
     description: "E-Rickshaw socket 3 pole female connector with 4mm deluxe wire.",
     partNumber: "SH2100301",
+    image: "/products/special-universal-connectors/special-universal/SH2100301.jpg",
     featured: true,
     specifications: {
       "Poles": "3 Pole",
@@ -34,6 +35,7 @@ export const specialConnector3PoleProducts: Product[] = [
     subcategory: "3 Pole Connectors",
     description: "Universal Ashok Leyland 3 pole female connector with 5mm & 8mm deluxe wire.",
     partNumber: "SH2100311",
+    image: "/products/special-universal-connectors/special-universal/SH2100311.jpg",
     featured: true,
     specifications: {
       "Poles": "3 Pole",
@@ -54,6 +56,7 @@ export const specialConnector3PoleProducts: Product[] = [
     subcategory: "3 Pole Connectors",
     description: "Universal Ashok Leyland 3 pole male connector with 5mm & 8mm deluxe wire.",
     partNumber: "SH2100312",
+    image: "/products/special-universal-connectors/special-universal/SH2100312.jpg",
     featured: true,
     specifications: {
       "Poles": "3 Pole",
@@ -74,6 +77,7 @@ export const specialConnector3PoleProducts: Product[] = [
     subcategory: "3 Pole Connectors",
     description: "Universal Tata 3 pole female connector with 5mm & 8mm deluxe wire.",
     partNumber: "SH2100313",
+    image: "/products/special-universal-connectors/special-universal/SH2100313.jpg",
     featured: true,
     specifications: {
       "Poles": "3 Pole",
@@ -94,6 +98,7 @@ export const specialConnector3PoleProducts: Product[] = [
     subcategory: "3 Pole Connectors",
     description: "Universal Tata 3 pole male connector with 5mm & 8mm deluxe wire.",
     partNumber: "SH2100314",
+    image: "/products/special-universal-connectors/special-universal/SH2100314.jpg",
     featured: true,
     specifications: {
       "Poles": "3 Pole",
@@ -114,6 +119,7 @@ export const specialConnector3PoleProducts: Product[] = [
     subcategory: "3 Pole Connectors",
     description: "Oxygen sensor for Santro Xing 3 pole female connector with 4mm deluxe wire.",
     partNumber: "SH2100318",
+    image: "/products/special-universal-connectors/special-universal/SH2100318.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Female",
@@ -133,6 +139,7 @@ export const specialConnector3PoleProducts: Product[] = [
     subcategory: "3 Pole Connectors",
     description: "Thermoswitch for Maruti & Mahindra Maximo 3 pole female connector with special wire.",
     partNumber: "SH2100320",
+    image: "/products/special-universal-connectors/special-universal/SH2100320.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Female",
@@ -152,6 +159,7 @@ export const specialConnector3PoleProducts: Product[] = [
     subcategory: "3 Pole Connectors",
     description: "Alternator for Alto/Wagon-R K Series 3 pole female connector with special wire.",
     partNumber: "SH2100321",
+    image: "/products/special-universal-connectors/special-universal/SH2100321.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Female",
@@ -171,6 +179,7 @@ export const specialConnector3PoleProducts: Product[] = [
     subcategory: "3 Pole Connectors",
     description: "Tata Magic 3 pole female connector with 4mm deluxe wire.",
     partNumber: "SH2100331",
+    image: "/products/special-universal-connectors/special-universal/SH2100331.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Female",
@@ -190,6 +199,7 @@ export const specialConnector3PoleProducts: Product[] = [
     subcategory: "3 Pole Connectors",
     description: "Mahindra Maximo 3 pole female connector with special wire.",
     partNumber: "SH2100333",
+    image: "/products/special-universal-connectors/special-universal/SH2100333.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Female",
@@ -209,6 +219,7 @@ export const specialConnector3PoleProducts: Product[] = [
     subcategory: "3 Pole Connectors",
     description: "Speedometer & Tata Indica Diesel 3 pole female connector with special wire.",
     partNumber: "SH2100334",
+    image: "/products/special-universal-connectors/special-universal/SH2100334.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Female",
@@ -228,6 +239,7 @@ export const specialConnector3PoleProducts: Product[] = [
     subcategory: "3 Pole Connectors",
     description: "Speedometer & Tata Indica Diesel 3 pole male connector with special wire.",
     partNumber: "SH2100337",
+    image: "/products/special-universal-connectors/special-universal/SH2100337.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Male",
@@ -247,6 +259,7 @@ export const specialConnector3PoleProducts: Product[] = [
     subcategory: "3 Pole Connectors",
     description: "Mahindra Maximo 3 pole female connector with special wire.",
     partNumber: "SH2100341",
+    image: "/products/special-universal-connectors/special-universal/SH2100341.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Female",
@@ -266,6 +279,7 @@ export const specialConnector3PoleProducts: Product[] = [
     subcategory: "3 Pole Connectors",
     description: "Universal Tata TP sensor speedometer Tavera 3 pole female connector with special wire.",
     partNumber: "SH2100343",
+    image: "/products/special-universal-connectors/special-universal/SH2100343.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Female",
@@ -285,6 +299,7 @@ export const specialConnector3PoleProducts: Product[] = [
     subcategory: "3 Pole Connectors",
     description: "Universal Tata 3 pole female connector with 4mm & 5mm deluxe wire.",
     partNumber: "SH2100345",
+    image: "/products/special-universal-connectors/special-universal/SH2100345.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Female",
@@ -304,6 +319,7 @@ export const specialConnector3PoleProducts: Product[] = [
     subcategory: "3 Pole Connectors",
     description: "Ignition coil for Alto/Swift/Baleno/Wagon-R 3 pole female connector with special wire.",
     partNumber: "SH2100347",
+    image: "/products/special-universal-connectors/special-universal/SH2100347.jpg",
     featured: true,
     specifications: {
       "Poles": "3 Pole",
@@ -324,6 +340,7 @@ export const specialConnector3PoleProducts: Product[] = [
     subcategory: "3 Pole Connectors",
     description: "IC valve for Maruti 3 pole female connector with special wire.",
     partNumber: "SH2100348",
+    image: "/products/special-universal-connectors/special-universal/SH2100348.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Female",
@@ -343,6 +360,7 @@ export const specialConnector3PoleProducts: Product[] = [
     subcategory: "3 Pole Connectors",
     description: "IC valve for Maruti 3 pole female connector with special wire.",
     partNumber: "SH2100349",
+    image: "/products/special-universal-connectors/special-universal/SH2100349.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Female",
@@ -362,6 +380,7 @@ export const specialConnector3PoleProducts: Product[] = [
     subcategory: "3 Pole Connectors",
     description: "Tata 3 pole female connector with special wire.",
     partNumber: "SH2100350",
+    image: "/products/special-universal-connectors/special-universal/SH2100350.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Female",
@@ -381,6 +400,7 @@ export const specialConnector3PoleProducts: Product[] = [
     subcategory: "3 Pole Connectors",
     description: "Tata 3 pole female connector with special wire.",
     partNumber: "SH2100351",
+    image: "/products/special-universal-connectors/special-universal/SH2100351.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Female",
@@ -400,6 +420,7 @@ export const specialConnector3PoleProducts: Product[] = [
     subcategory: "3 Pole Connectors",
     description: "Tata 3 pole female connector with special wire.",
     partNumber: "SH2100352",
+    image: "/products/special-universal-connectors/special-universal/SH2100352.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Female",
@@ -419,6 +440,7 @@ export const specialConnector3PoleProducts: Product[] = [
     subcategory: "3 Pole Connectors",
     description: "Mahindra Maximo 3 pole female connector with ECM special wire.",
     partNumber: "SH2100356",
+    image: "/products/special-universal-connectors/special-universal/SH2100356.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Female",
@@ -438,6 +460,7 @@ export const specialConnector3PoleProducts: Product[] = [
     subcategory: "3 Pole Connectors",
     description: "Universal Tata 3 pole female connector with 4mm deluxe wire.",
     partNumber: "SH2100360",
+    image: "/products/special-universal-connectors/special-universal/SH2100360.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Female",
@@ -457,6 +480,7 @@ export const specialConnector3PoleProducts: Product[] = [
     subcategory: "3 Pole Connectors",
     description: "Tata 3 pole female connector with ECM special wire.",
     partNumber: "SH2100362",
+    image: "/products/special-universal-connectors/special-universal/SH2100362.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Female",
@@ -476,6 +500,7 @@ export const specialConnector3PoleProducts: Product[] = [
     subcategory: "3 Pole Connectors",
     description: "Tata 3 pole female connector with 6mm & 8mm deluxe wire.",
     partNumber: "SH2100375",
+    image: "/products/special-universal-connectors/special-universal/SH2100375.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Female",
@@ -495,6 +520,7 @@ export const specialConnector3PoleProducts: Product[] = [
     subcategory: "3 Pole Connectors",
     description: "Tata 3 pole male connector with 6mm & 8mm deluxe wire.",
     partNumber: "SH2100376",
+    image: "/products/special-universal-connectors/special-universal/SH2100376.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Male",
@@ -514,6 +540,7 @@ export const specialConnector3PoleProducts: Product[] = [
     subcategory: "3 Pole Connectors",
     description: "New model Ashok Leyland 3 pole female connector with 4mm deluxe wire.",
     partNumber: "SH2100380",
+    image: "/products/special-universal-connectors/special-universal/SH2100380.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Female",
@@ -533,6 +560,7 @@ export const specialConnector3PoleProducts: Product[] = [
     subcategory: "3 Pole Connectors",
     description: "Ashok Leyland 3 pole female connector with 5mm deluxe wire.",
     partNumber: "SH2100382",
+    image: "/products/special-universal-connectors/special-universal/SH2100382.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Female",
@@ -552,6 +580,7 @@ export const specialConnector3PoleProducts: Product[] = [
     subcategory: "3 Pole Connectors",
     description: "Universal 3 pole female connector with 4mm deluxe wire.",
     partNumber: "SH2100384",
+    image: "/products/special-universal-connectors/special-universal/SH2100384.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Female",
@@ -570,6 +599,7 @@ export const specialConnector3PoleProducts: Product[] = [
     subcategory: "3 Pole Connectors",
     description: "Ashok Leyland 3 pole female connector with ECM special wire.",
     partNumber: "SH2100386",
+    image: "/products/special-universal-connectors/special-universal/SH2100386.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Female",
@@ -589,6 +619,7 @@ export const specialConnector3PoleProducts: Product[] = [
     subcategory: "3 Pole Connectors",
     description: "Universal 3 pole female connector with wire.",
     partNumber: "SH2100389",
+    image: "/products/special-universal-connectors/special-universal/SH2100389.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Female",
@@ -607,6 +638,7 @@ export const specialConnector3PoleProducts: Product[] = [
     subcategory: "3 Pole Connectors",
     description: "Tata 3 pole female connector with special wire.",
     partNumber: "SH2100390",
+    image: "/products/special-universal-connectors/special-universal/SH2100390.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Female",
@@ -626,6 +658,7 @@ export const specialConnector3PoleProducts: Product[] = [
     subcategory: "3 Pole Connectors",
     description: "Universal 3 pole female connector with special wire.",
     partNumber: "SH2100463",
+    image: "/products/special-universal-connectors/special-universal/SH2100463.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Female",
@@ -648,6 +681,7 @@ export const specialConnector4PoleProducts: Product[] = [
     subcategory: "4 Pole Connectors",
     description: "High pressure switch for Innova 4 pole female connector with 4mm deluxe wire.",
     partNumber: "SH2100411",
+    image: "/products/special-universal-connectors/special-universal/SH2100411.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Female",
@@ -667,6 +701,7 @@ export const specialConnector4PoleProducts: Product[] = [
     subcategory: "4 Pole Connectors",
     description: "Tata ACE 4 pole female connector with 4mm deluxe wire.",
     partNumber: "SH2100413",
+    image: "/products/special-universal-connectors/special-universal/SH2100413.jpg",
     featured: true,
     specifications: {
       "Poles": "4 Pole",
@@ -687,6 +722,7 @@ export const specialConnector4PoleProducts: Product[] = [
     subcategory: "4 Pole Connectors",
     description: "Mahindra Maximo 4 pole female connector with 4mm deluxe wire.",
     partNumber: "SH2100421",
+    image: "/products/special-universal-connectors/special-universal/SH2100421.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Female",
@@ -706,6 +742,7 @@ export const specialConnector4PoleProducts: Product[] = [
     subcategory: "4 Pole Connectors",
     description: "Universal 4 pole female connector with special wire.",
     partNumber: "SH2100423",
+    image: "/products/special-universal-connectors/special-universal/SH2100423.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Female",
@@ -724,6 +761,7 @@ export const specialConnector4PoleProducts: Product[] = [
     subcategory: "4 Pole Connectors",
     description: "Universal 4 pole male connector with special wire.",
     partNumber: "SH2100424",
+    image: "/products/special-universal-connectors/special-universal/SH2100424.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Male",
@@ -742,6 +780,7 @@ export const specialConnector4PoleProducts: Product[] = [
     subcategory: "4 Pole Connectors",
     description: "Alternator for Honda/Innova/Maruti K Series 4 pole female connector with 4mm deluxe wire.",
     partNumber: "SH2100431",
+    image: "/products/special-universal-connectors/special-universal/SH2100431.jpg",
     featured: true,
     specifications: {
       "Poles": "4 Pole",
@@ -762,6 +801,7 @@ export const specialConnector4PoleProducts: Product[] = [
     subcategory: "4 Pole Connectors",
     description: "Mahindra Maximo 4 pole female connector with ECM special wire.",
     partNumber: "SH2100456",
+    image: "/products/special-universal-connectors/special-universal/SH2100456.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Female",
@@ -781,6 +821,7 @@ export const specialConnector4PoleProducts: Product[] = [
     subcategory: "4 Pole Connectors",
     description: "Ashok Leyland 4 pole male connector with 4mm deluxe wire.",
     partNumber: "SH2100455",
+    image: "/products/special-universal-connectors/special-universal/SH2100455.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Male",
@@ -800,6 +841,7 @@ export const specialConnector4PoleProducts: Product[] = [
     subcategory: "4 Pole Connectors",
     description: "Universal Tata 4 pole female connector with 4mm deluxe wire.",
     partNumber: "SH2100461",
+    image: "/products/special-universal-connectors/special-universal/SH2100461.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Female",
@@ -819,6 +861,7 @@ export const specialConnector4PoleProducts: Product[] = [
     subcategory: "4 Pole Connectors",
     description: "Universal Ashok Leyland 4 pole female connector with ECM special wire.",
     partNumber: "SH2100462",
+    image: "/products/special-universal-connectors/special-universal/SH2100462.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Female",
@@ -838,6 +881,7 @@ export const specialConnector4PoleProducts: Product[] = [
     subcategory: "4 Pole Connectors",
     description: "Universal 4 pole female connector with 4mm deluxe wire.",
     partNumber: "SH2100486",
+    image: "/products/special-universal-connectors/special-universal/SH2100486.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Female",
@@ -856,6 +900,7 @@ export const specialConnector4PoleProducts: Product[] = [
     subcategory: "4 Pole Connectors",
     description: "Ashok Leyland 4 pole female connector with 5mm deluxe wire.",
     partNumber: "SH2100487",
+    image: "/products/special-universal-connectors/special-universal/SH2100487.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Female",
@@ -875,6 +920,7 @@ export const specialConnector4PoleProducts: Product[] = [
     subcategory: "4 Pole Connectors",
     description: "Ashok Leyland 4 pole female connector with 5mm deluxe wire.",
     partNumber: "SH2100488",
+    image: "/products/special-universal-connectors/special-universal/SH2100488.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Female",
@@ -894,6 +940,7 @@ export const specialConnector4PoleProducts: Product[] = [
     subcategory: "4 Pole Connectors",
     description: "Ashok Leyland 4 pole female connector with 5mm deluxe wire.",
     partNumber: "SH2100489",
+    image: "/products/special-universal-connectors/special-universal/SH2100489.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Female",
@@ -913,6 +960,7 @@ export const specialConnector4PoleProducts: Product[] = [
     subcategory: "4 Pole Connectors",
     description: "Universal 4 pole male connector with 4mm deluxe wire.",
     partNumber: "SH2100490",
+    image: "/products/special-universal-connectors/special-universal/SH2100490.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Male",
@@ -931,6 +979,7 @@ export const specialConnector4PoleProducts: Product[] = [
     subcategory: "4 Pole Connectors",
     description: "Tata Indica 4 pole female connector with 8mm deluxe wire.",
     partNumber: "SH2100491",
+    image: "/products/special-universal-connectors/special-universal/SH2100491.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Female",
@@ -950,6 +999,7 @@ export const specialConnector4PoleProducts: Product[] = [
     subcategory: "4 Pole Connectors",
     description: "Tata Indica 4 pole male connector with 8mm deluxe wire.",
     partNumber: "SH2100493",
+    image: "/products/special-universal-connectors/special-universal/SH2100493.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Male",
@@ -969,6 +1019,7 @@ export const specialConnector4PoleProducts: Product[] = [
     subcategory: "4 Pole Connectors",
     description: "Ashok Leyland 4 pole female connector with special wire.",
     partNumber: "SH2100494",
+    image: "/products/special-universal-connectors/special-universal/SH2100494.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Female",
@@ -988,6 +1039,7 @@ export const specialConnector4PoleProducts: Product[] = [
     subcategory: "4 Pole Connectors",
     description: "Ashok Leyland 4 pole female connector with 4mm deluxe wire.",
     partNumber: "SH2100495",
+    image: "/products/special-universal-connectors/special-universal/SH2100495.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Female",
@@ -1007,6 +1059,7 @@ export const specialConnector4PoleProducts: Product[] = [
     subcategory: "4 Pole Connectors",
     description: "Tata 4 pole female connector with special wire.",
     partNumber: "SH2100496",
+    image: "/products/special-universal-connectors/special-universal/SH2100496.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Female",
@@ -1026,6 +1079,7 @@ export const specialConnector4PoleProducts: Product[] = [
     subcategory: "4 Pole Connectors",
     description: "Universal 4 pole female connector with 4mm deluxe wire.",
     partNumber: "SH2100497",
+    image: "/products/special-universal-connectors/special-universal/SH2100497.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Female",
@@ -1044,6 +1098,7 @@ export const specialConnector4PoleProducts: Product[] = [
     subcategory: "4 Pole Connectors",
     description: "Ashok Leyland & Tata new model 4 pole connector with ECM wire.",
     partNumber: "SH2100498",
+    image: "/products/special-universal-connectors/special-universal/SH2100498.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Compatible": "Ashok Leyland & Tata New Model",
@@ -1062,6 +1117,7 @@ export const specialConnector4PoleProducts: Product[] = [
     subcategory: "4 Pole Connectors",
     description: "Ashok Leyland 4 pole female connector with 4mm deluxe wire.",
     partNumber: "SH2100499",
+    image: "/products/special-universal-connectors/special-universal/SH2100499.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Female",

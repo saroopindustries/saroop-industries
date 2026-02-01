@@ -14,6 +14,7 @@ export const jcbConnectorProducts: Product[] = [
     subcategory: "JCB Standard Connectors",
     description: "JCB 2 pole female connector with 4mm deluxe wire. 9 inch long. Premium quality for JCB equipment.",
     partNumber: "SJCB02001",
+    image: "/products/jcb-connectors/jcb-holder/SJCB02001.jpg",
     featured: true,
     specifications: {
       "Poles": "2 Pole",
@@ -34,6 +35,7 @@ export const jcbConnectorProducts: Product[] = [
     subcategory: "JCB Standard Connectors",
     description: "JCB 2 pole male connector with 4mm deluxe wire. 9 inch long.",
     partNumber: "SJCB02002",
+    image: "/products/jcb-connectors/jcb-holder/SJCB02002.jpg",
     featured: true,
     specifications: {
       "Poles": "2 Pole",
@@ -54,6 +56,7 @@ export const jcbConnectorProducts: Product[] = [
     subcategory: "JCB Standard Connectors",
     description: "JCB 2 pole female connector with 4mm deluxe wire. Alternative type 2 design.",
     partNumber: "SJCB02005",
+    image: "/products/jcb-connectors/jcb-holder/SJCB02005.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -74,6 +77,7 @@ export const jcbConnectorProducts: Product[] = [
     subcategory: "JCB Standard Connectors",
     description: "JCB 2 pole male connector with 4mm deluxe wire. Alternative type 2 design.",
     partNumber: "SJCB02006",
+    image: "/products/jcb-connectors/jcb-holder/SJCB02006.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Male",
@@ -94,6 +98,7 @@ export const jcbConnectorProducts: Product[] = [
     subcategory: "JCB Standard Connectors",
     description: "JCB 3 pole female connector with 4mm deluxe wire.",
     partNumber: "SJCB03001",
+    image: "/products/jcb-connectors/jcb-holder/SJCB03001.jpg",
     featured: true,
     specifications: {
       "Poles": "3 Pole",
@@ -114,6 +119,7 @@ export const jcbConnectorProducts: Product[] = [
     subcategory: "JCB Standard Connectors",
     description: "JCB 3 pole male connector with 4mm deluxe wire.",
     partNumber: "SJCB03002",
+    image: "/products/jcb-connectors/jcb-holder/SJCB03002.jpg",
     featured: true,
     specifications: {
       "Poles": "3 Pole",
@@ -134,6 +140,7 @@ export const jcbConnectorProducts: Product[] = [
     subcategory: "JCB Standard Connectors",
     description: "JCB 3 pole female connector with 4mm deluxe wire. Alternative type 2.",
     partNumber: "SJCB03005",
+    image: "/products/jcb-connectors/jcb-holder/SJCB03005.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Female",
@@ -154,6 +161,7 @@ export const jcbConnectorProducts: Product[] = [
     subcategory: "JCB Standard Connectors",
     description: "JCB 3 pole male connector with 4mm deluxe wire. Alternative type 2.",
     partNumber: "SJCB03006",
+    image: "/products/jcb-connectors/jcb-holder/SJCB03006.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Male",
@@ -174,6 +182,7 @@ export const jcbConnectorProducts: Product[] = [
     subcategory: "JCB Standard Connectors",
     description: "JCB 4 pole female connector with 4mm deluxe wire.",
     partNumber: "SJCB04001",
+    image: "/products/jcb-connectors/jcb-holder/SJCB04001.jpg",
     featured: true,
     specifications: {
       "Poles": "4 Pole",
@@ -194,6 +203,7 @@ export const jcbConnectorProducts: Product[] = [
     subcategory: "JCB Standard Connectors",
     description: "JCB 4 pole male connector with 4mm deluxe wire.",
     partNumber: "SJCB04002",
+    image: "/products/jcb-connectors/jcb-holder/SJCB04002.jpg",
     featured: true,
     specifications: {
       "Poles": "4 Pole",
@@ -214,6 +224,7 @@ export const jcbConnectorProducts: Product[] = [
     subcategory: "JCB Standard Connectors",
     description: "JCB 4 pole female connector with 4mm deluxe wire. Alternative type 2.",
     partNumber: "SJCB04005",
+    image: "/products/jcb-connectors/jcb-holder/SJCB04005.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Female",
@@ -234,6 +245,7 @@ export const jcbConnectorProducts: Product[] = [
     subcategory: "JCB Standard Connectors",
     description: "JCB 4 pole male connector with 4mm deluxe wire. Alternative type 2.",
     partNumber: "SJCB04006",
+    image: "/products/jcb-connectors/jcb-holder/SJCB04006.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Male",
@@ -254,6 +266,7 @@ export const jcbConnectorProducts: Product[] = [
     subcategory: "JCB Standard Connectors",
     description: "JCB 6 pole female connector with 4mm deluxe wire.",
     partNumber: "SJCB06001",
+    image: "/products/jcb-connectors/jcb-holder/SJCB06001.jpg",
     featured: true,
     specifications: {
       "Poles": "6 Pole",
@@ -274,6 +287,7 @@ export const jcbConnectorProducts: Product[] = [
     subcategory: "JCB Standard Connectors",
     description: "JCB 6 pole male connector with 4mm deluxe wire.",
     partNumber: "SJCB06002",
+    image: "/products/jcb-connectors/jcb-holder/SJCB06002.jpg",
     featured: true,
     specifications: {
       "Poles": "6 Pole",
@@ -294,6 +308,7 @@ export const jcbConnectorProducts: Product[] = [
     subcategory: "JCB Standard Connectors",
     description: "JCB 6 pole female connector with 4mm deluxe wire. Alternative type 2.",
     partNumber: "SJCB06005",
+    image: "/products/jcb-connectors/jcb-holder/SJCB06005.jpg",
     specifications: {
       "Poles": "6 Pole",
       "Gender": "Female",
@@ -314,6 +329,7 @@ export const jcbConnectorProducts: Product[] = [
     subcategory: "JCB Standard Connectors",
     description: "JCB 6 pole male connector with 4mm deluxe wire. Alternative type 2.",
     partNumber: "SJCB06006",
+    image: "/products/jcb-connectors/jcb-holder/SJCB06006.jpg",
     specifications: {
       "Poles": "6 Pole",
       "Gender": "Male",
@@ -334,6 +350,7 @@ export const jcbConnectorProducts: Product[] = [
     subcategory: "JCB Standard Connectors",
     description: "JCB 8 pole female connector with 4mm deluxe wire.",
     partNumber: "SJCB08001",
+    image: "/products/jcb-connectors/jcb-holder/SJCB08001.jpg",
     featured: true,
     specifications: {
       "Poles": "8 Pole",
@@ -354,6 +371,7 @@ export const jcbConnectorProducts: Product[] = [
     subcategory: "JCB Standard Connectors",
     description: "JCB 8 pole male connector with 4mm deluxe wire.",
     partNumber: "SJCB08002",
+    image: "/products/jcb-connectors/jcb-holder/SJCB08002.jpg",
     featured: true,
     specifications: {
       "Poles": "8 Pole",
@@ -374,6 +392,7 @@ export const jcbConnectorProducts: Product[] = [
     subcategory: "JCB Standard Connectors",
     description: "JCB 12 pole female connector with 4mm deluxe wire.",
     partNumber: "SJCB12001",
+    image: "/products/jcb-connectors/jcb-holder/SJCB12001.jpg",
     featured: true,
     specifications: {
       "Poles": "12 Pole",
@@ -418,6 +437,7 @@ export const jcbConnectorAlternativeProducts: Product[] = [
     subcategory: "JCB Heavy Duty Connectors",
     description: "JCB 2 pole female connector with 5mm deluxe wire. Heavy duty variant.",
     partNumber: "SJCB02013",
+    image: "/products/jcb-connectors/jcb-holder/SJCB02013.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -437,6 +457,7 @@ export const jcbConnectorAlternativeProducts: Product[] = [
     subcategory: "JCB Heavy Duty Connectors",
     description: "JCB 2 pole male connector with 5mm deluxe wire. Heavy duty variant.",
     partNumber: "SJCB02014",
+    image: "/products/jcb-connectors/jcb-holder/SJCB02014.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Male",
@@ -456,6 +477,7 @@ export const jcbConnectorAlternativeProducts: Product[] = [
     subcategory: "JCB Heavy Duty Connectors",
     description: "JCB 4 pole female connector with 5mm deluxe wire. Heavy duty variant.",
     partNumber: "SJCB04013",
+    image: "/products/jcb-connectors/jcb-holder/SJCB04013.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Female",
@@ -475,6 +497,7 @@ export const jcbConnectorAlternativeProducts: Product[] = [
     subcategory: "JCB Heavy Duty Connectors",
     description: "JCB 4 pole male connector with 5mm deluxe wire. Heavy duty variant.",
     partNumber: "SJCB04014",
+    image: "/products/jcb-connectors/jcb-holder/SJCB04014.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Male",
@@ -494,6 +517,7 @@ export const jcbConnectorAlternativeProducts: Product[] = [
     subcategory: "JCB Standard Connectors",
     description: "JCB 2 pole female connector with 4mm deluxe wire. Alternative type 3.",
     partNumber: "SJCB02009",
+    image: "/products/jcb-connectors/jcb-holder/SJCB02009.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -514,6 +538,7 @@ export const jcbConnectorAlternativeProducts: Product[] = [
     subcategory: "JCB Standard Connectors",
     description: "JCB 2 pole male connector with 4mm deluxe wire. Alternative type 3.",
     partNumber: "SJCB02010",
+    image: "/products/jcb-connectors/jcb-holder/SJCB02010.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Male",
@@ -534,6 +559,7 @@ export const jcbConnectorAlternativeProducts: Product[] = [
     subcategory: "JCB Standard Connectors",
     description: "JCB 3 pole female connector with 4mm deluxe wire. Alternative type 3.",
     partNumber: "SJCB03009",
+    image: "/products/jcb-connectors/jcb-holder/SJCB03009.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Female",
@@ -554,6 +580,7 @@ export const jcbConnectorAlternativeProducts: Product[] = [
     subcategory: "JCB Standard Connectors",
     description: "JCB 3 pole male connector with 4mm deluxe wire. Alternative type 3.",
     partNumber: "SJCB03010",
+    image: "/products/jcb-connectors/jcb-holder/SJCB03010.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Male",
@@ -574,6 +601,7 @@ export const jcbConnectorAlternativeProducts: Product[] = [
     subcategory: "JCB Standard Connectors",
     description: "JCB 4 pole female connector with 4mm deluxe wire. Alternative type 3.",
     partNumber: "SJCB04009",
+    image: "/products/jcb-connectors/jcb-holder/SJCB04009.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Female",
@@ -594,6 +622,7 @@ export const jcbConnectorAlternativeProducts: Product[] = [
     subcategory: "JCB Standard Connectors",
     description: "JCB 4 pole male connector with 4mm deluxe wire. Alternative type 3.",
     partNumber: "SJCB04010",
+    image: "/products/jcb-connectors/jcb-holder/SJCB04010.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Male",
@@ -614,6 +643,7 @@ export const jcbConnectorAlternativeProducts: Product[] = [
     subcategory: "JCB Standard Connectors",
     description: "JCB 6 pole female connector with 4mm deluxe wire. Alternative type 3.",
     partNumber: "SJCB06009",
+    image: "/products/jcb-connectors/jcb-holder/SJCB06009.jpg",
     specifications: {
       "Poles": "6 Pole",
       "Gender": "Female",
@@ -634,6 +664,7 @@ export const jcbConnectorAlternativeProducts: Product[] = [
     subcategory: "JCB Standard Connectors",
     description: "JCB 6 pole male connector with 4mm deluxe wire. Alternative type 3.",
     partNumber: "SJCB06010",
+    image: "/products/jcb-connectors/jcb-holder/SJCB06010.jpg",
     specifications: {
       "Poles": "6 Pole",
       "Gender": "Male",
@@ -654,6 +685,7 @@ export const jcbConnectorAlternativeProducts: Product[] = [
     subcategory: "JCB Standard Connectors",
     description: "JCB 8 pole female connector with 4mm deluxe wire. Alternative type 2.",
     partNumber: "SJCB08005",
+    image: "/products/jcb-connectors/jcb-holder/SJCB08005.jpg",
     specifications: {
       "Poles": "8 Pole",
       "Gender": "Female",
@@ -674,6 +706,7 @@ export const jcbConnectorAlternativeProducts: Product[] = [
     subcategory: "JCB Standard Connectors",
     description: "JCB 8 pole male connector with 4mm deluxe wire. Alternative type 2.",
     partNumber: "SJCB08006",
+    image: "/products/jcb-connectors/jcb-holder/SJCB08006.jpg",
     specifications: {
       "Poles": "8 Pole",
       "Gender": "Male",
@@ -694,6 +727,7 @@ export const jcbConnectorAlternativeProducts: Product[] = [
     subcategory: "JCB Standard Connectors",
     description: "JCB 8 pole female connector with 4mm deluxe wire. Alternative type 3.",
     partNumber: "SJCB08009",
+    image: "/products/jcb-connectors/jcb-holder/SJCB08009.jpg",
     specifications: {
       "Poles": "8 Pole",
       "Gender": "Female",
@@ -714,6 +748,7 @@ export const jcbConnectorAlternativeProducts: Product[] = [
     subcategory: "JCB Standard Connectors",
     description: "JCB 8 pole male connector with 4mm deluxe wire. Alternative type 3.",
     partNumber: "SJCB08010",
+    image: "/products/jcb-connectors/jcb-holder/SJCB08010.jpg",
     specifications: {
       "Poles": "8 Pole",
       "Gender": "Male",
@@ -734,6 +769,7 @@ export const jcbConnectorAlternativeProducts: Product[] = [
     subcategory: "JCB Standard Connectors",
     description: "JCB 12 pole female connector with 4mm deluxe wire. Alternative type 2.",
     partNumber: "SJCB12005",
+    image: "/products/jcb-connectors/jcb-holder/SJCB12005.jpg",
     specifications: {
       "Poles": "12 Pole",
       "Gender": "Female",
@@ -754,6 +790,7 @@ export const jcbConnectorAlternativeProducts: Product[] = [
     subcategory: "JCB Standard Connectors",
     description: "JCB 12 pole male connector with 4mm deluxe wire. Alternative type 2.",
     partNumber: "SJCB12006",
+    image: "/products/jcb-connectors/jcb-holder/SJCB12006.jpg",
     specifications: {
       "Poles": "12 Pole",
       "Gender": "Male",
@@ -774,6 +811,7 @@ export const jcbConnectorAlternativeProducts: Product[] = [
     subcategory: "JCB Standard Connectors",
     description: "JCB 12 pole female connector with 4mm deluxe wire. Alternative type 3.",
     partNumber: "SJCB12009",
+    image: "/products/jcb-connectors/jcb-holder/SJCB12009.jpg",
     specifications: {
       "Poles": "12 Pole",
       "Gender": "Female",
@@ -794,6 +832,7 @@ export const jcbConnectorAlternativeProducts: Product[] = [
     subcategory: "JCB Standard Connectors",
     description: "JCB 12 pole male connector with 4mm deluxe wire. Alternative type 3.",
     partNumber: "SJCB12010",
+    image: "/products/jcb-connectors/jcb-holder/SJCB12010.jpg",
     specifications: {
       "Poles": "12 Pole",
       "Gender": "Male",
@@ -818,6 +857,7 @@ export const jcbHighPoleConnectorProducts: Product[] = [
     subcategory: "JCB High Pole Connectors",
     description: "JCB 9 pole female connector with 4mm & 5mm deluxe wire.",
     partNumber: "SJCB00019",
+    image: "/products/jcb-connectors/jcb-holder/SJCB00019.jpg",
     specifications: {
       "Poles": "9 Pole",
       "Gender": "Female",
@@ -837,6 +877,7 @@ export const jcbHighPoleConnectorProducts: Product[] = [
     subcategory: "JCB High Pole Connectors",
     description: "JCB 9 pole male connector with 4mm & 5mm deluxe wire.",
     partNumber: "SJCB00020",
+    image: "/products/jcb-connectors/jcb-holder/SJCB00020.jpg",
     specifications: {
       "Poles": "9 Pole",
       "Gender": "Male",
@@ -856,6 +897,7 @@ export const jcbHighPoleConnectorProducts: Product[] = [
     subcategory: "JCB High Pole Connectors",
     description: "JCB 14 pole female connector with 4mm & 5mm deluxe wire.",
     partNumber: "SJCB00023",
+    image: "/products/jcb-connectors/jcb-holder/SJCB00023.jpg",
     featured: true,
     specifications: {
       "Poles": "14 Pole",
@@ -876,6 +918,7 @@ export const jcbHighPoleConnectorProducts: Product[] = [
     subcategory: "JCB High Pole Connectors",
     description: "JCB 14 pole male connector with 4mm & 5mm deluxe wire.",
     partNumber: "SJCB00024",
+    image: "/products/jcb-connectors/jcb-holder/SJCB00024.jpg",
     featured: true,
     specifications: {
       "Poles": "14 Pole",
@@ -896,6 +939,7 @@ export const jcbHighPoleConnectorProducts: Product[] = [
     subcategory: "JCB High Pole Connectors",
     description: "JCB 16 pole female connector with 4mm & 5mm deluxe wire.",
     partNumber: "SJCB00027",
+    image: "/products/jcb-connectors/jcb-holder/SJCB00027.jpg",
     featured: true,
     specifications: {
       "Poles": "16 Pole",
@@ -916,6 +960,7 @@ export const jcbHighPoleConnectorProducts: Product[] = [
     subcategory: "JCB High Pole Connectors",
     description: "JCB 16 pole male connector with 4mm & 5mm deluxe wire.",
     partNumber: "SJCB00028",
+    image: "/products/jcb-connectors/jcb-holder/SJCB00028.jpg",
     featured: true,
     specifications: {
       "Poles": "16 Pole",
@@ -936,6 +981,7 @@ export const jcbHighPoleConnectorProducts: Product[] = [
     subcategory: "JCB High Pole Connectors",
     description: "JCB 18 pole female connector with 4mm & 5mm deluxe wire.",
     partNumber: "SJCB00031",
+    image: "/products/jcb-connectors/jcb-holder/SJCB00031.jpg",
     featured: true,
     specifications: {
       "Poles": "18 Pole",
@@ -956,6 +1002,7 @@ export const jcbHighPoleConnectorProducts: Product[] = [
     subcategory: "JCB High Pole Connectors",
     description: "JCB 18 pole male connector with 4mm & 5mm deluxe wire.",
     partNumber: "SJCB00032",
+    image: "/products/jcb-connectors/jcb-holder/SJCB00032.jpg",
     featured: true,
     specifications: {
       "Poles": "18 Pole",
@@ -976,6 +1023,7 @@ export const jcbHighPoleConnectorProducts: Product[] = [
     subcategory: "JCB High Pole Connectors",
     description: "JCB 19 pole female connector with 4mm & 5mm deluxe wire.",
     partNumber: "SJCB00051",
+    image: "/products/jcb-connectors/jcb-holder/SJCB00051.jpg",
     specifications: {
       "Poles": "19 Pole",
       "Gender": "Female",
@@ -995,6 +1043,7 @@ export const jcbHighPoleConnectorProducts: Product[] = [
     subcategory: "JCB High Pole Connectors",
     description: "JCB 21 pole male connector with 4mm & 5mm deluxe wire.",
     partNumber: "SJCB00052",
+    image: "/products/jcb-connectors/jcb-holder/SJCB00052.jpg",
     specifications: {
       "Poles": "21 Pole",
       "Gender": "Male",
@@ -1014,6 +1063,7 @@ export const jcbHighPoleConnectorProducts: Product[] = [
     subcategory: "JCB High Pole Connectors",
     description: "JCB 23 pole female connector with 4mm & 5mm deluxe wire.",
     partNumber: "SJCB00035",
+    image: "/products/jcb-connectors/jcb-holder/SJCB00035.jpg",
     featured: true,
     specifications: {
       "Poles": "23 Pole",
@@ -1034,6 +1084,7 @@ export const jcbHighPoleConnectorProducts: Product[] = [
     subcategory: "JCB High Pole Connectors",
     description: "JCB 23 pole male connector with 4mm & 5mm deluxe wire.",
     partNumber: "SJCB00036",
+    image: "/products/jcb-connectors/jcb-holder/SJCB00036.jpg",
     featured: true,
     specifications: {
       "Poles": "23 Pole",
@@ -1054,6 +1105,7 @@ export const jcbHighPoleConnectorProducts: Product[] = [
     subcategory: "JCB High Pole Connectors",
     description: "JCB 29 pole female connector with 4mm & 5mm deluxe wire.",
     partNumber: "SJCB00039",
+    image: "/products/jcb-connectors/jcb-holder/SJCB00039.jpg",
     featured: true,
     specifications: {
       "Poles": "29 Pole",
@@ -1074,6 +1126,7 @@ export const jcbHighPoleConnectorProducts: Product[] = [
     subcategory: "JCB High Pole Connectors",
     description: "JCB 29 pole male connector with 4mm & 5mm deluxe wire.",
     partNumber: "SJCB00040",
+    image: "/products/jcb-connectors/jcb-holder/SJCB00040.jpg",
     featured: true,
     specifications: {
       "Poles": "29 Pole",
@@ -1094,6 +1147,7 @@ export const jcbHighPoleConnectorProducts: Product[] = [
     subcategory: "JCB High Pole Connectors",
     description: "JCB 31 pole female connector with 4mm & 5mm deluxe wire.",
     partNumber: "SJCB00043",
+    image: "/products/jcb-connectors/jcb-holder/SJCB00043.jpg",
     featured: true,
     specifications: {
       "Poles": "31 Pole",
@@ -1114,6 +1168,7 @@ export const jcbHighPoleConnectorProducts: Product[] = [
     subcategory: "JCB High Pole Connectors",
     description: "JCB 31 pole male connector with 4mm & 5mm deluxe wire.",
     partNumber: "SJCB00044",
+    image: "/products/jcb-connectors/jcb-holder/SJCB00044.jpg",
     featured: true,
     specifications: {
       "Poles": "31 Pole",
@@ -1134,6 +1189,7 @@ export const jcbHighPoleConnectorProducts: Product[] = [
     subcategory: "JCB High Pole Connectors",
     description: "JCB 31 pole female connector with 4mm & 5mm deluxe wire. Alternative type 2.",
     partNumber: "SJCB00055",
+    image: "/products/jcb-connectors/jcb-holder/SJCB00055.jpg",
     specifications: {
       "Poles": "31 Pole",
       "Gender": "Female",
@@ -1154,6 +1210,7 @@ export const jcbHighPoleConnectorProducts: Product[] = [
     subcategory: "JCB High Pole Connectors",
     description: "JCB 32 pole male connector with 4mm & 5mm deluxe wire.",
     partNumber: "SJCB00056",
+    image: "/products/jcb-connectors/jcb-holder/SJCB00056.jpg",
     specifications: {
       "Poles": "32 Pole",
       "Gender": "Male",
@@ -1173,6 +1230,7 @@ export const jcbHighPoleConnectorProducts: Product[] = [
     subcategory: "JCB High Pole Connectors",
     description: "JCB 32 pole female connector with 4mm & 5mm deluxe wire.",
     partNumber: "SJCB00059",
+    image: "/products/jcb-connectors/jcb-holder/SJCB00059.jpg",
     specifications: {
       "Poles": "32 Pole",
       "Gender": "Female",
@@ -1192,6 +1250,7 @@ export const jcbHighPoleConnectorProducts: Product[] = [
     subcategory: "JCB High Pole Connectors",
     description: "JCB 33 pole female connector with 4mm & 5mm deluxe wire.",
     partNumber: "SJCB00060",
+    image: "/products/jcb-connectors/jcb-holder/SJCB00060.jpg",
     specifications: {
       "Poles": "33 Pole",
       "Gender": "Female",
@@ -1211,6 +1270,7 @@ export const jcbHighPoleConnectorProducts: Product[] = [
     subcategory: "JCB High Pole Connectors",
     description: "JCB 33 pole male connector with 4mm & 5mm deluxe wire.",
     partNumber: "SJCB00063",
+    image: "/products/jcb-connectors/jcb-holder/SJCB00063.jpg",
     specifications: {
       "Poles": "33 Pole",
       "Gender": "Male",
@@ -1230,6 +1290,7 @@ export const jcbHighPoleConnectorProducts: Product[] = [
     subcategory: "JCB High Pole Connectors",
     description: "JCB 37 pole female connector with 4mm & 5mm deluxe wire.",
     partNumber: "SJCB00064",
+    image: "/products/jcb-connectors/jcb-holder/SJCB00064.jpg",
     specifications: {
       "Poles": "37 Pole",
       "Gender": "Female",
@@ -1253,6 +1314,7 @@ export const jcbFuseBoxProducts: Product[] = [
     subcategory: "JCB Fuse Box",
     description: "JCB 12 pole female small fuse box with stick and 5mm deluxe wire. 9 inch long wire.",
     partNumber: "SJCB00001",
+    image: "/products/jcb-connectors/jcb-holder/SJCB00001.jpg",
     featured: true,
     specifications: {
       "Type": "Small Fuse Box",
@@ -1275,6 +1337,7 @@ export const jcbFuseBoxProducts: Product[] = [
     subcategory: "JCB Fuse Box",
     description: "JCB 28 pole female medium fuse box with stick and 5mm deluxe wire. 15 inch long wire.",
     partNumber: "SJCB00011",
+    image: "/products/jcb-connectors/jcb-holder/SJCB00011.jpg",
     featured: true,
     specifications: {
       "Type": "Medium Fuse Box",
@@ -1297,6 +1360,7 @@ export const jcbFuseBoxProducts: Product[] = [
     subcategory: "JCB Fuse Box",
     description: "JCB 48 pole female big fuse box with 5mm deluxe wire. 15 inch long wire. Largest JCB fuse box.",
     partNumber: "SJCB00021",
+    image: "/products/jcb-connectors/jcb-holder/SJCB00021.jpg",
     featured: true,
     specifications: {
       "Type": "Big Fuse Box",

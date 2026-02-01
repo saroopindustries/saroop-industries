@@ -14,6 +14,7 @@ export const terminalCapProducts: Product[] = [
     subcategory: "Bullet Series Caps",
     description: "Waterproof terminal cap for bullet terminals. CW-103 series.",
     partNumber: "SI0007001",
+    image: "/products/terminal-caps/caps/SI0007001.jpg",
     specifications: {
       "Series": "CW-103",
       "Dimensions": "35.18mm x 33.20mm",
@@ -31,6 +32,7 @@ export const terminalCapProducts: Product[] = [
     subcategory: "Bullet Series Caps",
     description: "Waterproof terminal cap for bullet terminals. CW-104 series.",
     partNumber: "SI0007002",
+    image: "/products/terminal-caps/caps/SI0007002.jpg",
     specifications: {
       "Series": "CW-104",
       "Type": "Waterproof Cap",
@@ -47,6 +49,7 @@ export const terminalCapProducts: Product[] = [
     subcategory: "Bullet Series Caps",
     description: "Terminal cap for bullet terminals. CB-103 series.",
     partNumber: "SI0007003",
+    image: "/products/terminal-caps/caps/SI0007003.jpg",
     specifications: {
       "Series": "CB-103",
       "Type": "Standard Cap",
@@ -63,6 +66,7 @@ export const terminalCapProducts: Product[] = [
     subcategory: "Bullet Series Caps",
     description: "Terminal cap for bullet terminals. CB-104 series.",
     partNumber: "SI0007004",
+    image: "/products/terminal-caps/caps/SI0007004.jpg",
     specifications: {
       "Series": "CB-104",
       "Type": "Standard Cap",
@@ -79,6 +83,7 @@ export const terminalCapProducts: Product[] = [
     subcategory: "Bullet Series Caps",
     description: "Terminal cap for bullet terminals. CA-103 series.",
     partNumber: "SI0007005",
+    image: "/products/terminal-caps/caps/SI0007005.jpg",
     specifications: {
       "Series": "CA-103",
       "Type": "Standard Cap",
@@ -95,6 +100,7 @@ export const terminalCapProducts: Product[] = [
     subcategory: "Bullet Series Caps",
     description: "Terminal cap for bullet terminals. CA-104 series.",
     partNumber: "SI0007006",
+    image: "/products/terminal-caps/caps/SI0007006.jpg",
     specifications: {
       "Series": "CA-104",
       "Type": "Standard Cap",
@@ -115,6 +121,7 @@ export const terminal0250CapProducts: Product[] = [
     subcategory: "0250 Series Caps",
     description: "Terminal cap for 0250 series 6.4mm female slot terminals.",
     partNumber: "SI0025001",
+    image: "/products/terminal-caps/caps/SI0025001.jpg",
     featured: true,
     specifications: {
       "Series": "0250 (6.3mm)",
@@ -133,6 +140,7 @@ export const terminal0250CapProducts: Product[] = [
     subcategory: "0250 Series Caps",
     description: "Terminal cap for 0250 series 6.4mm female slot terminals. PBC material for better durability.",
     partNumber: "SI0025002",
+    image: "/products/terminal-caps/caps/SI0025002.jpg",
     specifications: {
       "Series": "0250 (6.3mm)",
       "Type": "Female Slot (P.B.C)",
@@ -151,6 +159,7 @@ export const terminal0250CapProducts: Product[] = [
     subcategory: "0250 Series Caps",
     description: "Terminal cap for 0250 series 6.4mm female flag terminals.",
     partNumber: "SI0025003",
+    image: "/products/terminal-caps/caps/SI0025003.jpg",
     specifications: {
       "Series": "0250 (6.3mm)",
       "Type": "Female Flag",
@@ -168,6 +177,7 @@ export const terminal0250CapProducts: Product[] = [
     subcategory: "0250 Series Caps",
     description: "3 pole coupler cap for 0250 series terminals.",
     partNumber: "SI0025004",
+    image: "/products/terminal-caps/caps/SI0025004.jpg",
     specifications: {
       "Series": "0250 (6.3mm)",
       "Type": "3 Pole Coupler",
@@ -184,6 +194,7 @@ export const terminal0250CapProducts: Product[] = [
     subcategory: "0250 Series Caps",
     description: "4 pole coupler cap for 0250 series terminals.",
     partNumber: "SI0025004",
+    image: "/products/terminal-caps/caps/SI0025004.jpg",
     specifications: {
       "Series": "0250 (6.3mm)",
       "Type": "4 Pole Coupler",
@@ -200,6 +211,7 @@ export const terminal0250CapProducts: Product[] = [
     subcategory: "0250 Series Caps",
     description: "6 pole female coupler cap for 0250 series terminals.",
     partNumber: "SI0025006F",
+    image: "/products/terminal-caps/caps/SI0025006F.jpg",
     featured: true,
     specifications: {
       "Series": "0250 (6.3mm)",
@@ -217,6 +229,7 @@ export const terminal0250CapProducts: Product[] = [
     subcategory: "0250 Series Caps",
     description: "6 pole male coupler cap for 0250 series terminals.",
     partNumber: "SI0025006M",
+    image: "/products/terminal-caps/caps/SI0025006M.jpg",
     specifications: {
       "Series": "0250 (6.3mm)",
       "Type": "6 Pole Male Coupler",
@@ -233,6 +246,7 @@ export const terminal0250CapProducts: Product[] = [
     subcategory: "0250 Series Caps",
     description: "8 pole female coupler cap for 0250 series terminals.",
     partNumber: "SI0025008F",
+    image: "/products/terminal-caps/caps/SI0025008F.jpg",
     specifications: {
       "Series": "0250 (6.3mm)",
       "Type": "8 Pole Female Coupler",
@@ -249,6 +263,7 @@ export const terminal0250CapProducts: Product[] = [
     subcategory: "0250 Series Caps",
     description: "8 pole male coupler cap for 0250 series terminals.",
     partNumber: "SI0025008M",
+    image: "/products/terminal-caps/caps/SI0025008M.jpg",
     specifications: {
       "Series": "0250 (6.3mm)",
       "Type": "8 Pole Male Coupler",
@@ -265,6 +280,7 @@ export const terminal0250CapProducts: Product[] = [
     subcategory: "0250 Series Caps",
     description: "8 pole hazard female coupler cap for 0250 series terminals. Special design for hazard light circuits.",
     partNumber: "SI0025006F",
+    image: "/products/terminal-caps/caps/SI0025006F.jpg",
     specifications: {
       "Series": "0250 (6.3mm)",
       "Type": "8 Pole Hazard Female Coupler",
@@ -286,6 +302,7 @@ export const terminal0312CapProducts: Product[] = [
     subcategory: "0312 Series Caps",
     description: "Terminal cap for 0312 series 8.3mm female flag terminals.",
     partNumber: "SI0025010",
+    image: "/products/terminal-caps/caps/SI0025010.jpg",
     specifications: {
       "Series": "0312 (7.8mm)",
       "Type": "Female Flag",
@@ -303,6 +320,7 @@ export const terminal0312CapProducts: Product[] = [
     subcategory: "0312 Series Caps",
     description: "3 pole female headlight coupler cap for 0312 series terminals.",
     partNumber: "SI0025025",
+    image: "/products/terminal-caps/caps/SI0025025.jpg",
     featured: true,
     specifications: {
       "Series": "0312 (7.8mm)",
@@ -325,6 +343,7 @@ export const terminal0110_0187CapProducts: Product[] = [
     subcategory: "0110 Series Caps",
     description: "Terminal cap for 0110 series 3.2mm female lock terminals.",
     partNumber: "SI0011001",
+    image: "/products/terminal-caps/caps/SI0011001.jpg",
     specifications: {
       "Series": "0110 (2.8mm)",
       "Type": "Female Lock",
@@ -342,6 +361,7 @@ export const terminal0110_0187CapProducts: Product[] = [
     subcategory: "0187 Series Caps",
     description: "Terminal cap for 0187 series 4.8mm female slot terminals.",
     partNumber: "SI0018001",
+    image: "/products/terminal-caps/caps/SI0018001.jpg",
     specifications: {
       "Series": "0187 (4.8mm)",
       "Type": "Female Slot",
@@ -359,6 +379,7 @@ export const terminal0110_0187CapProducts: Product[] = [
     subcategory: "Special Caps",
     description: "Terminal cap for 3.2mm female lock terminals.",
     partNumber: "SI0031201",
+    image: "/products/terminal-caps/caps/SI0031201.jpg",
     specifications: {
       "Type": "Female Lock",
       "Tab Size": "3.2mm",
@@ -375,6 +396,7 @@ export const terminal0110_0187CapProducts: Product[] = [
     subcategory: "Special Caps",
     description: "Terminal cap for 4.8mm female slot terminals.",
     partNumber: "SI0031205",
+    image: "/products/terminal-caps/caps/SI0031205.jpg",
     specifications: {
       "Type": "Female Slot",
       "Tab Size": "4.8mm",
@@ -395,6 +417,7 @@ export const vehicleSpecificCapProducts: Product[] = [
     subcategory: "Battery Terminal Caps",
     description: "Universal battery terminal cap for protection against corrosion and short circuits.",
     partNumber: "SI0099001",
+    image: "/products/terminal-caps/caps/SI0099001.jpg",
     featured: true,
     specifications: {
       "Type": "Battery Terminal Cap",
@@ -412,6 +435,7 @@ export const vehicleSpecificCapProducts: Product[] = [
     subcategory: "Battery Terminal Caps",
     description: "Terminal cap for LA-204 and LA-206 battery lugs.",
     partNumber: "SI0099010",
+    image: "/products/terminal-caps/caps/SI0099010.jpg",
     specifications: {
       "Compatible": "LA-204, LA-206",
       "Dimensions": "40.00mm x 18.85mm",
@@ -428,6 +452,7 @@ export const vehicleSpecificCapProducts: Product[] = [
     subcategory: "Battery Terminal Caps",
     description: "Terminal cap for LA-306 battery lugs.",
     partNumber: "SI0099011",
+    image: "/products/terminal-caps/caps/SI0099011.jpg",
     specifications: {
       "Compatible": "LA-306",
       "Dimensions": "30.00mm x 28.00mm",
@@ -444,6 +469,7 @@ export const vehicleSpecificCapProducts: Product[] = [
     subcategory: "Ring Terminal Caps",
     description: "Terminal cap for ring terminals LA-206, LA-208, and LA-210.",
     partNumber: "SI0099116",
+    image: "/products/terminal-caps/caps/SI0099116.jpg",
     specifications: {
       "Compatible": "LA-206, LA-208, LA-210",
       "Type": "Ring Terminal",
@@ -478,6 +504,7 @@ export const vehicleSpecificCapProducts: Product[] = [
     subcategory: "Vehicle-Specific Caps",
     description: "Battery lugs cap for Maruti car type battery terminals.",
     partNumber: "SI0099031",
+    image: "/products/terminal-caps/caps/SI0099031.jpg",
     featured: true,
     specifications: {
       "Compatible": "Maruti Car",
@@ -495,6 +522,7 @@ export const vehicleSpecificCapProducts: Product[] = [
     subcategory: "Vehicle-Specific Caps",
     description: "Battery lugs cap for Tata ACE battery terminals.",
     partNumber: "SI0099035",
+    image: "/products/terminal-caps/caps/SI0099035.jpg",
     specifications: {
       "Compatible": "Tata ACE",
       "Type": "Battery Lugs Cap",
@@ -511,6 +539,7 @@ export const vehicleSpecificCapProducts: Product[] = [
     subcategory: "Vehicle-Specific Caps",
     description: "Battery lugs cap for Tata Sumo old and new models. Small size.",
     partNumber: "SI0099064",
+    image: "/products/terminal-caps/caps/SI0099064.jpg",
     specifications: {
       "Compatible": "Tata Sumo Old & New",
       "Size": "Small",
@@ -528,6 +557,7 @@ export const vehicleSpecificCapProducts: Product[] = [
     subcategory: "Vehicle-Specific Caps",
     description: "Battery lugs cap for Tata Sumo old and new models. Big size.",
     partNumber: "SI0099124",
+    image: "/products/terminal-caps/caps/SI0099124.jpg",
     specifications: {
       "Compatible": "Tata Sumo Old & New",
       "Size": "Big",
@@ -545,6 +575,7 @@ export const vehicleSpecificCapProducts: Product[] = [
     subcategory: "Special Caps",
     description: "6.4mm positive lock terminal cap, 2 pole configuration. PVC material.",
     partNumber: "SI0099015",
+    image: "/products/terminal-caps/caps/SI0099015.jpg",
     specifications: {
       "Type": "Positive Lock",
       "Material": "PVC",
@@ -563,6 +594,7 @@ export const vehicleSpecificCapProducts: Product[] = [
     subcategory: "Special Caps",
     description: "6.4mm positive lock terminal cap, 2 pole configuration. PBC material for enhanced durability.",
     partNumber: "SI0099021",
+    image: "/products/terminal-caps/caps/SI0099021.jpg",
     specifications: {
       "Type": "Positive Lock",
       "Material": "PBC",
@@ -585,6 +617,7 @@ export const twoWheelerHousingCapProducts: Product[] = [
     subcategory: "2-Wheeler Housing Caps",
     description: "Housing cap for Bajaj Pulsar motorcycle wiring connectors.",
     partNumber: "SI0099010",
+    image: "/products/terminal-caps/caps/SI0099010.jpg",
     featured: true,
     specifications: {
       "Compatible": "Bajaj Pulsar",
@@ -603,6 +636,7 @@ export const twoWheelerHousingCapProducts: Product[] = [
     subcategory: "2-Wheeler Housing Caps",
     description: "Housing cap for Hero HF Delux motorcycle wiring connectors.",
     partNumber: "SI0099038",
+    image: "/products/terminal-caps/caps/SI0099038.jpg",
     specifications: {
       "Compatible": "Hero HF Delux",
       "Type": "Housing Cap",
@@ -620,6 +654,7 @@ export const twoWheelerHousingCapProducts: Product[] = [
     subcategory: "2-Wheeler Housing Caps",
     description: "Housing cap for Honda Activa scooter wiring connectors.",
     partNumber: "SI0099043",
+    image: "/products/terminal-caps/caps/SI0099043.jpg",
     featured: true,
     specifications: {
       "Compatible": "Honda Activa",
@@ -638,6 +673,7 @@ export const twoWheelerHousingCapProducts: Product[] = [
     subcategory: "2-Wheeler Housing Caps",
     description: "Housing cap for TVS motorcycle wiring connectors.",
     partNumber: "SI0099045",
+    image: "/products/terminal-caps/caps/SI0099045.jpg",
     specifications: {
       "Compatible": "TVS",
       "Type": "Housing Cap",
@@ -655,6 +691,7 @@ export const twoWheelerHousingCapProducts: Product[] = [
     subcategory: "2-Wheeler Housing Caps",
     description: "Housing cap for TVS motorcycle wiring connectors. Type II variant.",
     partNumber: "SI0099047",
+    image: "/products/terminal-caps/caps/SI0099047.jpg",
     specifications: {
       "Compatible": "TVS",
       "Type": "Housing Cap Type-II",
@@ -671,6 +708,7 @@ export const twoWheelerHousingCapProducts: Product[] = [
     subcategory: "2-Wheeler Housing Caps",
     description: "Housing cap for Bajaj Pulsar new model wiring connectors.",
     partNumber: "SI0099049",
+    image: "/products/terminal-caps/caps/SI0099049.jpg",
     specifications: {
       "Compatible": "Bajaj Pulsar New Model",
       "Type": "Housing Cap",
@@ -688,6 +726,7 @@ export const twoWheelerHousingCapProducts: Product[] = [
     subcategory: "2-Wheeler Housing Caps",
     description: "Housing cap for Bajaj Discover motorcycle wiring connectors.",
     partNumber: "SI0099058",
+    image: "/products/terminal-caps/caps/SI0099058.jpg",
     specifications: {
       "Compatible": "Bajaj Discover",
       "Type": "Housing Cap",
@@ -705,6 +744,7 @@ export const twoWheelerHousingCapProducts: Product[] = [
     subcategory: "2-Wheeler Housing Caps",
     description: "Housing cap for Honda motorcycle/scooter wiring connectors.",
     partNumber: "SI0099061",
+    image: "/products/terminal-caps/caps/SI0099061.jpg",
     specifications: {
       "Compatible": "Honda",
       "Type": "Housing Cap",
@@ -721,6 +761,7 @@ export const twoWheelerHousingCapProducts: Product[] = [
     subcategory: "2-Wheeler Housing Caps",
     description: "General housing cap for Bajaj motorcycle wiring connectors.",
     partNumber: "SI0099070",
+    image: "/products/terminal-caps/caps/SI0099070.jpg",
     specifications: {
       "Compatible": "Bajaj",
       "Type": "Housing Cap",
@@ -738,6 +779,7 @@ export const twoWheelerHousingCapProducts: Product[] = [
     subcategory: "2-Wheeler Housing Caps",
     description: "Universal housing cap for 2-wheeler motorcycle wiring connectors.",
     partNumber: "SI0099072",
+    image: "/products/terminal-caps/caps/SI0099072.jpg",
     featured: true,
     specifications: {
       "Compatible": "Universal 2 Wheeler",
@@ -755,6 +797,7 @@ export const twoWheelerHousingCapProducts: Product[] = [
     subcategory: "2-Wheeler Terminal Caps",
     description: "Universal terminal cap for 2-wheeler wiring terminals.",
     partNumber: "SI0099074",
+    image: "/products/terminal-caps/caps/SI0099074.jpg",
     specifications: {
       "Compatible": "Universal 2 Wheeler",
       "Type": "Terminal Cap",
@@ -775,6 +818,7 @@ export const multiWheelerCapProducts: Product[] = [
     subcategory: "3-Wheeler Caps",
     description: "Housing cap for Mahindra Maximo 3-wheeler wiring connectors.",
     partNumber: "SI0099053",
+    image: "/products/terminal-caps/caps/SI0099053.jpg",
     specifications: {
       "Compatible": "Mahindra Maximo",
       "Type": "Housing Cap",
@@ -792,6 +836,7 @@ export const multiWheelerCapProducts: Product[] = [
     subcategory: "3-Wheeler Caps",
     description: "Battery terminal cap for 3-wheeler auto-rickshaw battery connections.",
     partNumber: "SI0099103",
+    image: "/products/terminal-caps/caps/SI0099103.jpg",
     specifications: {
       "Compatible": "3 Wheeler",
       "Type": "Battery Terminal Cap",
@@ -809,6 +854,7 @@ export const multiWheelerCapProducts: Product[] = [
     subcategory: "Connector Caps",
     description: "4 pole round connector cap for 4-wheeler automotive applications.",
     partNumber: "SI0099119",
+    image: "/products/terminal-caps/caps/SI0099119.jpg",
     specifications: {
       "Type": "4 Pole Round Connector Cap",
       "Poles": "4",
@@ -825,6 +871,7 @@ export const multiWheelerCapProducts: Product[] = [
     subcategory: "Battery Terminal Caps",
     description: "Battery terminal cap for 4-wheeler automotive battery connections.",
     partNumber: "SI0099121",
+    image: "/products/terminal-caps/caps/SI0099121.jpg",
     specifications: {
       "Compatible": "4 Wheeler",
       "Type": "Battery Terminal Cap",
@@ -841,6 +888,7 @@ export const multiWheelerCapProducts: Product[] = [
     subcategory: "Universal Caps",
     description: "Universal general purpose terminal cap for various applications.",
     partNumber: "SI0099123",
+    image: "/products/terminal-caps/caps/SI0099123.jpg",
     specifications: {
       "Type": "General Terminal Cap",
       "Application": "Universal",

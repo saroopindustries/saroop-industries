@@ -630,6 +630,7 @@ export const holder0110SpecialShutterProducts: Product[] = [
     subcategory: "0110 Special Series",
     description: "Eicher Canter 2 pole female holder with special wire. 0110 series.",
     partNumber: "SH0100152F",
+    image: "/products/universal-holders/0110-series/SH0100152F.jpg",
     specifications: {
       "Series": "0110 (2.8mm)",
       "Poles": "2 Pole",
@@ -727,6 +728,7 @@ export const holder0110SpecialShutterProducts: Product[] = [
     subcategory: "Shutter Series",
     description: "8 pole shutter holder with special wire.",
     partNumber: "SH0100188",
+    image: "/products/universal-holders/shutter-holder/SH0100188.jpg",
     specifications: {
       "Type": "Shutter",
       "Poles": "8 Pole",
@@ -745,6 +747,7 @@ export const holder0110SpecialShutterProducts: Product[] = [
     subcategory: "Shutter Series",
     description: "10 pole shutter holder with special wire.",
     partNumber: "SH0100190",
+    image: "/products/universal-holders/shutter-holder/SH0100190.jpg",
     specifications: {
       "Type": "Shutter",
       "Poles": "10 Pole",
@@ -763,6 +766,7 @@ export const holder0110SpecialShutterProducts: Product[] = [
     subcategory: "Shutter Series",
     description: "12 pole shutter holder with special wire.",
     partNumber: "SH0100192",
+    image: "/products/universal-holders/shutter-holder/SH0100192.jpg",
     featured: true,
     specifications: {
       "Type": "Shutter",
@@ -782,6 +786,7 @@ export const holder0110SpecialShutterProducts: Product[] = [
     subcategory: "Shutter Series",
     description: "16 pole shutter holder with special wire.",
     partNumber: "SH0100194",
+    image: "/products/universal-holders/shutter-holder/SH0100194.jpg",
     specifications: {
       "Type": "Shutter",
       "Poles": "16 Pole",
@@ -800,6 +805,7 @@ export const holder0110SpecialShutterProducts: Product[] = [
     subcategory: "0110 Special Series",
     description: "Eicher Canter 5 pole female holder with special wire.",
     partNumber: "SH0100155F",
+    image: "/products/universal-holders/0110-series/SH0100155F.jpg",
     specifications: {
       "Series": "0110 (2.8mm)",
       "Poles": "5 Pole",
@@ -820,6 +826,7 @@ export const holder0110SpecialShutterProducts: Product[] = [
     subcategory: "0110 Special Series",
     description: "Eicher Canter 7 pole female holder with special wire.",
     partNumber: "SH0100157F",
+    image: "/products/universal-holders/0110-series/SH0100157F.jpg",
     specifications: {
       "Series": "0110 (2.8mm)",
       "Poles": "7 Pole",
@@ -840,6 +847,7 @@ export const holder0110SpecialShutterProducts: Product[] = [
     subcategory: "0110 Special Series",
     description: "Eicher Canter 9 pole female holder with special wire.",
     partNumber: "SH0100159F",
+    image: "/products/universal-holders/0110-series/SH0100159F.jpg",
     specifications: {
       "Series": "0110 (2.8mm)",
       "Poles": "9 Pole",
@@ -860,6 +868,7 @@ export const holder0110SpecialShutterProducts: Product[] = [
     subcategory: "0110 Special Series",
     description: "Eicher Canter 11 pole female holder with special wire.",
     partNumber: "SH0100161F",
+    image: "/products/universal-holders/0110-series/SH0100161F.jpg",
     specifications: {
       "Series": "0110 (2.8mm)",
       "Poles": "11 Pole",
@@ -880,6 +889,7 @@ export const holder0110SpecialShutterProducts: Product[] = [
     subcategory: "0110 Special Series",
     description: "Eicher Canter 13 pole female holder with special wire.",
     partNumber: "SH0100163F",
+    image: "/products/universal-holders/0110-series/SH0100163F.jpg",
     specifications: {
       "Series": "0110 (2.8mm)",
       "Poles": "13 Pole",

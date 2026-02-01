@@ -14,6 +14,7 @@ export const specialConnector2PoleExtendedProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Ashok Leyland 2 pole female connector with 4mm deluxe wire.",
     partNumber: "SH2100251",
+    image: "/products/special-universal-connectors/special-universal/SH2100251.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -33,6 +34,7 @@ export const specialConnector2PoleExtendedProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Universal Tata 2 pole female connector with 4mm deluxe wire.",
     partNumber: "SH2100252",
+    image: "/products/special-universal-connectors/special-universal/SH2100252.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -52,6 +54,7 @@ export const specialConnector2PoleExtendedProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Universal Tata fuse box 2 pole female connector with 6mm deluxe wire.",
     partNumber: "SH2100253",
+    image: "/products/special-universal-connectors/special-universal/SH2100253.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -71,6 +74,7 @@ export const specialConnector2PoleExtendedProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Universal Tata ECM 2 pole female connector with ECM special wire.",
     partNumber: "SH2100254",
+    image: "/products/special-universal-connectors/special-universal/SH2100254.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -90,6 +94,7 @@ export const specialConnector2PoleExtendedProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Toyota Qualis corner light 2 pole female connector with special wire.",
     partNumber: "SH2100255",
+    image: "/products/special-universal-connectors/special-universal/SH2100255.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -109,6 +114,7 @@ export const specialConnector2PoleExtendedProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Mahindra Maximo 2 pole female connector with special wire.",
     partNumber: "SH2100256",
+    image: "/products/special-universal-connectors/special-universal/SH2100256.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -128,6 +134,7 @@ export const specialConnector2PoleExtendedProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Universal Tata ECM 2 pole female connector with ECM special wire.",
     partNumber: "SH2100257",
+    image: "/products/special-universal-connectors/special-universal/SH2100257.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -147,6 +154,7 @@ export const specialConnector2PoleExtendedProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "High pressure switch 2 pole female connector with special wire.",
     partNumber: "SH2100258",
+    image: "/products/special-universal-connectors/special-universal/SH2100258.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -166,6 +174,7 @@ export const specialConnector2PoleExtendedProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Outside air temperature sensor for Maruti Swift 2 pole female connector with special wire.",
     partNumber: "SH2100259",
+    image: "/products/special-universal-connectors/special-universal/SH2100259.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -185,6 +194,7 @@ export const specialConnector2PoleExtendedProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Tata air bag 2 pole female connector with special wire.",
     partNumber: "SH2100260",
+    image: "/products/special-universal-connectors/special-universal/SH2100260.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -204,6 +214,7 @@ export const specialConnector2PoleExtendedProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Maruti injector 2 pole female connector with special wire.",
     partNumber: "SH2100261",
+    image: "/products/special-universal-connectors/special-universal/SH2100261.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -223,6 +234,7 @@ export const specialConnector2PoleExtendedProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Universal Tata 2 pole female connector with special wire.",
     partNumber: "SH2100262",
+    image: "/products/special-universal-connectors/special-universal/SH2100262.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -242,6 +254,7 @@ export const specialConnector2PoleExtendedProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Thermo switch for Zen 2 pole female connector with special wire.",
     partNumber: "SH2100263",
+    image: "/products/special-universal-connectors/special-universal/SH2100263.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -261,6 +274,7 @@ export const specialConnector2PoleExtendedProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Ashok Leyland 2 pole female connector with special wire.",
     partNumber: "SH2100264",
+    image: "/products/special-universal-connectors/special-universal/SH2100264.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -280,6 +294,7 @@ export const specialConnector2PoleExtendedProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Ignition coil for Swaraj Mazda 2 pole female connector with special wire.",
     partNumber: "SH2100265",
+    image: "/products/special-universal-connectors/special-universal/SH2100265.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -299,6 +314,7 @@ export const specialConnector2PoleExtendedProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Tata fuse universal 2 pole female connector with 6mm deluxe wire.",
     partNumber: "SH2100266",
+    image: "/products/special-universal-connectors/special-universal/SH2100266.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -318,6 +334,7 @@ export const specialConnector2PoleExtendedProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Universal Tata 2 pole female connector with special wire.",
     partNumber: "SH2100267",
+    image: "/products/special-universal-connectors/special-universal/SH2100267.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -337,6 +354,7 @@ export const specialConnector2PoleExtendedProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Universal Tata fuse 2 pole female connector with 8mm deluxe wire.",
     partNumber: "SH2100268",
+    image: "/products/special-universal-connectors/special-universal/SH2100268.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -356,6 +374,7 @@ export const specialConnector2PoleExtendedProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Universal 2 pole female connector with special wire.",
     partNumber: "SH2100269",
+    image: "/products/special-universal-connectors/special-universal/SH2100269.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -374,6 +393,7 @@ export const specialConnector2PoleExtendedProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Universal 2 pole female connector with special wire.",
     partNumber: "SH2100270",
+    image: "/products/special-universal-connectors/special-universal/SH2100270.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -392,6 +412,7 @@ export const specialConnector2PoleExtendedProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Universal Tata 2 pole female connector with special wire.",
     partNumber: "SH2100271",
+    image: "/products/special-universal-connectors/special-universal/SH2100271.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -411,6 +432,7 @@ export const specialConnector2PoleExtendedProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Universal 2 pole female connector with 6mm deluxe wire and 40 AMPS fuse.",
     partNumber: "SH2100273",
+    image: "/products/special-universal-connectors/special-universal/SH2100273.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -430,6 +452,7 @@ export const specialConnector2PoleExtendedProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Universal 2 pole female connector with 8mm deluxe wire and 60 AMPS fuse.",
     partNumber: "SH2100274",
+    image: "/products/special-universal-connectors/special-universal/SH2100274.jpg",
     featured: true,
     specifications: {
       "Poles": "2 Pole",
@@ -450,6 +473,7 @@ export const specialConnector2PoleExtendedProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Universal 2 pole female connector with special wire.",
     partNumber: "SH2100280",
+    image: "/products/special-universal-connectors/special-universal/SH2100280.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -472,6 +496,7 @@ export const specialConnector2PoleFinalProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Universal 2 pole female connector with ECM special wire.",
     partNumber: "SH2100284",
+    image: "/products/special-universal-connectors/special-universal/SH2100284.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -490,6 +515,7 @@ export const specialConnector2PoleFinalProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Universal 2 pole female connector with ECM wire.",
     partNumber: "SH2100285",
+    image: "/products/special-universal-connectors/special-universal/SH2100285.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -508,6 +534,7 @@ export const specialConnector2PoleFinalProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Universal 2 pole female connector with 6mm deluxe wire.",
     partNumber: "SH2100286",
+    image: "/products/special-universal-connectors/special-universal/SH2100286.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -526,6 +553,7 @@ export const specialConnector2PoleFinalProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Universal 2 pole female connector with ECM special wire.",
     partNumber: "SH2100287",
+    image: "/products/special-universal-connectors/special-universal/SH2100287.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -544,6 +572,7 @@ export const specialConnector2PoleFinalProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Universal 2 pole female connector with ECM special wire.",
     partNumber: "SH2100288",
+    image: "/products/special-universal-connectors/special-universal/SH2100288.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -562,6 +591,7 @@ export const specialConnector2PoleFinalProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Universal 2 pole female connector with special wire.",
     partNumber: "SH2100289",
+    image: "/products/special-universal-connectors/special-universal/SH2100289.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -580,6 +610,7 @@ export const specialConnector2PoleFinalProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Universal 2 pole female connector with special wire.",
     partNumber: "SH2100290",
+    image: "/products/special-universal-connectors/special-universal/SH2100290.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -598,6 +629,7 @@ export const specialConnector2PoleFinalProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Indica Diesel fuse 2 pole female connector with 8mm deluxe wire.",
     partNumber: "SH2100292",
+    image: "/products/special-universal-connectors/special-universal/SH2100292.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -617,6 +649,7 @@ export const specialConnector2PoleFinalProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Universal 2 pole female connector with special wire.",
     partNumber: "SH2100294",
+    image: "/products/special-universal-connectors/special-universal/SH2100294.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -635,6 +668,7 @@ export const specialConnector2PoleFinalProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Universal Tata 2 pole female connector with 4mm deluxe wire.",
     partNumber: "SH2100295",
+    image: "/products/special-universal-connectors/special-universal/SH2100295.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -654,6 +688,7 @@ export const specialConnector2PoleFinalProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Universal 2 pole female connector with special wire.",
     partNumber: "SH2100296",
+    image: "/products/special-universal-connectors/special-universal/SH2100296.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -672,6 +707,7 @@ export const specialConnector2PoleFinalProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Universal Tata tail light holder 2 pole female connector with ECM special wire.",
     partNumber: "SH2100297",
+    image: "/products/special-universal-connectors/special-universal/SH2100297.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -691,6 +727,7 @@ export const specialConnector2PoleFinalProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Universal Ashok Leyland 2 pole female connector with special wire.",
     partNumber: "SH2100298",
+    image: "/products/special-universal-connectors/special-universal/SH2100298.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -710,6 +747,7 @@ export const specialConnector2PoleFinalProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Universal 2 pole female connector with ECM special wire.",
     partNumber: "SH2100299",
+    image: "/products/special-universal-connectors/special-universal/SH2100299.png",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",

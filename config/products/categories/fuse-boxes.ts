@@ -27,6 +27,7 @@ export const fuseBoxProducts: Product[] = [
     subcategory: "Eicher",
     description: "Fuse box compatible with Eicher Canter trucks. Universal fit for models 10.11, 10.50 Pro, 10.59, 10.69, 10.75, 10.90, 10.95, 11.10, 30.25 Galaxy, Jumbo.",
     partNumber: "SFB5151C",
+    image: "/products/fuse-boxes-complete/universal-fuse-box/SFB5151C.jpg",
     specifications: {
       "Compatible": "Eicher Canter",
       "Models": "10.11, 10.50 Pro, 10.59, 10.69, 10.75, 10.90, 10.95, 11.10, 30.25 Galaxy, Jumbo",
@@ -59,6 +60,7 @@ export const fuseBoxProducts: Product[] = [
     subcategory: "Maruti",
     description: "Fuse box for Maruti cars. Compatible with Type I, Type II, Type III, Gypsy King.",
     partNumber: "SFB5401M",
+    image: "/products/fuse-boxes-complete/universal-fuse-box/SFB5401M.jpg",
     featured: true,
     specifications: {
       "Compatible": "Maruti Cars",
@@ -139,6 +141,7 @@ export const fuseBoxProducts: Product[] = [
     subcategory: "Mahindra",
     description: "Mini fuse box for Mahindra Bolero Camper with 4 relay configuration.",
     partNumber: "SFB5415M",
+    image: "/products/fuse-boxes-complete/universal-fuse-box/SFB5415M.jpg",
     specifications: {
       "Compatible": "Mahindra Bolero Camper",
       "Type": "MDI TC BS II, BS III, BS IV",
@@ -157,6 +160,7 @@ export const fuseBoxProducts: Product[] = [
     subcategory: "Tata",
     description: "Universal fuse box for Tata Sumo, Sumo Deluxe models.",
     partNumber: "SFB5422M",
+    image: "/products/fuse-boxes-complete/universal-fuse-box/SFB5422M.jpg",
     specifications: {
       "Compatible": "Tata Sumo, Sumo Deluxe, 1613 TC, 2515 TC, 2518 TC, 407, 709, 1109 Turbo",
       "Configuration": "23 Wire, 28 Point",
@@ -172,6 +176,7 @@ export const fuseBoxProducts: Product[] = [
     subcategory: "Tata",
     description: "Fuse box for Tata ACE BS II, BS III & BS IV, Magic.",
     partNumber: "SFB5432M",
+    image: "/products/fuse-boxes-complete/universal-fuse-box/SFB5432M.jpg",
     featured: true,
     specifications: {
       "Compatible": "Tata ACE, Magic",
@@ -189,6 +194,7 @@ export const fuseBoxProducts: Product[] = [
     subcategory: "Mahindra",
     description: "Mini fuse box for Mahindra Maximo with 5mm & 6mm deluxe wire.",
     partNumber: "SFB9021",
+    image: "/products/fuse-boxes-complete/universal-fuse-box/SFB9021.jpg",
     specifications: {
       "Compatible": "Mahindra Maximo",
       "Configuration": "46 Wire",
@@ -205,6 +211,7 @@ export const fuseBoxProducts: Product[] = [
     subcategory: "Tata",
     description: "Square fuse box suitable for Tata LPT series trucks (1613TC, 1616TC, 2515TC, 2518TC, 3118TC, 3718TC, 4018TC, 4018 Horse).",
     partNumber: "SFB5101S",
+    image: "/products/fuse-boxes-complete/universal-fuse-box/SFB5101S.jpg",
     specifications: {
       "Compatible": "Tata LPT Series",
       "Models": "1613TC, 1616TC, 2515TC, 2518TC, 3118TC, 3718TC, 4018TC, 4018 Horse",
@@ -222,6 +229,7 @@ export const fuseBoxProducts: Product[] = [
     subcategory: "Mahindra",
     description: "Universal fuse box for Mahindra Jeep, Bolero, Pick-up Utility Savari.",
     partNumber: "SFB5418M",
+    image: "/products/fuse-boxes-complete/universal-fuse-box/SFB5418M.jpg",
     specifications: {
       "Compatible": "Mahindra Jeep, Bolero, Pick-up Utility Savari",
       "Configuration": "17 Wire, 24 Point",
@@ -238,6 +246,7 @@ export const fuseBoxProducts: Product[] = [
     subcategory: "Tata",
     description: "Universal fuse box for Tata Sumo 207 DI / 207 2005 DI / 207 DI Turbo / Sumo Spacio.",
     partNumber: "SFB5428M",
+    image: "/products/fuse-boxes-complete/universal-fuse-box/SFB5428M.jpg",
     specifications: {
       "Compatible": "Tata Sumo 207 DI, 207 2005 DI, 207 DI Turbo, Sumo Spacio",
       "Configuration": "32 Wire, 32 Point, 2 Pcs AC Fuse Dibbi",

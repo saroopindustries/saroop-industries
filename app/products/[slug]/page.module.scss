@@ -328,11 +328,13 @@
 
 .featuredImage {
   height: 180px;
-  background: linear-gradient(135deg, #0a1628 0%, #0f2847 100%);
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px 8px 0 0;
 }
 
 .featuredTag {
@@ -530,7 +532,7 @@
     transform: translateY(-4px);
     
     .productImage {
-      background: linear-gradient(135deg, #0f2847 0%, #1a3a5c 100%);
+      background: #f8fafb;
     }
     
     .productImageImg {
@@ -552,7 +554,7 @@
 
 .productImage {
   height: 100%;
-  background: linear-gradient(135deg, #0a1628 0%, #0f2847 100%);
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -563,7 +565,7 @@
   .productImageImg {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: transform 0.3s ease;
   }
   
@@ -743,13 +745,14 @@
   aspect-ratio: 1;
   max-width: 500px;
   margin: 0 auto;
-  background: linear-gradient(135deg, #0a1628 0%, #0f2847 100%);
+  background: #ffffff;
   border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   overflow: hidden;
+  border: 1px solid #e5e7eb;
   
   &::before {
     content: '';
@@ -946,10 +949,12 @@
   
   .relatedImage {
     height: 100px;
-    background: linear-gradient(135deg, #0a1628 0%, #0f2847 100%);
+    background: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px 8px 0 0;
     
     span {
       font-size: 2rem;

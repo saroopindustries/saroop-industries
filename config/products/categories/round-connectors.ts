@@ -14,6 +14,7 @@ export const roundConnectorProducts: Product[] = [
     subcategory: "Round Connectors",
     description: "Maruti Zen fuse link 1 pole female round connector with 5mm deluxe wire.",
     partNumber: "SH0600101F",
+    image: "/products/round-connectors/round-holder/SH0600101F.jpg",
     featured: true,
     specifications: {
       "Poles": "1 Pole",
@@ -35,6 +36,7 @@ export const roundConnectorProducts: Product[] = [
     subcategory: "Round Connectors",
     description: "Maruti Zen fuse link 1 pole male round connector with 5mm deluxe wire.",
     partNumber: "SH0600101M",
+    image: "/products/round-connectors/round-holder/SH0600101M.jpg",
     featured: true,
     specifications: {
       "Poles": "1 Pole",
@@ -56,6 +58,7 @@ export const roundConnectorProducts: Product[] = [
     subcategory: "Round Connectors",
     description: "Ashok Leyland new model 1 pole female round connector with 8mm deluxe wire.",
     partNumber: "SH0600102F",
+    image: "/products/round-connectors/round-holder/SH0600102F.jpg",
     specifications: {
       "Poles": "1 Pole",
       "Gender": "Female",
@@ -76,6 +79,7 @@ export const roundConnectorProducts: Product[] = [
     subcategory: "Round Connectors",
     description: "Jeep and E-Rickshaw 2 pole female round connector with 5mm deluxe wire.",
     partNumber: "SH0600201F",
+    image: "/products/round-connectors/round-holder/SH0600201F.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -96,6 +100,7 @@ export const roundConnectorProducts: Product[] = [
     subcategory: "Round Connectors",
     description: "Jeep and E-Rickshaw 2 pole male round connector with 5mm deluxe wire.",
     partNumber: "SH0600201M",
+    image: "/products/round-connectors/round-holder/SH0600201M.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Male",
@@ -116,6 +121,7 @@ export const roundConnectorProducts: Product[] = [
     subcategory: "Round Connectors",
     description: "Fan motor for Zen, Maruti Car Type II, Esteem 3 pole female round connector with 5mm deluxe wire.",
     partNumber: "SH0600301F",
+    image: "/products/round-connectors/round-holder/SH0600301F.jpg",
     featured: true,
     specifications: {
       "Poles": "3 Pole",
@@ -137,6 +143,7 @@ export const roundConnectorProducts: Product[] = [
     subcategory: "Round Connectors",
     description: "Fan motor for Zen, Maruti Car Type II, Esteem 3 pole male round connector with 5mm deluxe wire.",
     partNumber: "SH0600301M",
+    image: "/products/round-connectors/round-holder/SH0600301M.jpg",
     featured: true,
     specifications: {
       "Poles": "3 Pole",
@@ -158,6 +165,7 @@ export const roundConnectorProducts: Product[] = [
     subcategory: "Round Connectors",
     description: "Injector for Maruti Van 3 pole female round connector with 4mm & 5mm deluxe wire.",
     partNumber: "SH0600302",
+    image: "/products/round-connectors/round-holder/SH0600302.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Female",
@@ -178,6 +186,7 @@ export const roundConnectorProducts: Product[] = [
     subcategory: "Round Connectors",
     description: "Fan motor for Zen, Maruti Car Type II, Esteem 4 pole female round connector with 4mm deluxe wire.",
     partNumber: "SH0600401F",
+    image: "/products/round-connectors/round-holder/SH0600401F.jpg",
     featured: true,
     specifications: {
       "Poles": "4 Pole",
@@ -199,6 +208,7 @@ export const roundConnectorProducts: Product[] = [
     subcategory: "Round Connectors",
     description: "Fan motor for Zen, Maruti Car Type II, Esteem 4 pole male round connector with 4mm deluxe wire.",
     partNumber: "SH0600401M",
+    image: "/products/round-connectors/round-holder/SH0600401M.jpg",
     featured: true,
     specifications: {
       "Poles": "4 Pole",

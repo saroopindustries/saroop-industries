@@ -60,7 +60,14 @@ export default function ProductDetailView({
             >
               {/* Handle both images array and single image */}
               {(() => {
-                const imageList = product.images || (product.image ? [product.image] : []);
+                let imageList = product.images || (product.image ? [product.image] : []);
+                
+                // If no images on main product, check first variant
+                if (imageList.length === 0 && product.variants && product.variants.length > 0) {
+                  const firstVariant = product.variants[0];
+                  imageList = firstVariant.images || [];
+                }
+                
                 return imageList.length > 0 ? (
                   <Swiper
                     modules={[SwiperPagination, Navigation]}

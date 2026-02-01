@@ -20,6 +20,7 @@ export const brassTerminalProducts: Product[] = [
       {
         id: "la103-small",
         code: "SWT001003S",
+        images: ["/products/brass-terminals/ring-series/SWT001003S.jpg"],
         name: "Small Hole (3.20mm ID)",
         specifications: {
           "OD": "7.00mm",
@@ -32,6 +33,7 @@ export const brassTerminalProducts: Product[] = [
       {
         id: "la103-medium",
         code: "SWT001003M",
+        images: ["/products/brass-terminals/ring-series/SWT001003M.jpg"],
         name: "Medium Hole (3.70mm ID)",
         specifications: {
           "OD": "7.00mm",
@@ -44,6 +46,7 @@ export const brassTerminalProducts: Product[] = [
       {
         id: "la103-big",
         code: "SWT001003B",
+        images: ["/products/brass-terminals/ring-series/SWT001003B.jpg"],
         name: "Big Hole (4.20mm ID)",
         specifications: {
           "OD": "7.00mm",

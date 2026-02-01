@@ -14,6 +14,7 @@ export const specialHolderNewModelProducts: Product[] = [
     subcategory: "New Model Holders",
     description: "Ashok Leyland new model 2 pole female special holder with special wire. 9 inch long.",
     partNumber: "SH3100201",
+    image: "/products/universal-holders/universal/SH3100201.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -33,6 +34,7 @@ export const specialHolderNewModelProducts: Product[] = [
     subcategory: "New Model Holders",
     description: "Ashok Leyland new model 3 pole female special holder with special wire. 9 inch long.",
     partNumber: "SH3100301",
+    image: "/products/universal-holders/universal/SH3100301.jpg",
     specifications: {
       "Poles": "3 Pole",
       "Gender": "Female",
@@ -52,6 +54,7 @@ export const specialHolderNewModelProducts: Product[] = [
     subcategory: "Combination Set Holders",
     description: "Tata combination set 4 pole female special holder with special wire. 9 inch long.",
     partNumber: "SH3100401",
+    image: "/products/universal-holders/universal/SH3100401.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Female",
@@ -71,6 +74,7 @@ export const specialHolderNewModelProducts: Product[] = [
     subcategory: "Combination Set Holders",
     description: "Tata combination set 6 pole female special holder with special wire. 9 inch long.",
     partNumber: "SH3100601",
+    image: "/products/universal-holders/universal/SH3100601.jpg",
     specifications: {
       "Poles": "6 Pole",
       "Gender": "Female",
@@ -90,6 +94,7 @@ export const specialHolderNewModelProducts: Product[] = [
     subcategory: "New Model Holders",
     description: "Tata new model 8 pole female special holder with special wire. 9 inch long.",
     partNumber: "SH3100801",
+    image: "/products/universal-holders/universal/SH3100801.jpg",
     featured: true,
     specifications: {
       "Poles": "8 Pole",
@@ -110,6 +115,7 @@ export const specialHolderNewModelProducts: Product[] = [
     subcategory: "New Model Holders",
     description: "Tata new model 10 pole female special holder with 4mm deluxe wire. 9 inch long.",
     partNumber: "SH3101001",
+    image: "/products/universal-holders/universal/SH3101001.jpg",
     specifications: {
       "Poles": "10 Pole",
       "Gender": "Female",
@@ -129,6 +135,7 @@ export const specialHolderNewModelProducts: Product[] = [
     subcategory: "New Model Holders",
     description: "Ashok Leyland new model 12 pole female special holder with 4mm deluxe wire. 9 inch long.",
     partNumber: "SH3101201",
+    image: "/products/universal-holders/universal/SH3101201.jpg",
     featured: true,
     specifications: {
       "Poles": "12 Pole",
@@ -149,6 +156,7 @@ export const specialHolderNewModelProducts: Product[] = [
     subcategory: "New Model Holders",
     description: "Ashok Leyland new model 14 pole female special holder with 4mm deluxe wire. 9 inch long.",
     partNumber: "SH3101401",
+    image: "/products/universal-holders/universal/SH3101401.jpg",
     specifications: {
       "Poles": "14 Pole",
       "Gender": "Female",
@@ -168,6 +176,7 @@ export const specialHolderNewModelProducts: Product[] = [
     subcategory: "New Model Holders",
     description: "Ashok Leyland new model 16 pole female special holder with 4mm deluxe wire. 9 inch long.",
     partNumber: "SH3101601",
+    image: "/products/universal-holders/universal/SH3101601.jpg",
     specifications: {
       "Poles": "16 Pole",
       "Gender": "Female",
@@ -187,6 +196,7 @@ export const specialHolderNewModelProducts: Product[] = [
     subcategory: "New Model Holders",
     description: "Ashok Leyland new model 18 pole female special holder with 4mm deluxe wire. 9 inch long.",
     partNumber: "SH3101801",
+    image: "/products/universal-holders/universal/SH3101801.jpg",
     specifications: {
       "Poles": "18 Pole",
       "Gender": "Female",
@@ -206,6 +216,7 @@ export const specialHolderNewModelProducts: Product[] = [
     subcategory: "New Model Holders",
     description: "Ashok Leyland new model 20 pole female special holder with 4mm deluxe wire. 9 inch long.",
     partNumber: "SH3102001",
+    image: "/products/universal-holders/universal/SH3102001.jpg",
     specifications: {
       "Poles": "20 Pole",
       "Gender": "Female",
@@ -225,6 +236,7 @@ export const specialHolderNewModelProducts: Product[] = [
     subcategory: "New Model Holders",
     description: "Ashok Leyland new model 22 pole female special holder with 4mm deluxe wire. 9 inch long.",
     partNumber: "SH3102201",
+    image: "/products/universal-holders/universal/SH3102201.jpg",
     specifications: {
       "Poles": "22 Pole",
       "Gender": "Female",
@@ -244,6 +256,7 @@ export const specialHolderNewModelProducts: Product[] = [
     subcategory: "New Model Holders",
     description: "Ashok Leyland new model 24 pole female special holder with 4mm deluxe wire. 9 inch long.",
     partNumber: "SH3102401",
+    image: "/products/universal-holders/universal/SH3102401.jpg",
     specifications: {
       "Poles": "24 Pole",
       "Gender": "Female",
@@ -267,6 +280,7 @@ export const relayBaseHeadLampAdditionalProducts: Product[] = [
     subcategory: "High Pole Relay Base",
     description: "Tata ACE CNG 5+4 pole female relay base connector with 4mm & 6mm deluxe wire.",
     partNumber: "SH0200951",
+    image: "/products/flasher-relay-base/relay-holder/SH0200951.jpg",
     featured: true,
     specifications: {
       "Poles": "5+4 Pole",
@@ -287,6 +301,7 @@ export const relayBaseHeadLampAdditionalProducts: Product[] = [
     subcategory: "High Pole Relay Base",
     description: "Universal 10 pole female relay base connector with 5mm deluxe wire.",
     partNumber: "SH0201001",
+    image: "/products/flasher-relay-base/relay-holder/SH0201001.jpg",
     specifications: {
       "Poles": "10 Pole",
       "Gender": "Female",
@@ -305,6 +320,7 @@ export const relayBaseHeadLampAdditionalProducts: Product[] = [
     subcategory: "High Pole Relay Base",
     description: "Universal 10 pole female relay base connector with 5mm deluxe wire.",
     partNumber: "SH0201005",
+    image: "/products/flasher-relay-base/relay-holder/SH0201005.jpg",
     specifications: {
       "Poles": "10 Pole",
       "Gender": "Female",
@@ -323,6 +339,7 @@ export const relayBaseHeadLampAdditionalProducts: Product[] = [
     subcategory: "High Pole Relay Base",
     description: "Tata fuse 12 pole female base relay with 4mm & 5mm deluxe wire.",
     partNumber: "SH0201271",
+    image: "/products/flasher-relay-base/relay-holder/SH0201271.jpg",
     specifications: {
       "Poles": "12 Pole",
       "Gender": "Female",
@@ -342,6 +359,7 @@ export const relayBaseHeadLampAdditionalProducts: Product[] = [
     subcategory: "High Pole Relay Base",
     description: "Ashok Leyland 15 pole female relay base connector with 4mm & 5mm deluxe wire.",
     partNumber: "SH0201581",
+    image: "/products/flasher-relay-base/relay-holder/SH0201581.jpg",
     specifications: {
       "Poles": "15 Pole",
       "Gender": "Female",
@@ -361,6 +379,7 @@ export const relayBaseHeadLampAdditionalProducts: Product[] = [
     subcategory: "High Pole Relay Base",
     description: "Universal tractor/3 wheelers GC-1000 8 pole female relay base with 4mm deluxe wire.",
     partNumber: "SH0200801",
+    image: "/products/flasher-relay-base/relay-holder/SH0200801.jpg",
     specifications: {
       "Poles": "8 Pole",
       "Gender": "Female",
@@ -380,6 +399,7 @@ export const relayBaseHeadLampAdditionalProducts: Product[] = [
     subcategory: "High Pole Relay Base",
     description: "Universal relay base for Sumo/Tata 9 pole female connector with 4mm & 5mm deluxe wire.",
     partNumber: "SH0200901",
+    image: "/products/flasher-relay-base/relay-holder/SH0200901.jpg",
     specifications: {
       "Poles": "9 Pole",
       "Gender": "Female",
@@ -399,6 +419,7 @@ export const relayBaseHeadLampAdditionalProducts: Product[] = [
     subcategory: "5 Pole Flasher/Relay",
     description: "Universal relay for Tata 5 pole female connector with 5mm & 6mm deluxe wire.",
     partNumber: "SH0200526",
+    image: "/products/flasher-relay-base/relay-holder/SH0200526.jpg",
     specifications: {
       "Poles": "5 Pole",
       "Gender": "Female",

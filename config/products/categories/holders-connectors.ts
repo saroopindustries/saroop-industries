@@ -278,6 +278,7 @@ export const jointerHolderProducts: Product[] = [
     subcategory: "Jointer Holders",
     description: "Joint holder with special wire for automotive applications.",
     partNumber: "SH2200201",
+    image: "/products/jointer-holders-relay/jointer-holders/SH2200201.jpg",
     specifications: {
       "Wire Type": "Special",
       "Length": "9 inch",
@@ -293,6 +294,7 @@ export const jointerHolderProducts: Product[] = [
     subcategory: "Jointer Holders",
     description: "Joint holder with 4mm deluxe wire.",
     partNumber: "SH2200211",
+    image: "/products/jointer-holders-relay/jointer-holders/SH2200211.jpg",
     specifications: {
       "Wire Type": "4mm Deluxe",
       "Length": "9 inch",
@@ -308,6 +310,7 @@ export const jointerHolderProducts: Product[] = [
     subcategory: "Jointer Holders",
     description: "Joint holder for H8 and H11 bulb connections with 5mm deluxe wire.",
     partNumber: "SH2200551",
+    image: "/products/jointer-holders-relay/jointer-holders/SH2200551.jpg",
     specifications: {
       "Wire Type": "5mm Deluxe",
       "Compatible": "H8, H11 Bulbs",

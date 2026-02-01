@@ -14,6 +14,7 @@ export const jointerHolderSpecialProducts: Product[] = [
     subcategory: "Joint Holders",
     description: "Ashok Leyland joint holder with special wire. 9 inch long.",
     partNumber: "SH2200201",
+    image: "/products/jointer-holders-relay/jointer-holders/SH2200201.jpg",
     featured: true,
     specifications: {
       "Type": "Joint Holder",
@@ -33,6 +34,7 @@ export const jointerHolderSpecialProducts: Product[] = [
     subcategory: "Joint Holders",
     description: "Universal joint holder with special wire.",
     partNumber: "SH2200211",
+    image: "/products/jointer-holders-relay/jointer-holders/SH2200211.jpg",
     featured: true,
     specifications: {
       "Type": "Joint Holder",
@@ -51,6 +53,7 @@ export const jointerHolderSpecialProducts: Product[] = [
     subcategory: "Joint Holders",
     description: "Universal joint holder with special & 4mm deluxe wire.",
     partNumber: "SH2200221",
+    image: "/products/jointer-holders-relay/jointer-holders/SH2200221.jpg",
     specifications: {
       "Type": "Joint Holder",
       "Wire Type": "Special & 4mm Deluxe",
@@ -68,6 +71,7 @@ export const jointerHolderSpecialProducts: Product[] = [
     subcategory: "Joint Holders",
     description: "Joint holder with 4mm deluxe wire.",
     partNumber: "SH2200231",
+    image: "/products/jointer-holders-relay/jointer-holders/SH2200231.jpg",
     specifications: {
       "Type": "Joint Holder",
       "Wire Type": "4mm Deluxe",
@@ -85,6 +89,7 @@ export const jointerHolderSpecialProducts: Product[] = [
     subcategory: "Joint Holders",
     description: "Joint holder with 4mm deluxe wire.",
     partNumber: "SH2200241",
+    image: "/products/jointer-holders-relay/jointer-holders/SH2200241.jpg",
     specifications: {
       "Type": "Joint Holder",
       "Wire Type": "4mm Deluxe",
@@ -102,6 +107,7 @@ export const jointerHolderSpecialProducts: Product[] = [
     subcategory: "Joint Holders",
     description: "Joint holder with 4mm deluxe wire.",
     partNumber: "SH2200551",
+    image: "/products/jointer-holders-relay/jointer-holders/SH2200551.jpg",
     specifications: {
       "Type": "Joint Holder",
       "Wire Type": "4mm Deluxe",
@@ -119,6 +125,7 @@ export const jointerHolderSpecialProducts: Product[] = [
     subcategory: "Joint Holders",
     description: "Joint holder with 5mm deluxe wire.",
     partNumber: "SH2200552",
+    image: "/products/jointer-holders-relay/jointer-holders/SH2200552.jpg",
     specifications: {
       "Type": "Joint Holder",
       "Wire Type": "5mm Deluxe",
@@ -136,6 +143,7 @@ export const jointerHolderSpecialProducts: Product[] = [
     subcategory: "Joint Holders",
     description: "Joint holder with ECM wire.",
     partNumber: "SH2200601",
+    image: "/products/jointer-holders-relay/jointer-holders/SH2200601.jpg",
     specifications: {
       "Type": "Joint Holder",
       "Wire Type": "ECM Wire",
@@ -153,6 +161,7 @@ export const jointerHolderSpecialProducts: Product[] = [
     subcategory: "Joint Holders",
     description: "H8 & H11 joint holder with 5mm deluxe wire.",
     partNumber: "SH2200651",
+    image: "/products/jointer-holders-relay/jointer-holders/SH2200651.jpg",
     featured: true,
     specifications: {
       "Type": "Joint Holder",
@@ -172,6 +181,7 @@ export const jointerHolderSpecialProducts: Product[] = [
     subcategory: "Joint Holders",
     description: "Joint holder with 4mm deluxe wire.",
     partNumber: "SH2200653",
+    image: "/products/jointer-holders-relay/jointer-holders/SH2200653.jpg",
     specifications: {
       "Type": "Joint Holder",
       "Wire Type": "4mm Deluxe",
@@ -193,6 +203,7 @@ export const relay4PinProducts: Product[] = [
     subcategory: "4 Pin Relay",
     description: "12V 4 pin Denso mini relay with relay base. 4mm & 5mm deluxe wire.",
     partNumber: "SRB041201",
+    image: "/products/jointer-holders-relay/relay-with-base/SRB041201.jpg",
     featured: true,
     specifications: {
       "Voltage": "12V",
@@ -214,6 +225,7 @@ export const relay4PinProducts: Product[] = [
     subcategory: "4 Pin Relay",
     description: "12V 4 pin mini relay with relay base. 4mm & 5mm deluxe wire.",
     partNumber: "SRB041202",
+    image: "/products/jointer-holders-relay/relay-with-base/SRB041202.jpg",
     featured: true,
     specifications: {
       "Voltage": "12V",
@@ -235,6 +247,7 @@ export const relay4PinProducts: Product[] = [
     subcategory: "4 Pin Relay",
     description: "12V 4 pin transparent relay with relay base. 5mm & 6mm deluxe wire.",
     partNumber: "SRB041204",
+    image: "/products/jointer-holders-relay/relay-with-base/SRB041204.jpg",
     featured: true,
     specifications: {
       "Voltage": "12V",
@@ -256,6 +269,7 @@ export const relay4PinProducts: Product[] = [
     subcategory: "4 Pin Relay",
     description: "12V 4 pin starting relay with relay base. 5mm & 7mm deluxe wire.",
     partNumber: "SRB041207",
+    image: "/products/jointer-holders-relay/relay-with-base/SRB041207.jpg",
     specifications: {
       "Voltage": "12V",
       "Pins": "4 Pin",
@@ -276,6 +290,7 @@ export const relay4PinProducts: Product[] = [
     subcategory: "4 Pin Relay",
     description: "12V 4 pin Denso mini relay with relay base. 4mm & 5mm deluxe wire.",
     partNumber: "SRB041208",
+    image: "/products/jointer-holders-relay/relay-with-base/SRB041208.jpg",
     specifications: {
       "Voltage": "12V",
       "Pins": "4 Pin",
@@ -296,6 +311,7 @@ export const relay4PinProducts: Product[] = [
     subcategory: "4 Pin Relay",
     description: "12V 4 pin starting relay with relay base. 4mm & 5mm deluxe wire.",
     partNumber: "SRB041211",
+    image: "/products/jointer-holders-relay/relay-with-base/SRB041211.jpg",
     specifications: {
       "Voltage": "12V",
       "Pins": "4 Pin",
@@ -316,6 +332,7 @@ export const relay4PinProducts: Product[] = [
     subcategory: "4 Pin Relay",
     description: "12V 4 pin starting relay with relay base. 6mm & 8mm deluxe wire.",
     partNumber: "SRB041214",
+    image: "/products/jointer-holders-relay/relay-with-base/SRB041214.jpg",
     specifications: {
       "Voltage": "12V",
       "Pins": "4 Pin",
@@ -336,6 +353,7 @@ export const relay4PinProducts: Product[] = [
     subcategory: "4 Pin Relay",
     description: "12V 4 pin starting relay with relay base. 4mm deluxe wire.",
     partNumber: "SRB041216",
+    image: "/products/jointer-holders-relay/relay-with-base/SRB041216.jpg",
     specifications: {
       "Voltage": "12V",
       "Pins": "4 Pin",
@@ -360,6 +378,7 @@ export const relay5PinProducts: Product[] = [
     subcategory: "5 Pin Relay",
     description: "12V 5 pin mini relay with relay base. 4mm & 5mm deluxe wire.",
     partNumber: "SRB051201",
+    image: "/products/jointer-holders-relay/relay-with-base/SRB051201.jpg",
     featured: true,
     specifications: {
       "Voltage": "12V",
@@ -381,6 +400,7 @@ export const relay5PinProducts: Product[] = [
     subcategory: "5 Pin Relay",
     description: "12V 5 pin starting relay with relay base. 4mm & 5mm deluxe wire.",
     partNumber: "SRB051204",
+    image: "/products/jointer-holders-relay/relay-with-base/SRB051204.jpg",
     featured: true,
     specifications: {
       "Voltage": "12V",
@@ -402,6 +422,7 @@ export const relay5PinProducts: Product[] = [
     subcategory: "5 Pin Relay",
     description: "12V 5 pin starting relay with relay base. 5mm & 6mm deluxe wire.",
     partNumber: "SRB051207",
+    image: "/products/jointer-holders-relay/relay-with-base/SRB051207.jpg",
     specifications: {
       "Voltage": "12V",
       "Pins": "5 Pin",
@@ -422,6 +443,7 @@ export const relay5PinProducts: Product[] = [
     subcategory: "5 Pin Relay",
     description: "12V 5 pin mini relay with relay base. 4mm & 5mm deluxe wire.",
     partNumber: "SRB051209",
+    image: "/products/jointer-holders-relay/relay-with-base/SRB051209.jpg",
     specifications: {
       "Voltage": "12V",
       "Pins": "5 Pin",
@@ -442,6 +464,7 @@ export const relay5PinProducts: Product[] = [
     subcategory: "5 Pin Relay",
     description: "12V 5 pin starting relay with relay base. 4mm & 5mm deluxe wire.",
     partNumber: "SRB051211",
+    image: "/products/jointer-holders-relay/relay-with-base/SRB051211.jpg",
     specifications: {
       "Voltage": "12V",
       "Pins": "5 Pin",
@@ -462,6 +485,7 @@ export const relay5PinProducts: Product[] = [
     subcategory: "5 Pin Relay",
     description: "12V 5 pin small starting relay with relay base. 4mm & 5mm deluxe wire.",
     partNumber: "SRB051213",
+    image: "/products/jointer-holders-relay/relay-with-base/SRB051213.jpg",
     specifications: {
       "Voltage": "12V",
       "Pins": "5 Pin",
@@ -482,6 +506,7 @@ export const relay5PinProducts: Product[] = [
     subcategory: "5 Pin Relay",
     description: "12V 5 pin starting relay with relay base. 5mm & 6mm deluxe wire.",
     partNumber: "SRB051216",
+    image: "/products/jointer-holders-relay/relay-with-base/SRB051216.jpg",
     specifications: {
       "Voltage": "12V",
       "Pins": "5 Pin",
@@ -502,6 +527,7 @@ export const relay5PinProducts: Product[] = [
     subcategory: "5 Pin Relay",
     description: "12V 5 pin starting relay with relay base. 4mm & 5mm deluxe wire.",
     partNumber: "SRB051217",
+    image: "/products/jointer-holders-relay/relay-with-base/SRB051217.jpg",
     specifications: {
       "Voltage": "12V",
       "Pins": "5 Pin",
@@ -522,6 +548,7 @@ export const relay5PinProducts: Product[] = [
     subcategory: "5 Pin Relay",
     description: "12V 5 pin small starting relay with relay base. 4mm & 5mm deluxe wire.",
     partNumber: "SRB051219",
+    image: "/products/jointer-holders-relay/relay-with-base/SRB051219.jpg",
     specifications: {
       "Voltage": "12V",
       "Pins": "5 Pin",
@@ -542,6 +569,7 @@ export const relay5PinProducts: Product[] = [
     subcategory: "5 Pin Relay",
     description: "12V 5 pin big starting relay with relay base. 5mm & 6mm deluxe wire.",
     partNumber: "SRB051223",
+    image: "/products/jointer-holders-relay/relay-with-base/SRB051223.jpg",
     specifications: {
       "Voltage": "12V",
       "Pins": "5 Pin",
@@ -566,6 +594,7 @@ export const relay24VProducts: Product[] = [
     subcategory: "5 Pin Relay",
     description: "24V 5 pin mini relay with relay base. 4mm & 5mm deluxe wire. For heavy commercial vehicles.",
     partNumber: "SRB051213",
+    image: "/products/jointer-holders-relay/relay-with-base/SRB051213.jpg",
     featured: true,
     specifications: {
       "Voltage": "24V",

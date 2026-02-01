@@ -14,6 +14,7 @@ export const rubberGrommetProducts: Product[] = [
     subcategory: "Rubber Grommet",
     description: "Rubber grommet for wire passage and protection. Size: 25.60mm x 19.30mm.",
     partNumber: "SI0100001",
+    image: "/products/cable-management/rubber-grommet/SI0100001.jpg",
     specifications: {
       "Outer Dimension": "25.60mm",
       "Inner Dimension": "19.30mm",
@@ -31,6 +32,7 @@ export const rubberGrommetProducts: Product[] = [
     subcategory: "Rubber Grommet",
     description: "Rubber grommet for wire passage. Size: 12.60mm x 12.90mm.",
     partNumber: "SI0100002",
+    image: "/products/cable-management/rubber-grommet/SI0100002.jpg",
     specifications: {
       "Outer Dimension": "12.60mm",
       "Inner Dimension": "12.90mm",
@@ -48,6 +50,7 @@ export const rubberGrommetProducts: Product[] = [
     subcategory: "Rubber Grommet",
     description: "Rubber grommet for wire passage. Size: 21.20mm x 12.60mm.",
     partNumber: "SI0100003",
+    image: "/products/cable-management/rubber-grommet/SI0100003.jpg",
     specifications: {
       "Outer Dimension": "21.20mm",
       "Inner Dimension": "12.60mm",
@@ -65,6 +68,7 @@ export const rubberGrommetProducts: Product[] = [
     subcategory: "Rubber Grommet",
     description: "Large rubber grommet for bulk wire passage.",
     partNumber: "SI0100004",
+    image: "/products/cable-management/rubber-grommet/SI0100004.jpg",
     featured: true,
     specifications: {
       "Size": "Large",
@@ -82,6 +86,7 @@ export const rubberGrommetProducts: Product[] = [
     subcategory: "Rubber Grommet",
     description: "Large rubber grommet. Size: 70mm x 23mm.",
     partNumber: "SI0100011",
+    image: "/products/cable-management/rubber-grommet/SI0100011.jpg",
     specifications: {
       "Outer Dimension": "70mm",
       "Inner Dimension": "23mm",
@@ -99,6 +104,7 @@ export const rubberGrommetProducts: Product[] = [
     subcategory: "Rubber Grommet",
     description: "Rubber grommet. Size: 42mm x 37mm.",
     partNumber: "SI0100012",
+    image: "/products/cable-management/rubber-grommet/SI0100012.jpg",
     specifications: {
       "Outer Dimension": "42mm",
       "Inner Dimension": "37mm",
@@ -116,6 +122,7 @@ export const rubberGrommetProducts: Product[] = [
     subcategory: "Rubber Grommet",
     description: "Large rubber grommet. Size: 54mm x 59mm.",
     partNumber: "SI0100013",
+    image: "/products/cable-management/rubber-grommet/SI0100013.jpg",
     specifications: {
       "Outer Dimension": "54mm",
       "Inner Dimension": "59mm",
@@ -133,6 +140,7 @@ export const rubberGrommetProducts: Product[] = [
     subcategory: "Rubber Grommet",
     description: "Large rubber grommet. Size: 70mm x 37mm.",
     partNumber: "SI0100014",
+    image: "/products/cable-management/rubber-grommet/SI0100014.jpg",
     specifications: {
       "Outer Dimension": "70mm",
       "Inner Dimension": "37mm",
@@ -150,6 +158,7 @@ export const rubberGrommetProducts: Product[] = [
     subcategory: "Rubber Grommet",
     description: "Rubber grommet. Size: 42mm.",
     partNumber: "SI0100015",
+    image: "/products/cable-management/rubber-grommet/SI0100015.jpg",
     specifications: {
       "Dimension": "42mm",
       "Material": "Rubber",
@@ -166,6 +175,7 @@ export const rubberGrommetProducts: Product[] = [
     subcategory: "Rubber Grommet",
     description: "Rubber grommet. Size: 37mm.",
     partNumber: "SI0100016",
+    image: "/products/cable-management/rubber-grommet/SI0100016.jpg",
     specifications: {
       "Dimension": "37mm",
       "Material": "Rubber",
@@ -203,6 +213,7 @@ export const wireSealProducts: Product[] = [
     subcategory: "Wire Seal",
     description: "Wire seal for waterproof wire passage in connectors. Type 1.",
     partNumber: "SI0002001",
+    image: "/products/cable-management/seal/SI0002001.jpg",
     featured: true,
     specifications: {
       "Type": "Wire Seal",
@@ -220,6 +231,7 @@ export const wireSealProducts: Product[] = [
     subcategory: "Wire Seal",
     description: "Wire seal for waterproof wire passage. Type 2.",
     partNumber: "SI0002002",
+    image: "/products/cable-management/seal/SI0002002.jpg",
     specifications: {
       "Type": "Wire Seal",
       "Application": "Waterproof Connectors",
@@ -236,6 +248,7 @@ export const wireSealProducts: Product[] = [
     subcategory: "Dummy Seal",
     description: "Dummy seal for unused connector cavities. Prevents water and dust ingress.",
     partNumber: "SI0002003",
+    image: "/products/cable-management/seal/SI0002003.jpg",
     specifications: {
       "Type": "Dummy Seal",
       "Application": "Unused Cavities",
@@ -252,6 +265,7 @@ export const wireSealProducts: Product[] = [
     subcategory: "Wire Seal",
     description: "Wire seal for waterproof wire passage. Type 4.",
     partNumber: "SI0002004",
+    image: "/products/cable-management/seal/SI0002004.jpg",
     specifications: {
       "Type": "Wire Seal",
       "Application": "Waterproof Connectors",
@@ -268,6 +282,7 @@ export const wireSealProducts: Product[] = [
     subcategory: "Wire Seal",
     description: "Wire seal for waterproof wire passage. Type 5.",
     partNumber: "SI0002005",
+    image: "/products/cable-management/seal/SI0002005.jpg",
     specifications: {
       "Type": "Wire Seal",
       "Application": "Waterproof Connectors",
@@ -284,6 +299,7 @@ export const wireSealProducts: Product[] = [
     subcategory: "Wire Seal",
     description: "Wire seal for waterproof wire passage. Type 6.",
     partNumber: "SI0002006",
+    image: "/products/cable-management/seal/SI0002006.jpg",
     specifications: {
       "Type": "Wire Seal",
       "Application": "Waterproof Connectors",
@@ -300,6 +316,7 @@ export const wireSealProducts: Product[] = [
     subcategory: "Wire Seal",
     description: "Wire seal for waterproof wire passage. Type 7.",
     partNumber: "SI0002007",
+    image: "/products/cable-management/seal/SI0002007.jpg",
     specifications: {
       "Type": "Wire Seal",
       "Application": "Waterproof Connectors",
@@ -316,6 +333,7 @@ export const wireSealProducts: Product[] = [
     subcategory: "Wire Seal",
     description: "Wire seal for waterproof wire passage. Type 8.",
     partNumber: "SI0002008",
+    image: "/products/cable-management/seal/SI0002008.jpg",
     specifications: {
       "Type": "Wire Seal",
       "Application": "Waterproof Connectors",
@@ -332,6 +350,7 @@ export const wireSealProducts: Product[] = [
     subcategory: "Wire Seal",
     description: "Wire seal for waterproof wire passage. Type 9.",
     partNumber: "SI0002009",
+    image: "/products/cable-management/seal/SI0002009.jpg",
     specifications: {
       "Type": "Wire Seal",
       "Application": "Waterproof Connectors",
@@ -348,6 +367,7 @@ export const wireSealProducts: Product[] = [
     subcategory: "Dummy Seal",
     description: "Dummy seal for unused connector cavities.",
     partNumber: "SI0002101",
+    image: "/products/cable-management/seal/SI0002101.jpg",
     specifications: {
       "Type": "Dummy Seal",
       "Application": "Unused Cavities",
@@ -364,6 +384,7 @@ export const wireSealProducts: Product[] = [
     subcategory: "Dummy Seal",
     description: "Dummy seal for unused connector cavities.",
     partNumber: "SI0002102",
+    image: "/products/cable-management/seal/SI0002102.jpg",
     specifications: {
       "Type": "Dummy Seal",
       "Application": "Unused Cavities",
@@ -380,6 +401,7 @@ export const wireSealProducts: Product[] = [
     subcategory: "Dummy Plug",
     description: "Dummy plug for sealing unused connector ports.",
     partNumber: "SI0002111",
+    image: "/products/cable-management/seal/SI0002111.jpg",
     specifications: {
       "Type": "Dummy Plug",
       "Application": "Port Sealing",
@@ -396,6 +418,7 @@ export const wireSealProducts: Product[] = [
     subcategory: "Dummy Plug",
     description: "Dummy plug for sealing unused connector ports.",
     partNumber: "SI0002112",
+    image: "/products/cable-management/seal/SI0002112.jpg",
     specifications: {
       "Type": "Dummy Plug",
       "Application": "Port Sealing",

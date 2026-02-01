@@ -14,6 +14,7 @@ export const flasherRelayBase3_4PoleProducts: Product[] = [
     subcategory: "3 & 4 Pole Flasher/Relay",
     description: "Universal flasher for Maruti Car/Van/Swift 3 pole female connector with 4mm deluxe wire.",
     partNumber: "SH0200301",
+    image: "/products/flasher-relay-base/flasher-holder/SH0200301.jpg",
     featured: true,
     specifications: {
       "Poles": "3 Pole",
@@ -34,6 +35,7 @@ export const flasherRelayBase3_4PoleProducts: Product[] = [
     subcategory: "3 & 4 Pole Flasher/Relay",
     description: "Universal relay 4 pole female connector with 4mm & 5mm deluxe wire. 12V.",
     partNumber: "SH0200430",
+    image: "/products/flasher-relay-base/relay-holder/SH0200430.jpg",
     featured: true,
     specifications: {
       "Poles": "4 Pole",
@@ -54,6 +56,7 @@ export const flasherRelayBase3_4PoleProducts: Product[] = [
     subcategory: "3 & 4 Pole Flasher/Relay",
     description: "Universal relay 4 pole female connector with special & 5mm deluxe wire.",
     partNumber: "SH0200432",
+    image: "/products/flasher-relay-base/relay-holder/SH0200432.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Female",
@@ -72,6 +75,7 @@ export const flasherRelayBase3_4PoleProducts: Product[] = [
     subcategory: "3 & 4 Pole Flasher/Relay",
     description: "Universal relay 4 pole female connector with 5mm & 7mm deluxe wire. 12V.",
     partNumber: "SH0200428",
+    image: "/products/flasher-relay-base/relay-holder/SH0200428.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Female",
@@ -91,6 +95,7 @@ export const flasherRelayBase3_4PoleProducts: Product[] = [
     subcategory: "3 & 4 Pole Flasher/Relay",
     description: "Universal relay 4 pole female connector with 6mm & 8mm deluxe wire. 24V for commercial vehicles.",
     partNumber: "SH0200516",
+    image: "/products/flasher-relay-base/relay-holder/SH0200516.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Female",
@@ -110,6 +115,7 @@ export const flasherRelayBase3_4PoleProducts: Product[] = [
     subcategory: "3 & 4 Pole Flasher/Relay",
     description: "Universal micro relay 4 pole female connector with 4mm & 5mm deluxe wire.",
     partNumber: "SH0200502",
+    image: "/products/flasher-relay-base/relay-holder/SH0200502.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Female",
@@ -129,6 +135,7 @@ export const flasherRelayBase3_4PoleProducts: Product[] = [
     subcategory: "3 & 4 Pole Flasher/Relay",
     description: "Universal relay 4 pole female connector with 4mm & 5mm deluxe wire. 24V.",
     partNumber: "SH0200520",
+    image: "/products/flasher-relay-base/relay-holder/SH0200520.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Female",
@@ -148,6 +155,7 @@ export const flasherRelayBase3_4PoleProducts: Product[] = [
     subcategory: "3 & 4 Pole Flasher/Relay",
     description: "Universal AC relay 4 pole female connector with 4mm & 5mm deluxe wire. 12V.",
     partNumber: "SH0200504",
+    image: "/products/flasher-relay-base/relay-holder/SH0200504.jpg",
     specifications: {
       "Poles": "4 Pole",
       "Gender": "Female",
@@ -172,6 +180,7 @@ export const flasherRelayBase5PoleProducts: Product[] = [
     subcategory: "5 Pole Flasher/Relay",
     description: "Universal AC relay 5 pole female connector with 4mm & 5mm deluxe wire.",
     partNumber: "SH0200501",
+    image: "/products/flasher-relay-base/relay-holder/SH0200501.jpg",
     featured: true,
     specifications: {
       "Poles": "5 Pole",
@@ -192,6 +201,7 @@ export const flasherRelayBase5PoleProducts: Product[] = [
     subcategory: "5 Pole Flasher/Relay",
     description: "Mahindra Maximo 5 pole female relay connector with 3mm & 4mm deluxe wire. 12V.",
     partNumber: "SH0200511",
+    image: "/products/flasher-relay-base/relay-holder/SH0200511.jpg",
     specifications: {
       "Poles": "5 Pole",
       "Gender": "Female",
@@ -212,6 +222,7 @@ export const flasherRelayBase5PoleProducts: Product[] = [
     subcategory: "5 Pole Flasher/Relay",
     description: "Universal relay 5 pole female connector with 4mm & 5mm deluxe wire. 12V.",
     partNumber: "SH0200515",
+    image: "/products/flasher-relay-base/relay-holder/SH0200515.jpg",
     featured: true,
     specifications: {
       "Poles": "5 Pole",
@@ -232,6 +243,7 @@ export const flasherRelayBase5PoleProducts: Product[] = [
     subcategory: "5 Pole Flasher/Relay",
     description: "Universal relay for Tata 5 pole female connector with 4mm & 5mm deluxe wire.",
     partNumber: "SH0200525",
+    image: "/products/flasher-relay-base/relay-holder/SH0200525.jpg",
     specifications: {
       "Poles": "5 Pole",
       "Gender": "Female",
@@ -251,6 +263,7 @@ export const flasherRelayBase5PoleProducts: Product[] = [
     subcategory: "5 Pole Flasher/Relay",
     description: "Universal relay 5 pole female connector with 4mm & 5mm deluxe wire.",
     partNumber: "SH0200520",
+    image: "/products/flasher-relay-base/relay-holder/SH0200520.jpg",
     specifications: {
       "Poles": "5 Pole",
       "Gender": "Female",
@@ -269,6 +282,7 @@ export const flasherRelayBase5PoleProducts: Product[] = [
     subcategory: "5 Pole Flasher/Relay",
     description: "Universal relay 5 pole female connector with 5mm & 6mm deluxe wire. 24V for commercial vehicles.",
     partNumber: "SH0200516",
+    image: "/products/flasher-relay-base/relay-holder/SH0200516.jpg",
     specifications: {
       "Poles": "5 Pole",
       "Gender": "Female",
@@ -288,6 +302,7 @@ export const flasherRelayBase5PoleProducts: Product[] = [
     subcategory: "5 Pole Flasher/Relay",
     description: "Universal micro relay 5 pole female connector with 4mm & 5mm deluxe wire.",
     partNumber: "SH0200504",
+    image: "/products/flasher-relay-base/relay-holder/SH0200504.jpg",
     specifications: {
       "Poles": "5 Pole",
       "Gender": "Female",

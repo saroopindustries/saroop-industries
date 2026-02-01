@@ -85,6 +85,7 @@ export const flasherProducts: Product[] = [
     category: "Flasher",
     description: "Electronic turn signal flasher relay 12V. Compatible with LED and incandescent bulbs.",
     partNumber: "SEF31211",
+    image: "/products/electrical-components/electronic-flasher/SEF31211.jpg",
     featured: true,
     specifications: {
       "Type": "Electronic",
@@ -102,6 +103,7 @@ export const flasherProducts: Product[] = [
     category: "Flasher",
     description: "Electronic turn signal flasher relay 24V for commercial vehicles.",
     partNumber: "SEF32411",
+    image: "/products/electrical-components/electronic-flasher/SEF32411.jpg",
     specifications: {
       "Type": "Electronic",
       "Voltage": "24V",
@@ -118,6 +120,7 @@ export const flasherProducts: Product[] = [
     category: "Flasher",
     description: "Musical flasher with melody feature for turn signal indication 12V.",
     partNumber: "SMF31202",
+    image: "/products/electrical-components/musical-flasher/SMF31202.jpg",
     specifications: {
       "Type": "Musical/Melody",
       "Voltage": "12V",
@@ -134,6 +137,7 @@ export const flasherProducts: Product[] = [
     category: "Flasher",
     description: "Musical flasher with melody feature for turn signal indication 24V.",
     partNumber: "SMF32402",
+    image: "/products/electrical-components/musical-flasher/SMF32402.jpg",
     specifications: {
       "Type": "Musical/Melody",
       "Voltage": "24V",
@@ -172,6 +176,7 @@ export const relayProducts: Product[] = [
     subcategory: "Starting Relay",
     description: "Starter motor relay for vehicle ignition systems. Suitable for 2 & 4 Wheeler.",
     partNumber: "S2WR21201",
+    image: "/products/electrical-components/2wheeler-relay/S2WR21201.jpg",
     specifications: {
       "Type": "Starter Relay",
       "Voltage": "12V",
@@ -219,6 +224,7 @@ export const relayProducts: Product[] = [
     subcategory: "Headlight Relay",
     description: "High-power relay for headlight circuits. Improves light output and protects switch. 6 Pin with wire.",
     partNumber: "SR61201",
+    image: "/products/electrical-components/headlight-relay/SR61201.jpg",
     featured: true,
     specifications: {
       "Type": "Headlight Relay",
@@ -238,6 +244,7 @@ export const relayProducts: Product[] = [
     subcategory: "Headlight Relay",
     description: "High-power relay for headlight circuits in commercial vehicles. 6 Pin with wire.",
     partNumber: "SR62401",
+    image: "/products/electrical-components/headlight-relay/SR62401.jpg",
     specifications: {
       "Type": "Headlight Relay",
       "Voltage": "24V",
@@ -256,6 +263,7 @@ export const relayProducts: Product[] = [
     subcategory: "Horn Relay",
     description: "Horn relay with 3 pin configuration for 12V systems.",
     partNumber: "SR31201",
+    image: "/products/electrical-components/horn-relay/SR31201.jpg",
     specifications: {
       "Type": "Horn Relay",
       "Voltage": "12V",
@@ -273,6 +281,7 @@ export const relayProducts: Product[] = [
     subcategory: "Micro Relay",
     description: "Compact 5 pin micro relay for 12V automotive applications.",
     partNumber: "SR51201",
+    image: "/products/electrical-components/relay/SR51201.jpg",
     specifications: {
       "Type": "Micro Relay",
       "Voltage": "12V",
@@ -289,6 +298,7 @@ export const relayProducts: Product[] = [
     subcategory: "Micro Relay",
     description: "Compact 5 pin micro relay for 24V commercial vehicle applications.",
     partNumber: "SR52401",
+    image: "/products/electrical-components/relay/SR52401.jpg",
     specifications: {
       "Type": "Micro Relay",
       "Voltage": "24V",

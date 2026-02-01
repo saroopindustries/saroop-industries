@@ -132,7 +132,32 @@ export default function ProductPage({ params }: PageProps) {
                   >
                     <Link href={`/products/${product.slug}`} className={styles.featuredCard}>
                       <div className={styles.featuredImage}>
-                        <span className={styles.productIcon}>📦</span>
+                        {(() => {
+                          // Get image from product or first variant
+                          let imageUrl = product.image;
+                          
+                          if (!imageUrl && product.images && product.images.length > 0) {
+                            imageUrl = product.images[0];
+                          }
+                          
+                          if (!imageUrl && product.variants && product.variants.length > 0) {
+                            const firstVariant = product.variants[0];
+                            if (firstVariant.images && firstVariant.images.length > 0) {
+                              imageUrl = firstVariant.images[0];
+                            }
+                          }
+                          
+                          return imageUrl ? (
+                            <img 
+                              src={imageUrl} 
+                              alt={product.name}
+                              className={styles.featuredProductImage}
+                              style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+                            />
+                          ) : (
+                            <span className={styles.productIcon}>📦</span>
+                          );
+                        })()}
                         <span className={styles.featuredTag}>Featured</span>
                       </div>
                       <div className={styles.featuredContent}>
@@ -184,7 +209,14 @@ export default function ProductPage({ params }: PageProps) {
                       <div className={styles.productImageWrapper}>
                         {(() => {
                           // Handle both images array and single image
-                          const imageList = product.images || (product.image ? [product.image] : []);
+                          // Also check variant images if no main product image
+                          let imageList = product.images || (product.image ? [product.image] : []);
+                          
+                          // If no images on main product, check first variant
+                          if (imageList.length === 0 && product.variants && product.variants.length > 0) {
+                            const firstVariant = product.variants[0];
+                            imageList = firstVariant.images || [];
+                          }
                           
                           return imageList.length > 1 ? (
                             <Swiper

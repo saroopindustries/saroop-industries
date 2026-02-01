@@ -307,6 +307,7 @@ export const batteryCableSetProducts: Product[] = [
     subcategory: "Heavy Duty",
     description: "Heavy-duty battery cable set for earth moving equipment and machinery.",
     partNumber: "SBC000032",
+    image: "/products/battery-accessories/cable-sets/SBC000032.jpg",
     featured: true,
     specifications: {
       "Type": "Heavy Duty",
@@ -324,6 +325,7 @@ export const batteryCableSetProducts: Product[] = [
     subcategory: "Vehicle Specific",
     description: "Battery cable set for Seva type vehicles.",
     partNumber: "SBC000042",
+    image: "/products/battery-accessories/cable-sets/SBC000042.jpg",
     specifications: {
       "Compatible": "Seva Type",
       "Type": "Custom configuration",
@@ -377,6 +379,7 @@ export const jumperCableProducts: Product[] = [
     subcategory: "Jumper Cables",
     description: "Heavy-duty jumper cable set. 3 meters (3000mm) length.",
     partNumber: "SBC000036",
+    image: "/products/battery-accessories/cable-sets/SBC000036.jpg",
     specifications: {
       "Length": "3 Meter (3000mm)",
       "Type": "Jumper Cable Set",
@@ -393,6 +396,7 @@ export const jumperCableProducts: Product[] = [
     subcategory: "Jumper Cables",
     description: "Heavy-duty jumper cable set. 4 meters (4000mm) length.",
     partNumber: "SBC000042",
+    image: "/products/battery-accessories/cable-sets/SBC000042.jpg",
     specifications: {
       "Length": "4 Meter (4000mm)",
       "Type": "Jumper Cable Set",
@@ -495,6 +499,7 @@ export const chargingClipProducts: Product[] = [
     subcategory: "Charging Clips",
     description: "Heavy-duty brass charging clip for battery charging applications. High conductivity and corrosion resistance.",
     partNumber: "SCC000001",
+    image: "/products/battery-accessories/charging-clips/SCC000001.jpg",
     featured: true,
     specifications: {
       "Material": "Brass",
@@ -513,6 +518,7 @@ export const chargingClipProducts: Product[] = [
     subcategory: "Charging Clips",
     description: "Crocodile clip with brass construction. Strong spring-loaded jaws for secure connection.",
     partNumber: "SCC000040",
+    image: "/products/battery-accessories/charging-clips/SCC000040.jpg",
     specifications: {
       "Material": "Brass",
       "Type": "Crocodile Clip",
@@ -529,6 +535,7 @@ export const chargingClipProducts: Product[] = [
     subcategory: "Charging Clips",
     description: "Export quality big charging clip in brass for heavy-duty applications.",
     partNumber: "SCC000017",
+    image: "/products/battery-accessories/charging-clips/SCC000017.jpg",
     featured: true,
     specifications: {
       "Material": "Brass",
@@ -547,6 +554,7 @@ export const chargingClipProducts: Product[] = [
     subcategory: "Charging Clips",
     description: "Export quality big charging clip with zinc white plating for corrosion resistance.",
     partNumber: "SCC000011",
+    image: "/products/battery-accessories/charging-clips/SCC000011.jpg",
     specifications: {
       "Material": "Zinc Plated",
       "Type": "Big Export Clip",
@@ -564,6 +572,7 @@ export const chargingClipProducts: Product[] = [
     subcategory: "Charging Clips",
     description: "Export quality big charging clip with zinc golden finish.",
     partNumber: "SCC000015",
+    image: "/products/battery-accessories/charging-clips/SCC000015.jpg",
     specifications: {
       "Material": "Zinc Plated",
       "Type": "Big Export Clip",

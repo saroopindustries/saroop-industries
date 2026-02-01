@@ -14,6 +14,7 @@ export const ecmConnectorProducts: Product[] = [
     subcategory: "ECM High Density",
     description: "Ashok Leyland 24 pole female ECM connector with 5mm deluxe wire. 15 inch long.",
     partNumber: "SH2109951",
+    image: "/products/ecm-connectors/ecm/SH2109951.jpg",
     featured: true,
     specifications: {
       "Poles": "24 Pole",
@@ -35,6 +36,7 @@ export const ecmConnectorProducts: Product[] = [
     subcategory: "ECM High Density",
     description: "Ashok Leyland 24 pole male ECM connector with 5mm deluxe wire. 15 inch long.",
     partNumber: "SH2109952",
+    image: "/products/ecm-connectors/ecm/SH2109952.jpg",
     featured: true,
     specifications: {
       "Poles": "24 Pole",
@@ -56,6 +58,7 @@ export const ecmConnectorProducts: Product[] = [
     subcategory: "ECM High Density",
     description: "Ashok Leyland 26 pole female ECM connector with ECM special & 5mm wire. 15 inch long.",
     partNumber: "SH2109963",
+    image: "/products/ecm-connectors/ecm/SH2109963.jpg",
     specifications: {
       "Poles": "26 Pole",
       "Gender": "Female",
@@ -76,6 +79,7 @@ export const ecmConnectorProducts: Product[] = [
     subcategory: "ECM High Density",
     description: "Tata ECM small 40 pole female connector with ECM special & 6mm deluxe wire. 15 inch long.",
     partNumber: "SH2109942",
+    image: "/products/ecm-connectors/ecm/SH2109942.jpg",
     featured: true,
     specifications: {
       "Poles": "40 Pole",
@@ -97,6 +101,7 @@ export const ecmConnectorProducts: Product[] = [
     subcategory: "ECM High Density",
     description: "Ashok Leyland new model 44 pole female ECM connector with ECM special & 4mm deluxe wire. 15 inch long.",
     partNumber: "SH2104401",
+    image: "/products/ecm-connectors/ecm/SH2104401.jpg",
     featured: true,
     specifications: {
       "Poles": "44 Pole",
@@ -118,6 +123,7 @@ export const ecmConnectorProducts: Product[] = [
     subcategory: "ECM High Density",
     description: "Tata 48 pole female ECM connector with ECM special & 4mm deluxe wire. 15 inch long.",
     partNumber: "SH2104801",
+    image: "/products/ecm-connectors/ecm/SH2104801.jpg",
     featured: true,
     specifications: {
       "Poles": "48 Pole",
@@ -139,6 +145,7 @@ export const ecmConnectorProducts: Product[] = [
     subcategory: "ECM High Density",
     description: "Ashok Leyland & Tata 48 pole female ECM connector with ECM special & 4mm deluxe wire. 15 inch long.",
     partNumber: "SH2104802",
+    image: "/products/ecm-connectors/ecm/SH2104802.jpg",
     featured: true,
     specifications: {
       "Poles": "48 Pole",
@@ -160,6 +167,7 @@ export const ecmConnectorProducts: Product[] = [
     subcategory: "ECM High Density",
     description: "Tata 48 pole female ECM connector with ECM special & 4mm deluxe wire. 15 inch long.",
     partNumber: "SH2104803",
+    image: "/products/ecm-connectors/ecm/SH2104803.jpg",
     specifications: {
       "Poles": "48 Pole",
       "Gender": "Female",
@@ -180,6 +188,7 @@ export const ecmConnectorProducts: Product[] = [
     subcategory: "ECM High Density",
     description: "Ashok Leyland & Tata 48 pole female ECM connector with ECM special, 8mm & 6mm deluxe wire. 15 inch long.",
     partNumber: "SH2109953",
+    image: "/products/ecm-connectors/ecm/SH2109953.jpg",
     featured: true,
     specifications: {
       "Poles": "48 Pole",
@@ -201,6 +210,7 @@ export const ecmConnectorProducts: Product[] = [
     subcategory: "ECM High Density",
     description: "Ashok Leyland & Tata 48 pole male ECM connector with ECM special, 8mm & 6mm deluxe wire. 15 inch long.",
     partNumber: "SH2109954",
+    image: "/products/ecm-connectors/ecm/SH2109954.jpg",
     featured: true,
     specifications: {
       "Poles": "48 Pole",
@@ -222,6 +232,7 @@ export const ecmConnectorProducts: Product[] = [
     subcategory: "ECM High Density",
     description: "Ashok Leyland 52 pole female ECM connector with ECM special & 5mm wire. 15 inch long.",
     partNumber: "SH2109949",
+    image: "/products/ecm-connectors/ecm/SH2109949.jpg",
     featured: true,
     specifications: {
       "Poles": "52 Pole",
@@ -243,6 +254,7 @@ export const ecmConnectorProducts: Product[] = [
     subcategory: "ECM High Density",
     description: "Ashok Leyland 53 pole female ECM connector with ECM special, 4mm & 5mm deluxe wire. 15 inch long.",
     partNumber: "SH2109957",
+    image: "/products/ecm-connectors/ecm/SH2109957.jpg",
     featured: true,
     specifications: {
       "Poles": "53 Pole",
@@ -264,6 +276,7 @@ export const ecmConnectorProducts: Product[] = [
     subcategory: "ECM High Density",
     description: "Ashok Leyland 32 pole female ECM connector with ECM special wire. 15 inch long.",
     partNumber: "SH2109959",
+    image: "/products/ecm-connectors/ecm/SH2109959.jpg",
     specifications: {
       "Poles": "32 Pole",
       "Gender": "Female",
@@ -284,6 +297,7 @@ export const ecmConnectorProducts: Product[] = [
     subcategory: "ECM High Density",
     description: "Ashok Leyland 60 pole female ECM connector with ECM special wire. 15 inch long.",
     partNumber: "SH2109961",
+    image: "/products/ecm-connectors/ecm/SH2109961.jpg",
     featured: true,
     specifications: {
       "Poles": "60 Pole",
@@ -305,6 +319,7 @@ export const ecmConnectorProducts: Product[] = [
     subcategory: "ECM High Density",
     description: "Ashok Leyland ECM new model 60 pole female connector with ECM special wire. 15 inch long.",
     partNumber: "SH2106001",
+    image: "/products/ecm-connectors/ecm/SH2106001.jpg",
     featured: true,
     specifications: {
       "Poles": "60 Pole",
@@ -326,6 +341,7 @@ export const ecmConnectorProducts: Product[] = [
     subcategory: "ECM High Density",
     description: "Ashok Leyland & Tata ECM new model 60 pole female connector with ECM special & 5mm wire. 15 inch long.",
     partNumber: "SH2106002",
+    image: "/products/ecm-connectors/ecm/SH2106002.jpg",
     featured: true,
     specifications: {
       "Poles": "60 Pole",
@@ -347,6 +363,7 @@ export const ecmConnectorProducts: Product[] = [
     subcategory: "ECM High Density",
     description: "Ashok Leyland & Tata ECM new model 60 pole female connector with ECM special & 5mm wire. 15 inch long.",
     partNumber: "SH2106003",
+    image: "/products/ecm-connectors/ecm/SH2106003.jpg",
     specifications: {
       "Poles": "60 Pole",
       "Gender": "Female",
@@ -367,6 +384,7 @@ export const ecmConnectorProducts: Product[] = [
     subcategory: "ECM High Density",
     description: "Ashok Leyland 62 pole female ECM connector with ECM special & 5mm deluxe wire. 15 inch long.",
     partNumber: "SH2109940",
+    image: "/products/ecm-connectors/ecm/SH2109940.jpg",
     featured: true,
     specifications: {
       "Poles": "62 Pole",
@@ -388,6 +406,7 @@ export const ecmConnectorProducts: Product[] = [
     subcategory: "ECM High Density",
     description: "Ashok Leyland 62 pole male ECM connector with ECM special & 5mm deluxe wire. 15 inch long.",
     partNumber: "SH2109921",
+    image: "/products/ecm-connectors/ecm/SH2109921.jpg",
     featured: true,
     specifications: {
       "Poles": "62 Pole",
@@ -409,6 +428,7 @@ export const ecmConnectorProducts: Product[] = [
     subcategory: "ECM High Density",
     description: "Tata ECM big 81 pole female connector with ECM special & 6mm deluxe wire. 15 inch long.",
     partNumber: "SH2109945",
+    image: "/products/ecm-connectors/ecm/SH2109945.jpg",
     featured: true,
     specifications: {
       "Poles": "81 Pole",
@@ -430,6 +450,7 @@ export const ecmConnectorProducts: Product[] = [
     subcategory: "ECM High Density",
     description: "Ashok Leyland & Tata ECM new model 94 pole female connector with ECM special & 6mm deluxe wire. 15 inch long.",
     partNumber: "SH2109401",
+    image: "/products/ecm-connectors/ecm/SH2109401.jpg",
     featured: true,
     specifications: {
       "Poles": "94 Pole",
@@ -451,6 +472,7 @@ export const ecmConnectorProducts: Product[] = [
     subcategory: "ECM High Density",
     description: "Ashok Leyland & Tata ECM new model 94 pole female connector with ECM special & 6mm deluxe wire. 15 inch long.",
     partNumber: "SH2109402",
+    image: "/products/ecm-connectors/ecm/SH2109402.jpg",
     featured: true,
     specifications: {
       "Poles": "94 Pole",
@@ -472,6 +494,7 @@ export const ecmConnectorProducts: Product[] = [
     subcategory: "ECM High Density",
     description: "Ashok Leyland 28 pole female ECM connector with ECM special wire. 15 inch long.",
     partNumber: "SH2109901",
+    image: "/products/ecm-connectors/ecm/SH2109901.jpg",
     specifications: {
       "Poles": "28 Pole",
       "Gender": "Female",

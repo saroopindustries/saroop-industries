@@ -14,6 +14,7 @@ export const specialConnector1PoleProducts: Product[] = [
     subcategory: "1 Pole Connectors",
     description: "Maruti fuse link 1 pole female connector with 8mm deluxe wire. 9 inch long.",
     partNumber: "SH2100101",
+    image: "/products/special-universal-connectors/special-universal/SH2100101.jpg",
     specifications: {
       "Poles": "1 Pole",
       "Gender": "Female",
@@ -33,6 +34,7 @@ export const specialConnector1PoleProducts: Product[] = [
     subcategory: "1 Pole Connectors",
     description: "Maruti fuse link 1 pole male connector with 8mm deluxe wire.",
     partNumber: "SH2100102",
+    image: "/products/special-universal-connectors/special-universal/SH2100102.jpg",
     specifications: {
       "Poles": "1 Pole",
       "Gender": "Male",
@@ -52,6 +54,7 @@ export const specialConnector1PoleProducts: Product[] = [
     subcategory: "1 Pole Connectors",
     description: "H1 headlight holder 1 pole female connector with 4mm deluxe wire.",
     partNumber: "SH2100111",
+    image: "/products/special-universal-connectors/special-universal/SH2100111.jpg",
     featured: true,
     specifications: {
       "Poles": "1 Pole",
@@ -72,6 +75,7 @@ export const specialConnector1PoleProducts: Product[] = [
     subcategory: "1 Pole Connectors",
     description: "H1 headlight holder 1 pole female connector with 5mm deluxe wire.",
     partNumber: "SH2100112",
+    image: "/products/special-universal-connectors/special-universal/SH2100112.jpg",
     specifications: {
       "Poles": "1 Pole",
       "Gender": "Female",
@@ -95,6 +99,7 @@ export const specialConnector2PoleUniversalProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Universal Tata 2 pole female connector with 8mm deluxe wire.",
     partNumber: "SH2100201",
+    image: "/products/special-universal-connectors/special-universal/SH2100201.jpg",
     featured: true,
     specifications: {
       "Poles": "2 Pole",
@@ -115,6 +120,7 @@ export const specialConnector2PoleUniversalProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Universal Tata 2 pole male connector with 8mm deluxe wire.",
     partNumber: "SH2100202",
+    image: "/products/special-universal-connectors/special-universal/SH2100202.jpg",
     featured: true,
     specifications: {
       "Poles": "2 Pole",
@@ -135,6 +141,7 @@ export const specialConnector2PoleUniversalProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Tata fan coupler 2 pole female connector with 8mm deluxe wire.",
     partNumber: "SH2100203",
+    image: "/products/special-universal-connectors/special-universal/SH2100203.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -154,6 +161,7 @@ export const specialConnector2PoleUniversalProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Tata fan coupler 2 pole male connector with 8mm deluxe wire.",
     partNumber: "SH2100204",
+    image: "/products/special-universal-connectors/special-universal/SH2100204.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Male",
@@ -173,6 +181,7 @@ export const specialConnector2PoleUniversalProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "H7 headlight holder 2 pole female connector with 4mm deluxe wire.",
     partNumber: "SH2100211",
+    image: "/products/special-universal-connectors/special-universal/SH2100211.jpg",
     featured: true,
     specifications: {
       "Poles": "2 Pole",
@@ -193,6 +202,7 @@ export const specialConnector2PoleUniversalProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "H7 headlight holder 2 pole female connector with 5mm deluxe wire.",
     partNumber: "SH2100212",
+    image: "/products/special-universal-connectors/special-universal/SH2100212.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -212,6 +222,7 @@ export const specialConnector2PoleUniversalProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "H11 headlight holder 2 pole female connector with 5mm deluxe wire.",
     partNumber: "SH2100224",
+    image: "/products/special-universal-connectors/special-universal/SH2100224.jpg",
     featured: true,
     specifications: {
       "Poles": "2 Pole",
@@ -232,6 +243,7 @@ export const specialConnector2PoleUniversalProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Mahindra Maximo H8 fog lamp 2 pole female connector with special wire.",
     partNumber: "SH2100221",
+    image: "/products/special-universal-connectors/special-universal/SH2100221.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -251,6 +263,7 @@ export const specialConnector2PoleUniversalProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Ashok Leyland fog lamp 2 pole female connector with 5mm deluxe wire.",
     partNumber: "SH2100223",
+    image: "/products/special-universal-connectors/special-universal/SH2100223.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -274,6 +287,7 @@ export const specialConnector2PoleSensorProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Tata corner light 2 pole female connector with 5mm deluxe wire.",
     partNumber: "SH2100227",
+    image: "/products/special-universal-connectors/special-universal/SH2100227.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -293,6 +307,7 @@ export const specialConnector2PoleSensorProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Tata injector 2 pole female connector with special wire.",
     partNumber: "SH2100228",
+    image: "/products/special-universal-connectors/special-universal/SH2100228.jpg",
     featured: true,
     specifications: {
       "Poles": "2 Pole",
@@ -313,6 +328,7 @@ export const specialConnector2PoleSensorProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Injector K Series CNG & Diesel 2 pole female connector with 4mm deluxe wire.",
     partNumber: "SH2100229",
+    image: "/products/special-universal-connectors/special-universal/SH2100229.jpg",
     featured: true,
     specifications: {
       "Poles": "2 Pole",
@@ -333,6 +349,7 @@ export const specialConnector2PoleSensorProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "DRV sensor for Fiesta Diesel 2 pole female connector with special wire.",
     partNumber: "SH2100230",
+    image: "/products/special-universal-connectors/special-universal/SH2100230.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -352,6 +369,7 @@ export const specialConnector2PoleSensorProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Universal Tata 2 pole female connector with special wire.",
     partNumber: "SH2100231",
+    image: "/products/special-universal-connectors/special-universal/SH2100231.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -371,6 +389,7 @@ export const specialConnector2PoleSensorProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Universal Tata 2 pole female connector with 4mm deluxe wire.",
     partNumber: "SH2100234",
+    image: "/products/special-universal-connectors/special-universal/SH2100234.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -390,6 +409,7 @@ export const specialConnector2PoleSensorProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Tata EGR valve 2 pole female connector with 5mm deluxe wire.",
     partNumber: "SH2100236",
+    image: "/products/special-universal-connectors/special-universal/SH2100236.jpg",
     featured: true,
     specifications: {
       "Poles": "2 Pole",
@@ -410,6 +430,7 @@ export const specialConnector2PoleSensorProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Mahindra Maximo 2 pole female connector with special wire.",
     partNumber: "SH2100237",
+    image: "/products/special-universal-connectors/special-universal/SH2100237.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -429,6 +450,7 @@ export const specialConnector2PoleSensorProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Thermoswitch for K Series Maruti Swift Petrol 2 pole female connector with special wire.",
     partNumber: "SH2100238",
+    image: "/products/special-universal-connectors/special-universal/SH2100238.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -448,6 +470,7 @@ export const specialConnector2PoleSensorProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Honda Accord & side indicator light 2 pole female connector with special wire.",
     partNumber: "SH2100241",
+    image: "/products/special-universal-connectors/special-universal/SH2100241.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -467,6 +490,7 @@ export const specialConnector2PoleSensorProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Injector K Series Maruti CNG 2 pole female connector with special wire.",
     partNumber: "SH2100242",
+    image: "/products/special-universal-connectors/special-universal/SH2100242.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -486,6 +510,7 @@ export const specialConnector2PoleSensorProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "High pressure switch for Santro & Indica 2 pole female connector with special wire.",
     partNumber: "SH2100243",
+    image: "/products/special-universal-connectors/special-universal/SH2100243.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -505,6 +530,7 @@ export const specialConnector2PoleSensorProducts: Product[] = [
     subcategory: "2 Pole Connectors",
     description: "Tata power window 2 pole female connector with special wire.",
     partNumber: "SH2100244",
+    image: "/products/special-universal-connectors/special-universal/SH2100244.jpg",
     specifications: {
       "Poles": "2 Pole",
       "Gender": "Female",
@@ -521,6 +547,7 @@ export const specialConnector2PoleSensorProducts: Product[] = [
     name: "Universal 2 Pole Female - Special Wire",
     slug: "special-universal-2-pole-female-special-generic",
     partNumber: "SH2100246",
+    image: "/products/special-universal-connectors/special-universal/SH2100246.jpg",
     category: "Special Universal Connectors",
     subcategory: "2 Pole Connectors",
     description: "Generic 2 pole female connector with special wire.",
