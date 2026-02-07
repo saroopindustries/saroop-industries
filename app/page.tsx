@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { featuredProducts } from "@/config/products.config";
 import { testimonials } from "@/config/testimonials.config";
-import { companyInfo } from "@/config/site.config";
 import HeroSection from "@/components/sections/HeroSection";
 import ProductGrid from "@/components/sections/ProductGrid";
 import TestimonialsSection from "@/components/sections/TestimonialsSection";
@@ -12,7 +11,7 @@ import StatsSection from "@/components/sections/StatsSection";
 import FeaturesSection from "@/components/sections/FeaturesSection";
 import CategoriesSection from "@/components/sections/CategoriesSection";
 import ClientsSection from "@/components/sections/ClientsSection";
-import { Target, Eye, ArrowRight, Phone } from "lucide-react";
+import { ArrowRight, Phone } from "lucide-react";
 import styles from "./page.module.scss";
 
 export default function Home() {
