@@ -2,8 +2,8 @@
 
 import { motion, useInView, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
-import { companyInfo } from "@/config/site.config";
-import { TrendingUp, Package, Users, Globe, Award, Clock } from "lucide-react";
+import { stats } from "@/config/about.config";
+import { Award } from "lucide-react";
 import styles from "./StatsSection.module.scss";
 
 interface AnimatedCounterProps {
@@ -43,41 +43,6 @@ function AnimatedCounter({ value, suffix = "", duration = 2 }: AnimatedCounterPr
 
   return <span ref={ref}>{displayValue}{suffix}</span>;
 }
-
-const stats = [
-  {
-    icon: Clock,
-    value: 10,
-    suffix: "+",
-    label: "Years of Excellence",
-    description: "Industry experience",
-    color: "#93c967",
-  },
-  {
-    icon: Package,
-    value: 500,
-    suffix: "+",
-    label: "Products",
-    description: "In our catalog",
-    color: "#3b82f6",
-  },
-  {
-    icon: Users,
-    value: 3000,
-    suffix: "+",
-    label: "Happy Customers",
-    description: "Worldwide",
-    color: "#10b981",
-  },
-  {
-    icon: Globe,
-    value: 50,
-    suffix: "+",
-    label: "Countries",
-    description: "Global reach",
-    color: "#8b5cf6",
-  },
-];
 
 export default function StatsSection() {
   const ref = useRef<HTMLElement>(null);

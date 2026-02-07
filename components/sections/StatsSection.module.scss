@@ -1,11 +1,13 @@
+@use "@/styles/breakpoints" as bp;
+
 .stats {
   position: relative;
   padding: 6rem 0;
   background: linear-gradient(180deg, hsl(var(--muted)) 0%, white 100%);
   overflow: hidden;
 
-  @media (min-width: 768px) {
-    padding: 8rem 0;
+  @include bp.down(md) {
+    padding: 2rem 0;
   }
 }
 
@@ -25,10 +27,13 @@
   padding: 0 1.5rem;
 }
 
-// Header
 .header {
   text-align: center;
   margin-bottom: 4rem;
+
+  @include bp.down(md) {
+    margin-bottom: 2rem;
+  }
 }
 
 .label {
@@ -163,7 +168,6 @@
   transition: opacity 0.3s ease;
 }
 
-// Bottom CTA
 .bottomCta {
   display: flex;
   align-items: center;
@@ -182,5 +186,11 @@
 
   svg {
     color: hsl(var(--accent));
+  }
+
+  @include bp.down(md) {
+    margin-top: 1.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.6rem;
   }
 }
