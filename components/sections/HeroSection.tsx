@@ -2,18 +2,13 @@
 "use client";
 
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Download, ArrowRight, ChevronDown, Zap, Shield, Award } from "lucide-react";
+import { Download, ArrowRight, ChevronDown } from "lucide-react";
 import Link from "next/link";
 import { useRef } from "react";
 import { siteConfig } from "@/config/site.config";
+import { heroFeatures } from "@/config/about.config";
 import { HeroVideoDialog } from "@/components/ui/hero-video-dialog";
 import styles from "./HeroSection.module.scss";
-
-const features = [
-  { icon: Zap, text: "High Conductivity" },
-  { icon: Shield, text: "Corrosion Resistant" },
-  { icon: Award, text: "Quality Certified" },
-];
 
 export default function HeroSection() {
   const containerRef = useRef<HTMLElement>(null);
@@ -89,7 +84,7 @@ export default function HeroSection() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6, duration: 0.6 }}
               >
-                {features.map((feature, index) => (
+                {heroFeatures.map((feature, index) => (
                   <div key={index} className={styles.featureItem}>
                     <feature.icon className="h-4 w-4" />
                     <span>{feature.text}</span>

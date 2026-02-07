@@ -8,8 +8,15 @@ import {
   Target,
   TrendingUp,
   Users,
+  Zap,
 } from "lucide-react";
 import { companyInfo } from "./site.config";
+
+export const heroFeatures = [
+  { icon: Zap, text: "High Conductivity" },
+  { icon: Shield, text: "Corrosion Resistant" },
+  { icon: Award, text: "Quality Certified" },
+];
 
 export const aboutValues = [
   { icon: Target, title: "Our Mission", description: companyInfo.mission },
