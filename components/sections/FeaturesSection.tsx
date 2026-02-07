@@ -2,47 +2,43 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Zap, Shield, Award, TrendingUp, Cog, Globe, Truck, Headphones } from "lucide-react";
+import { Headphones } from "lucide-react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import { features } from "@/config/about.config";
 import styles from "./FeaturesSection.module.scss";
+import "swiper/css";
+import "swiper/css/pagination";
 
-const features = [
-  {
-    icon: Zap,
-    title: "Premium Brass Terminals",
-    description: "Precision-engineered using high-quality brass for excellent conductivity and long-lasting performance.",
-    highlight: "High Conductivity",
-  },
-  {
-    icon: Shield,
-    title: "Corrosion Resistant",
-    description: "Advanced surface treatment ensures protection against environmental factors and extended product life.",
-    highlight: "Durable Design",
-  },
-  {
-    icon: Award,
-    title: "Quality Certified",
-    description: "ISO 9001:2015 certified manufacturing processes guarantee consistent quality in every product.",
-    highlight: "ISO Certified",
-  },
-  {
-    icon: Cog,
-    title: "Custom Solutions",
-    description: "Tailored automotive components designed to meet your specific requirements and applications.",
-    highlight: "Made to Order",
-  },
-  {
-    icon: Globe,
-    title: "Global Reach",
-    description: "Serving customers across 50+ countries with reliable international shipping and support.",
-    highlight: "50+ Countries",
-  },
-  {
-    icon: Truck,
-    title: "Fast Delivery",
-    description: "Efficient logistics and inventory management ensure timely delivery of all orders.",
-    highlight: "Quick Turnaround",
-  },
-];
+function FeatureCard({
+  feature,
+  index,
+  isInView,
+}: {
+  feature: (typeof features)[number];
+  index: number;
+  isInView: boolean;
+}) {
+  const Icon = feature.icon;
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      animate={isInView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
+      className={styles.featureCard}
+    >
+      <div className={styles.cardContent}>
+        <div className={styles.iconWrapper}>
+          <Icon className="h-6 w-6" />
+        </div>
+        <span className={styles.highlight}>{feature.highlight}</span>
+        <h3 className={styles.featureTitle}>{feature.title}</h3>
+        <p className={styles.featureDescription}>{feature.description}</p>
+      </div>
+      <div className={styles.cardHover} />
+    </motion.div>
+  );
+}
 
 export default function FeaturesSection() {
   const ref = useRef<HTMLElement>(null);
@@ -70,30 +66,33 @@ export default function FeaturesSection() {
           </p>
         </motion.div>
 
-        {/* Features Grid */}
+        {/* Mobile: Slider */}
+        <motion.div
+          className={styles.sliderWrapper}
+          initial={{ opacity: 0 }}
+          animate={isInView ? { opacity: 1 } : {}}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
+          <Swiper
+            modules={[Pagination]}
+            spaceBetween={16}
+            slidesPerView={1.15}
+            pagination={{ clickable: true }}
+            className={styles.slider}
+          >
+            {features.map((feature, index) => (
+              <SwiperSlide key={index}>
+                <FeatureCard feature={feature} index={index} isInView={isInView} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </motion.div>
+
+        {/* Desktop: Grid */}
         <div className={styles.grid}>
-          {features.map((feature, index) => {
-            const Icon = feature.icon;
-            return (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className={styles.featureCard}
-              >
-                <div className={styles.cardContent}>
-                  <div className={styles.iconWrapper}>
-                    <Icon className="h-6 w-6" />
-                  </div>
-                  <span className={styles.highlight}>{feature.highlight}</span>
-                  <h3 className={styles.featureTitle}>{feature.title}</h3>
-                  <p className={styles.featureDescription}>{feature.description}</p>
-                </div>
-                <div className={styles.cardHover} />
-              </motion.div>
-            );
-          })}
+          {features.map((feature, index) => (
+            <FeatureCard key={index} feature={feature} index={index} isInView={isInView} />
+          ))}
         </div>
 
         {/* Bottom Visual */}

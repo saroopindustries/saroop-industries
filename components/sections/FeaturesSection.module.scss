@@ -1,11 +1,13 @@
+@use "../../styles/breakpoints" as bp;
+
 .features {
   position: relative;
   padding: 6rem 0;
   background: white;
   overflow: hidden;
 
-  @media (min-width: 768px) {
-    padding: 8rem 0;
+  @include bp.down(md) {
+    padding: 2rem 0;
   }
 }
 
@@ -17,13 +19,16 @@
   padding: 0 1.5rem;
 }
 
-// Header
 .header {
   text-align: center;
   margin-bottom: 4rem;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
+
+  @include bp.down(md) {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .label {
@@ -61,18 +66,46 @@
   line-height: 1.7;
 }
 
-// Features Grid
+.sliderWrapper {
+  margin-bottom: 2rem;
+
+  @include bp.up(md) {
+    display: none;
+  }
+}
+
+.slider {
+  padding-bottom: 2.5rem;
+
+  :global(.swiper-slide) {
+    height: auto;
+  }
+
+  :global(.swiper-pagination-bullet) {
+    width: 8px;
+    height: 8px;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+
+    &:global(.swiper-pagination-bullet-active) {
+      width: 24px;
+      border-radius: 4px;
+      background: hsl(var(--accent));
+    }
+  }
+}
+
 .grid {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: none;
   gap: 1.5rem;
   margin-bottom: 4rem;
 
-  @media (min-width: 640px) {
+  @include bp.up(md) {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (min-width: 1024px) {
+  @include bp.up(lg) {
     grid-template-columns: repeat(3, 1fr);
   }
 }

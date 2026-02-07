@@ -1,12 +1,14 @@
 import {
   Award,
   Clock,
+  Cog,
   Eye,
   Globe,
   Package,
   Shield,
   Target,
   TrendingUp,
+  Truck,
   Users,
   Zap,
 } from "lucide-react";
@@ -16,6 +18,15 @@ export const heroFeatures = [
   { icon: Zap, text: "High Conductivity" },
   { icon: Shield, text: "Corrosion Resistant" },
   { icon: Award, text: "Quality Certified" },
+];
+
+export const features = [
+  { icon: Zap, title: "Premium Brass Terminals", description: "Precision-engineered using high-quality brass for excellent conductivity and long-lasting performance.", highlight: "High Conductivity" },
+  { icon: Shield, title: "Corrosion Resistant", description: "Advanced surface treatment ensures protection against environmental factors and extended product life.", highlight: "Durable Design" },
+  { icon: Award, title: "Quality Certified", description: "ISO 9001:2015 certified manufacturing processes guarantee consistent quality in every product.", highlight: "ISO Certified" },
+  { icon: Cog, title: "Custom Solutions", description: "Tailored automotive components designed to meet your specific requirements and applications.", highlight: "Made to Order" },
+  { icon: Globe, title: "Global Reach", description: "Serving customers across 50+ countries with reliable international shipping and support.", highlight: "50+ Countries" },
+  { icon: Truck, title: "Fast Delivery", description: "Efficient logistics and inventory management ensure timely delivery of all orders.", highlight: "Quick Turnaround" },
 ];
 
 export const aboutValues = [
