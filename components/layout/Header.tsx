@@ -1,11 +1,11 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Fragment } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Phone, Mail, ArrowRight, ChevronDown } from "lucide-react";
+import { Phone, Mail, ArrowRight, ChevronDown } from "lucide-react";
 import { navigationConfig } from "@/config/navigation.config";
 import { siteConfig } from "@/config/site.config";
 import CartButton from "@/components/cart/CartButton";
@@ -15,7 +15,10 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
   const pathname = usePathname();
+
+  const phoneNumbers: string[] = Array.isArray(siteConfig.phone) ? [...siteConfig.phone] : [String(siteConfig.phone)];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,6 +31,7 @@ export default function Header() {
 
   useEffect(() => {
     setMobileMenuOpen(false);
+    setMobileProductsOpen(false);
   }, [pathname]);
 
   // Lock body scroll when mobile menu is open
@@ -168,60 +172,74 @@ export default function Header() {
                     className={styles.logoImage}
                   />
                 </Link>
-                <button
-                  className={styles.closeButton}
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  <X className="h-6 w-6" />
-                </button>
               </div>
 
               <div className={styles.mobileMenuBody}>
                 {navigationConfig.map((item) => (
                   <div key={item.href} className={styles.mobileNavItem}>
-                    <Link
-                      href={item.href}
-                      className={`${styles.mobileNavLink} ${pathname === item.href || pathname.startsWith(item.href + '/') ? styles.active : ""}`}
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      <span>{item.title}</span>
-                      {item.children && <ChevronDown className={styles.mobileChevron} />}
-                    </Link>
-                    {item.children && (
-                      <div className={styles.mobileSubmenu}>
-                        {item.children.map((child) => (
+                    {item.children ? (
+                      <>
+                        <button
+                          type="button"
+                          className={`${styles.mobileNavLink} ${mobileProductsOpen ? styles.expanded : ""}`}
+                          onClick={() => setMobileProductsOpen((prev) => !prev)}
+                          aria-expanded={mobileProductsOpen}
+                        >
+                          <span>{item.title}</span>
+                          <ChevronDown className={styles.mobileChevron} />
+                        </button>
+                        <div className={`${styles.mobileSubmenu} ${mobileProductsOpen ? styles.mobileSubmenuOpen : ""}`}>
+                          {item.children.map((child) => (
+                            <Link
+                              key={child.href}
+                              href={child.href}
+                              className={styles.mobileSubmenuLink}
+                              onClick={() => setMobileMenuOpen(false)}
+                            >
+                              {child.title}
+                            </Link>
+                          ))}
                           <Link
-                            key={child.href}
-                            href={child.href}
-                            className={styles.mobileSubmenuLink}
+                            href="/products"
+                            className={styles.mobileViewAll}
                             onClick={() => setMobileMenuOpen(false)}
                           >
-                            {child.title}
+                            View all products
+                            <ArrowRight className="h-4 w-4" />
                           </Link>
-                        ))}
-                      </div>
+                        </div>
+                      </>
+                    ) : (
+                      <Link
+                        href={item.href}
+                        className={`${styles.mobileNavLink} ${pathname === item.href ? styles.active : ""}`}
+                        onClick={() => setMobileMenuOpen(false)}
+                      >
+                        <span>{item.title}</span>
+                      </Link>
                     )}
                   </div>
                 ))}
               </div>
 
               <div className={styles.mobileMenuFooter}>
-                <Link
-                  href="/contact"
-                  className={styles.mobileCta}
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Get a Quote
-                  <ArrowRight className="h-5 w-5" />
-                </Link>
                 <div className={styles.mobileContact}>
-                  <a href={`tel:${siteConfig.phone}`}>
-                    <Phone className="h-4 w-4" />
-                    {siteConfig.phone}
-                  </a>
+                  <div className={styles.mobileContactPhones}>
+                    {[phoneNumbers[0], phoneNumbers[1]].map((phone, i) => (
+                      <Fragment key={i}>
+                        <a href={`tel:${phone.replace(/\D/g, "")}`}>
+                          <Phone className={styles.mobileContactIcon} />
+                          <span>{phone}</span>
+                        </a>
+                        {i < phoneNumbers.length - 2 && (
+                          <span className={styles.mobileContactPipe}>|</span>
+                        )}
+                      </Fragment>
+                    ))}
+                  </div>
                   <a href={`mailto:${siteConfig.email}`}>
-                    <Mail className="h-4 w-4" />
-                    {siteConfig.email}
+                    <Mail className={styles.mobileContactIcon} />
+                    <span>{siteConfig.email}</span>
                   </a>
                 </div>
               </div>

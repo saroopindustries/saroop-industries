@@ -139,7 +139,7 @@ export default function RootLayout({
       >
         <CartProvider>
           <Header />
-          <main className="min-h-screen" role="main">
+          <main className="min-h-screen relative z-0" role="main">
             {children}
           </main>
           <Footer />

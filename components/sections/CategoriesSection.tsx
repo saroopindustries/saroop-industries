@@ -10,7 +10,6 @@ import styles from "./CategoriesSection.module.scss";
 export default function CategoriesSection() {
   const [showAll, setShowAll] = useState(false);
   
-  // Show only 8 categories initially (2 rows × 4 columns on desktop)
   const INITIAL_COUNT = 8;
   const displayedCategories = showAll ? productCategories : productCategories.slice(0, INITIAL_COUNT);
   const hasMore = productCategories.length > INITIAL_COUNT;
