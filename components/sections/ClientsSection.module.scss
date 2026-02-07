@@ -1,11 +1,13 @@
+@use "@/styles/breakpoints" as bp;
+
 .clientsSection {
   padding: 5rem 0;
   background: linear-gradient(180deg, #fafbfc 0%, #ffffff 100%);
   overflow: hidden;
   position: relative;
 
-  @media (max-width: 768px) {
-    padding: 3rem 0;
+  @include bp.down(md) {
+    padding: 2rem 0;
   }
 }
 
@@ -13,8 +15,8 @@
   text-align: center;
   margin-bottom: 3rem;
 
-  @media (max-width: 768px) {
-    margin-bottom: 2rem;
+  @include bp.down(md) {
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -25,7 +27,7 @@
   margin-bottom: 0.75rem;
   line-height: 1.2;
 
-  @media (max-width: 768px) {
+  @include bp.down(md) {
     font-size: 1.75rem;
   }
 }
@@ -36,7 +38,7 @@
   max-width: 600px;
   margin: 0 auto;
 
-  @media (max-width: 768px) {
+  @include bp.down(md) {
     font-size: 1rem;
   }
 }
@@ -44,7 +46,7 @@
 .marqueeContainer {
   margin-top: 2rem;
   
-  @media (max-width: 768px) {
+  @include bp.down(md) {
     margin-top: 1.5rem;
   }
 }
@@ -62,13 +64,13 @@
   border: 1px solid hsl(var(--border));
   transition: all 0.3s ease;
 
-  @media (max-width: 768px) {
+  @include bp.down(md) {
     width: 140px;
     height: 80px;
     padding: 0.75rem;
   }
 
-  @media (max-width: 480px) {
+  @include bp.down(sm) {
     width: 120px;
     height: 70px;
   }
@@ -95,7 +97,7 @@
   opacity: 0.7;
   transition: all 0.3s ease;
 
-  @media (max-width: 768px) {
+  @include bp.down(md) {
     filter: grayscale(0%);
     opacity: 0.9;
   }
