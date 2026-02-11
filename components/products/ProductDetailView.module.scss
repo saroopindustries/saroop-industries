@@ -415,8 +415,11 @@
   align-items: center;
   justify-content: center;
   font-size: 3rem;
+  position: relative;
+  overflow: hidden;
   
-  img {
+  img,
+  .relatedImageTag {
     width: 100%;
     height: 100%;
     object-fit: contain;

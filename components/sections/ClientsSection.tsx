@@ -1,6 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { clientLogos } from "@/config/clients.config";
 import styles from "./ClientsSection.module.scss";
@@ -31,9 +32,11 @@ export default function ClientsSection() {
           <Marquee pauseOnHover className="[--duration:40s] [--gap:2rem]">
             {clientLogos.map((client) => (
               <div key={client.id} className={styles.logoWrapper}>
-                <img
+                <Image
                   src={client.logo}
                   alt={client.name}
+                  width={120}
+                  height={80}
                   loading="lazy"
                   className={styles.logo}
                 />

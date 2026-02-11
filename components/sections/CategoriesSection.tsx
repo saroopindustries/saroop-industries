@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { productCategories } from "@/config/products.config";
 import { ArrowRight, Package, ChevronUpIcon, ChevronDownIcon } from "lucide-react";
@@ -41,7 +42,15 @@ export default function CategoriesSection() {
                 <Link href={`/products/${category.slug}`} className={styles.categoryCard}>
                   <div className={styles.cardImage}>
                     {category.image && (
-                      <img src={category.image} alt={category.name} />
+                      <Image 
+                        src={category.image} 
+                        alt={category.name}
+                        width={400}
+                        height={300}
+                        loading="lazy"
+                        className={styles.categoryImage}
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      />
                     )}
                     <div className={styles.overlay} />
                   </div>

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination as SwiperPagination, Navigation } from "swiper/modules";
 import { Product, ProductCategory } from "@/config/products.config";
@@ -228,9 +229,13 @@ export default function ProductDetailView({
                     >
                       <div className={styles.relatedImage}>
                         {imageUrl ? (
-                          <img 
+                          <Image 
                             src={imageUrl} 
                             alt={relatedProduct.name}
+                            width={300}
+                            height={300}
+                            loading="lazy"
+                            className={styles.relatedImageTag}
                           />
                         ) : (
                           <span>📦</span>

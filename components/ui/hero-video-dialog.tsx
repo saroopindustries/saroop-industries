@@ -1,9 +1,9 @@
-/* eslint-disable @next/next/no-img-element */
 "use client"
 
 import { useState } from "react"
 import { Play, XIcon } from "lucide-react"
 import { AnimatePresence, motion } from "framer-motion"
+import Image from "next/image"
 
 import { cn } from "@/lib/utils"
 
@@ -84,12 +84,15 @@ export function HeroVideoDialog({
         className="relative cursor-pointer group"
         onClick={() => setIsVideoOpen(true)}
       >
-        <img
+        <Image
           src={thumbnailSrc}
           alt={thumbnailAlt}
           width={1920}
           height={1080}
+          priority
+          fetchPriority="high"
           className="w-full rounded-2xl transition-all duration-200 group-hover:brightness-[0.8] ease-out"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
         <div className="absolute inset-0 flex items-center justify-center group-hover:scale-105 transition-transform duration-200 ease-out">
           <div className="flex items-center justify-center rounded-full backdrop-blur-md size-28 bg-primary/10 shadow-2xl">
