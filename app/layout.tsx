@@ -10,6 +10,7 @@ import { BackToTop } from "@/components/ui/back-to-top";
 import ContactSidebar from "@/components/ui/contact-sidebar";
 import { siteConfig } from "@/config/site.config";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 /* ------------------ FONTS ------------------ */
 const dmSans = DM_Sans({
@@ -150,6 +151,9 @@ export default function RootLayout({
 
         {/* Vercel Analytics */}
         <Analytics />
+        
+        {/* Vercel Speed Insights */}
+        <SpeedInsights />
       </body>
     </html>
   );
