@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import Image, { ImageProps } from "next/image";
 
 interface SafeImageProps extends Omit<ImageProps, "src"> {
@@ -8,36 +8,39 @@ interface SafeImageProps extends Omit<ImageProps, "src"> {
   fallbackSrc?: string;
 }
 
-const DEFAULT_PLACEHOLDER = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjFmNWY5Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzk0YTNiZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPk5vIEltYWdlPC90ZXh0Pjwvc3ZnPg==";
+const createPlaceholderSvg = () =>
+  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Crect width='100%25' height='100%25' fill='%23f1f5f9'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial,sans-serif' font-size='18' fill='%2394a3bf' text-anchor='middle' dy='.3em'%3ENo Image%3C/text%3E%3C/svg%3E";
 
-export default function SafeImage({ 
-  src, 
-  fallbackSrc = DEFAULT_PLACEHOLDER,
+export default function SafeImage({
+  src,
+  fallbackSrc,
   alt,
-  ...props 
+  ...props
 }: SafeImageProps) {
   const [imgSrc, setImgSrc] = useState(src);
-  const [hasError, setHasError] = useState(false);
+  const [hasErrored, setHasErrored] = useState(false);
 
   useEffect(() => {
     setImgSrc(src);
-    setHasError(false);
+    setHasErrored(false);
   }, [src]);
 
   const handleError = () => {
-    if (!hasError && imgSrc !== fallbackSrc) {
-      setHasError(true);
-      setImgSrc(fallbackSrc);
-    }
+    if (hasErrored) return;
+
+    setHasErrored(true);
+    setImgSrc(fallbackSrc || createPlaceholderSvg());
   };
+
+  const unoptimized = imgSrc.startsWith("data:");
 
   return (
     <Image
       {...props}
       src={imgSrc}
-      alt={alt || "Product image"}
+      alt={alt ?? "Image"}
       onError={handleError}
-      unoptimized={imgSrc === fallbackSrc}
+      unoptimized={unoptimized}
     />
   );
 }
