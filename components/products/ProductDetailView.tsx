@@ -81,10 +81,14 @@ export default function ProductDetailView({
                     {imageList.map((image, imgIndex) => (
                       <SwiperSlide key={imgIndex}>
                         <div className={styles.mainImage}>
-                          <img 
+                          <Image 
                             src={image} 
                             alt={`${product.name} - ${imgIndex + 1}`}
+                            width={800}
+                            height={800}
                             className={styles.productImage}
+                            priority={imgIndex === 0}
+                            loading={imgIndex === 0 ? "eager" : "lazy"}
                           />
                         </div>
                       </SwiperSlide>

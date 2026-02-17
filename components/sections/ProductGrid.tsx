@@ -3,6 +3,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination as SwiperPagination } from "swiper/modules";
 import { Product } from "@/config/products.config";
@@ -207,19 +208,25 @@ function ProductCard({
                 >
                   {imageList.map((image, imgIndex) => (
                     <SwiperSlide key={imgIndex}>
-                      <img 
+                      <Image 
                         src={image} 
                         alt={`${product.name} - ${imgIndex + 1}`}
+                        width={400}
+                        height={400}
                         className={styles.productImage}
+                        loading="lazy"
                       />
                     </SwiperSlide>
                   ))}
                 </Swiper>
               ) : imageList.length === 1 ? (
-                <img 
+                <Image 
                   src={imageList[0]} 
                   alt={product.name}
+                  width={400}
+                  height={400}
                   className={styles.productImage}
+                  loading="lazy"
                 />
               ) : (
                 <div className={styles.imagePlaceholder}>

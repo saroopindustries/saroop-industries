@@ -3,6 +3,7 @@
 import { notFound } from "next/navigation";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination as SwiperPagination } from "swiper/modules";
 import {
@@ -59,10 +60,17 @@ export default function ProductPage({ params }: PageProps) {
         >
           <div className={styles.heroBackground}>
             {category.image && (
-              <div
-                className={styles.heroImage}
-                style={{ backgroundImage: `url(${category.image})` }}
-              />
+              <div className={styles.heroImageWrapper}>
+                <Image
+                  src={category.image}
+                  alt={category.name}
+                  fill
+                  className={styles.heroImage}
+                  priority
+                  quality={85}
+                  sizes="100vw"
+                />
+              </div>
             )}
             <div className={styles.heroOverlay} />
             <div className={styles.heroGlow} />
@@ -208,15 +216,13 @@ export default function ProductPage({ params }: PageProps) {
                           }
 
                           return imageUrl ? (
-                            <img
+                            <Image
                               src={imageUrl}
                               alt={product.name}
+                              width={400}
+                              height={400}
                               className={styles.featuredProductImage}
-                              style={{
-                                width: "100%",
-                                height: "100%",
-                                objectFit: "contain",
-                              }}
+                              loading="lazy"
                             />
                           ) : (
                             <span className={styles.productIcon}>📦</span>
@@ -310,10 +316,13 @@ export default function ProductPage({ params }: PageProps) {
                               {imageList.map((image, imgIndex) => (
                                 <SwiperSlide key={imgIndex}>
                                   <div className={styles.productImage}>
-                                    <img
+                                    <Image
                                       src={image}
                                       alt={`${product.name} - ${imgIndex + 1}`}
+                                      width={400}
+                                      height={400}
                                       className={styles.productImageImg}
+                                      loading="lazy"
                                     />
                                   </div>
                                 </SwiperSlide>
@@ -321,10 +330,13 @@ export default function ProductPage({ params }: PageProps) {
                             </Swiper>
                           ) : imageList.length === 1 ? (
                             <div className={styles.productImage}>
-                              <img
+                              <Image
                                 src={imageList[0]}
                                 alt={product.name}
+                                width={400}
+                                height={400}
                                 className={styles.productImageImg}
+                                loading="lazy"
                               />
                             </div>
                           ) : (
