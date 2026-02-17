@@ -3,7 +3,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
+import SafeImage from "@/components/ui/safe-image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination as SwiperPagination } from "swiper/modules";
 import { Product } from "@/config/products.config";
@@ -208,7 +208,7 @@ function ProductCard({
                 >
                   {imageList.map((image, imgIndex) => (
                     <SwiperSlide key={imgIndex}>
-                      <Image 
+                      <SafeImage 
                         src={image} 
                         alt={`${product.name} - ${imgIndex + 1}`}
                         width={400}
@@ -220,7 +220,7 @@ function ProductCard({
                   ))}
                 </Swiper>
               ) : imageList.length === 1 ? (
-                <Image 
+                <SafeImage 
                   src={imageList[0]} 
                   alt={product.name}
                   width={400}

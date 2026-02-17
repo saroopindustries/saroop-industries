@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Image from "next/image";
+import SafeImage from "@/components/ui/safe-image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination as SwiperPagination, Navigation } from "swiper/modules";
 import { Product, ProductCategory } from "@/config/products.config";
@@ -81,7 +81,7 @@ export default function ProductDetailView({
                     {imageList.map((image, imgIndex) => (
                       <SwiperSlide key={imgIndex}>
                         <div className={styles.mainImage}>
-                          <Image 
+                          <SafeImage 
                             src={image} 
                             alt={`${product.name} - ${imgIndex + 1}`}
                             width={800}
@@ -233,7 +233,7 @@ export default function ProductDetailView({
                     >
                       <div className={styles.relatedImage}>
                         {imageUrl ? (
-                          <Image 
+                          <SafeImage 
                             src={imageUrl} 
                             alt={relatedProduct.name}
                             width={300}

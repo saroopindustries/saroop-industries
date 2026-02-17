@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Image from "next/image";
+import SafeImage from "@/components/ui/safe-image";
 import { useSearchParams } from "next/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination as SwiperPagination } from "swiper/modules";
@@ -359,7 +359,7 @@ function ProductsPageContent() {
                                   <SwiperSlide key={imgIndex}>
                                     <div className={styles.productImage}>
                                       <div className={styles.imagePattern}></div>
-                                      <Image 
+                                      <SafeImage 
                                         src={image} 
                                         alt={`${product.name} - ${imgIndex + 1}`}
                                         width={400}
@@ -374,7 +374,7 @@ function ProductsPageContent() {
                             ) : imageList.length === 1 ? (
                               <div className={styles.productImage}>
                                 <div className={styles.imagePattern}></div>
-                                <Image 
+                                <SafeImage 
                                   src={imageList[0]} 
                                   alt={product.name}
                                   width={400}

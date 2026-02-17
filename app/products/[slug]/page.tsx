@@ -3,7 +3,7 @@
 import { notFound } from "next/navigation";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Image from "next/image";
+import SafeImage from "@/components/ui/safe-image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination as SwiperPagination } from "swiper/modules";
 import {
@@ -61,7 +61,7 @@ export default function ProductPage({ params }: PageProps) {
           <div className={styles.heroBackground}>
             {category.image && (
               <div className={styles.heroImageWrapper}>
-                <Image
+                <SafeImage
                   src={category.image}
                   alt={category.name}
                   fill
@@ -216,7 +216,7 @@ export default function ProductPage({ params }: PageProps) {
                           }
 
                           return imageUrl ? (
-                            <Image
+                            <SafeImage
                               src={imageUrl}
                               alt={product.name}
                               width={400}
@@ -316,7 +316,7 @@ export default function ProductPage({ params }: PageProps) {
                               {imageList.map((image, imgIndex) => (
                                 <SwiperSlide key={imgIndex}>
                                   <div className={styles.productImage}>
-                                    <Image
+                                    <SafeImage
                                       src={image}
                                       alt={`${product.name} - ${imgIndex + 1}`}
                                       width={400}
@@ -330,7 +330,7 @@ export default function ProductPage({ params }: PageProps) {
                             </Swiper>
                           ) : imageList.length === 1 ? (
                             <div className={styles.productImage}>
-                              <Image
+                              <SafeImage
                                 src={imageList[0]}
                                 alt={product.name}
                                 width={400}
