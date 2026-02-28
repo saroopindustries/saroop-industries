@@ -89,8 +89,7 @@ export function HeroVideoDialog({
           alt={thumbnailAlt}
           width={1920}
           height={1080}
-          priority
-          fetchPriority="high"
+          loading="lazy"
           className="w-full rounded-2xl transition-all duration-200 group-hover:brightness-[0.8] ease-out"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
