@@ -1,6 +1,12 @@
 {
-  "name": "",
-  "short_name": "",
+  "name": "Saroop Industries - Automotive Solutions",
+  "short_name": "Saroop",
+  "description": "Manufacturer of high-quality automotive and industrial components.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#0f172a",
+  "background_color": "#ffffff",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
@@ -12,8 +18,5 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
-  "display": "standalone"
+  ]
 }
