@@ -31,7 +31,6 @@ const outfit = Outfit({
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 5,
   themeColor: "#0f172a",
 };
 
@@ -78,7 +77,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: siteConfig.url,
+    canonical: "/",
   },
 
   openGraph: {
@@ -105,7 +104,7 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
 
-  /* -------- FAVICONS & APP ICONS (CORRECT WAY) -------- */
+  /* -------- FAVICONS & APP ICONS -------- */
   icons: {
     icon: [
       { url: "/favicon.ico" },
@@ -113,19 +112,10 @@ export const metadata: Metadata = {
       { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
     ],
     apple: "/apple-touch-icon.png",
-    other: [
-      {
-        rel: "android-chrome-192x192",
-        url: "/android-chrome-192x192.png",
-      },
-      {
-        rel: "android-chrome-512x512",
-        url: "/android-chrome-512x512.png",
-      },
-    ],
   },
 
   manifest: "/site.webmanifest",
+
   category: "Automotive Parts",
 };
 
@@ -140,7 +130,7 @@ export default function RootLayout({
       >
         <CartProvider>
           <Header />
-          <main className="min-h-screen relative z-0" role="main">
+          <main id="main" className="min-h-screen relative z-0" role="main">
             {children}
           </main>
           <Footer />
@@ -149,10 +139,7 @@ export default function RootLayout({
           <ContactSidebar />
         </CartProvider>
 
-        {/* Vercel Analytics */}
         <Analytics />
-        
-        {/* Vercel Speed Insights */}
         <SpeedInsights />
       </body>
     </html>
