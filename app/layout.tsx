@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   keywords: [
     "automotive electrical parts",
     "fuse box manufacturer",
-    "jcb connectors",
+    "JCB connectors",
     "wiring harness manufacturer",
     "glass fuse box",
     "square fuse box",
@@ -67,6 +67,7 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    nocache: false,
     googleBot: {
       index: true,
       follow: true,
@@ -77,7 +78,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "/",
+    canonical: siteConfig.url, 
   },
 
   openGraph: {
@@ -93,6 +94,7 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         alt: siteConfig.name,
+        type: "image/png",
       },
     ],
   },
@@ -126,13 +128,22 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${dmSans.variable} ${outfit.variable} font-sans antialiased`}
+        className={`${dmSans.variable} ${outfit.variable} font-sans antialiased bg-white text-slate-900`}
       >
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:bg-white focus:px-4 focus:py-2 focus:shadow"
+        >
+          Skip to content
+        </a>
+
         <CartProvider>
           <Header />
+
           <main id="main" className="min-h-screen relative z-0" role="main">
             {children}
           </main>
+
           <Footer />
           <CartDrawer />
           <BackToTop />
