@@ -1,17 +1,5 @@
-// ============================================
-// PRODUCT CONFIGURATION
-// Centralized product catalog with modular category imports
-// ============================================
+export type { Product, ProductVariant, ProductCategory, ProductSubcategory } from './products/types';
 
-// Import types
-export type {
-  Product,
-  ProductVariant,
-  ProductCategory,
-  ProductSubcategory,
-} from './products/types';
-
-// Import products by category
 import { wireProducts } from './products/categories/wire-cables';
 import { brassTerminalProducts } from './products/categories/brass-terminals';
 import { 

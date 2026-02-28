@@ -7,7 +7,6 @@ export interface GalleryImage {
 }
 
 export const galleryImages: GalleryImage[] = [
-  // Dubai 2019 Event Images (existing files only)
   {
     id: 1,
     title: "Dubai Exhibition 2019",

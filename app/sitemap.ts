@@ -4,7 +4,6 @@ import { allProducts, productCategories } from '@/config/products.config'
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://saroopindustries.com'
   
-  // Static pages
   const staticPages = [
     {
       url: baseUrl,
@@ -38,7 +37,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]
 
-  // Category pages
   const categoryPages = productCategories.map((category) => ({
     url: `${baseUrl}/products/${category.slug}`,
     lastModified: new Date(),
@@ -46,7 +44,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }))
 
-  // Individual product pages
   const productPages = allProducts.map((product) => ({
     url: `${baseUrl}/products/${product.slug}`,
     lastModified: new Date(),

@@ -1,11 +1,7 @@
-// ============================================
-// PRODUCT TYPE DEFINITIONS
-// ============================================
-
 export interface ProductVariant {
   id: string;
-  code: string;  // Product identification code
-  name?: string;  // Optional variant name
+  code: string;
+  name?: string;
   specifications: Record<string, string>;
   price?: number;
   stock?: string;
@@ -20,15 +16,15 @@ export interface Product {
   subcategory?: string;
   description: string;
   image?: string;
-  images?: string[];  // Multiple images for gallery
+  images?: string[];
   featured?: boolean;
   partNumber?: string;
   specifications?: Record<string, string>;
-  variants?: ProductVariant[];  // Product variants
-  variantType?: 'size' | 'color' | 'spec' | 'model';  // Type of variants
-  defaultVariant?: string;  // Default variant ID
-  tags?: string[];  // For search and filtering
-  applications?: string[];  // Use cases (Automotive, Industrial, etc.)
+  variants?: ProductVariant[];
+  variantType?: 'size' | 'color' | 'spec' | 'model';
+  defaultVariant?: string;
+  tags?: string[];
+  applications?: string[];
 }
 
 export interface ProductCategory {

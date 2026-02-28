@@ -7,7 +7,6 @@ export interface Testimonial {
   image?: string;
 }
 
-
 export const testimonials: Testimonial[] = [
   {
     id: "1",
