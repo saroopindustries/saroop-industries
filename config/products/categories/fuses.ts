@@ -773,6 +773,7 @@ export const midiFuseProducts: Product[] = [
     },
     tags: ["fuse", "midi", "high-current"],
     applications: ["Automotive", "Heavy Current", "Power Distribution"],
+    image: "/products/fuses/midi-fuse/SI00005020-SI00005100.jpg",
   },
 ];
 
@@ -795,6 +796,7 @@ export const megaFuseProducts: Product[] = [
     },
     tags: ["fuse", "mega", "very-high-current", "power-distribution"],
     applications: ["Commercial Vehicles", "Heavy Machinery", "Main Power Distribution"],
+    image: "/products/fuses/mega-fuse/SI00006050-SI00006500.jpg",
   },
 ];
 
@@ -817,6 +819,7 @@ export const anlFuseProducts: Product[] = [
     },
     tags: ["fuse", "anl", "audio", "high-power"],
     applications: ["Car Audio", "Power Systems", "High Current Protection"],
+    image: "/products/fuses/anl-fuse/SI00007020-SI00007150.jpg",
   },
 ];
 
