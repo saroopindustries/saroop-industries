@@ -40,8 +40,8 @@ export default function VariantSelector({
           {variants.map((variant) => (
             <option key={variant.id} value={variant.id}>
               {variant.name || variant.code}
-              {variant.specifications.Size &&
-                ` - ${variant.specifications.Size}`}
+              {variant.specifications?.Size &&
+                ` - ${variant.specifications?.Size}`}
             </option>
           ))}
         </select>
@@ -53,7 +53,7 @@ export default function VariantSelector({
               Specifications
             </h4>
             <div className={styles.specsGrid}>
-              {Object.entries(selectedVariant.specifications).map(
+              {Object.entries(selectedVariant.specifications || {}).map(
                 ([key, value]) => (
                   <div key={key} className={styles.specItem}>
                     <span className={styles.specKey}>{key}:</span>
@@ -123,7 +123,7 @@ export default function VariantSelector({
             Specifications for {selectedVariant.name || selectedVariant.code}
           </h4>
           <div className={styles.specsGrid}>
-            {Object.entries(selectedVariant.specifications).map(
+            {Object.entries(selectedVariant.specifications || {}).map(
               ([key, value]) => (
                 <div key={key} className={styles.specItem}>
                   <span className={styles.specKey}>{key}:</span>

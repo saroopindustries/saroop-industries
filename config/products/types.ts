@@ -2,7 +2,7 @@ export interface ProductVariant {
   id: string;
   code: string;
   name?: string;
-  specifications: Record<string, string>;
+  specifications?: Record<string, string>;
   price?: number;
   stock?: string;
   images?: string[];
