@@ -22,4 +22,5 @@ export const clientLogos: ClientLogo[] = [
   { id: 14, name: 'Client Partner 14', logo: '/saroop/happy-customer-logo/14.jpeg' },
   { id: 15, name: 'Client Partner 15', logo: '/saroop/happy-customer-logo/15.png' },
   { id: 16, name: 'Client Partner 16', logo: '/saroop/happy-customer-logo/16.png' },
+  { id: 17, name: 'Client Partner 17', logo: '/saroop/happy-customer-logo/PMI.webp' },
 ];
