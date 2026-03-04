@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState, Suspense } from "react";
+import { useMemo, useRef, useState, Suspense } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import dynamic from "next/dynamic";
@@ -49,6 +49,9 @@ import "swiper/css/pagination";
 // ------------------------------
 
 const certificateEntries = certifications.filter((c) => !!c.certificateSrc);
+
+const HERO_VIDEO_URL =
+  "https://res.cloudinary.com/djuygkt3f/video/upload/v1772600392/hero-video_j11t4l.mp4";
 
 // ------------------------------
 // Helpers
@@ -123,18 +126,10 @@ function StatCard({ stat, index }: { stat: typeof stats[0]; index: number }) {
 
 export default function AboutPage() {
   const heroRef = useRef<HTMLDivElement>(null);
-  const videoRef = useRef<HTMLVideoElement>(null);
 
   const [videoError, setVideoError] = useState(false);
   const [certLogoFailed, setCertLogoFailed] = useState<Record<string, boolean>>({});
   const [certLightboxIndex, setCertLightboxIndex] = useState<number>(-1);
-
-  // Hero in-view gate (video play/pause + keep main thread free)
-  const { ref: heroInViewRef, inView: heroInView } = useInView({
-    threshold: 0.2,
-    rootMargin: "200px 0px",
-    triggerOnce: false,
-  });
 
   const { scrollYProgress } = useScroll({
     target: heroRef,
@@ -143,19 +138,6 @@ export default function AboutPage() {
 
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "45%"]);
   const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
-
-  useEffect(() => {
-    const v = videoRef.current;
-    if (!v) return;
-
-    if (videoError) return;
-
-    if (heroInView) {
-      v.play().catch(() => setVideoError(true));
-    } else {
-      v.pause();
-    }
-  }, [heroInView, videoError]);
 
   const markCertLogoFailed = (name: string) => {
     setCertLogoFailed((prev) => (prev[name] ? prev : { ...prev, [name]: true }));
@@ -180,12 +162,7 @@ export default function AboutPage() {
         {/* Hero Section with Parallax */}
         <section
           className={styles.hero}
-          ref={(node) => {
-            if (heroRef.current) {
-              (heroRef.current as HTMLDivElement).style.minHeight = "70vh";
-            }
-            heroInViewRef(node);
-          }}
+          ref={heroRef}
         >
           <motion.div className={styles.heroBackground} style={{ y }}>
             {videoError ? (
@@ -200,18 +177,18 @@ export default function AboutPage() {
                 />
               </div>
             ) : (
-              <video
-                ref={videoRef}
-                className={styles.heroVideo}
-                loop
-                muted
-                playsInline
-                preload="none"
-                poster="/machine-manufacturing.jpg"
-                onError={() => setVideoError(true)}
-              >
-                <source src="/about/hero-video.mp4" type="video/mp4" />
-              </video>
+              <div className={styles.heroVideoWrapper}>
+                <video
+                  className={styles.heroVideo}
+                  src={HERO_VIDEO_URL}
+                  muted
+                  loop
+                  playsInline
+                  autoPlay
+                  onError={() => setVideoError(true)}
+                  aria-hidden
+                />
+              </div>
             )}
           </motion.div>
 
