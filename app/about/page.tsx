@@ -191,7 +191,7 @@ export default function AboutPage() {
             {videoError ? (
               <div className={styles.heroFallbackWrap}>
                 <Image
-                  src="/gallery.jpg"
+                  src="/machine-manufacturing.jpg"
                   alt="Saroop Industries Manufacturing"
                   fill
                   priority
@@ -207,25 +207,12 @@ export default function AboutPage() {
                 muted
                 playsInline
                 preload="none"
-                poster="/gallery.jpg"
+                poster="/machine-manufacturing.jpg"
                 onError={() => setVideoError(true)}
               >
                 <source src="/about/hero-video.mp4" type="video/mp4" />
               </video>
             )}
-
-            <noscript>
-              <div className={styles.heroFallbackWrap}>
-                <Image
-                  src="/gallery.jpg"
-                  alt="Saroop Industries Manufacturing"
-                  fill
-                  priority
-                  sizes="100vw"
-                  className={styles.heroFallback}
-                />
-              </div>
-            </noscript>
           </motion.div>
 
           <div className={styles.heroOverlay} />
