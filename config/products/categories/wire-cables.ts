@@ -13,9 +13,7 @@ export const wireProducts: Product[] = [
     description: "Premium quality auto cables available in various sizes: 14/0.3mm (1.00sq mm), 28/0.3mm (1.50sq mm), 35/0.3mm (2.50sq mm), 44/0.3mm (3.00sq mm), 65/0.3mm (4.00sq mm), 120/0.3mm (10sq mm).",
     featured: true,
     partNumber: "GAC-30SWG",
-    images: [
-      "/products/wire-cables/gold-auto-cables-30swg.png",
-    ],
+    image: "/products/wire-cables/gold-auto-cables-30swg.png",
     specifications: {
       "Wire Gauge": "30 SWG",
       "Material": "Copper with PVC insulation",

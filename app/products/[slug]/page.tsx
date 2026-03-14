@@ -232,16 +232,15 @@ export default function ProductPage({ params }: PageProps) {
                       </div>
                       <div className={styles.featuredContent}>
                         <h3 className={styles.featuredName}>{product.name}</h3>
-                        {product.partNumber && (
-                          <p className={styles.featuredCode}>
-                            Code: {product.partNumber}
-                          </p>
-                        )}
-                        {product.variants && product.variants.length > 0 && (
-                          <div className={styles.variantInfo}>
-                            {product.variants.length} variants available
-                          </div>
-                        )}
+<p className={styles.featuredCode}>
+  {product.partNumber ? `Code: ${product.partNumber}` : "\u00A0"}
+</p>
+
+           <div className={styles.variantInfo}>
+  {product.variants && product.variants.length > 0
+    ? `${product.variants.length} variants available`
+    : "\u00A0"}
+</div>
                         <Button
                           variant="ghost"
                           size="sm"
