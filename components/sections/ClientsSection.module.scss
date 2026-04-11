@@ -79,11 +79,6 @@
     transform: translateY(-4px);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
     border-color: hsl(var(--primary));
-
-    .logo {
-      filter: grayscale(0%);
-      opacity: 1;
-    }
   }
 }
 
@@ -93,8 +88,6 @@
   width: auto;
   height: auto;
   object-fit: contain;
-  filter: grayscale(100%);
-  opacity: 0.7;
   transition: all 0.3s ease;
 
   @include bp.down(md) {
