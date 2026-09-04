@@ -7,6 +7,20 @@ export interface GalleryImage {
 }
 
 export const galleryImages: GalleryImage[] = [
+    {
+    id: -1,
+    title: "Canada Expo",
+    category: "Events",
+    imageUrl: "/gallery/events/canada-1.jpeg",
+    description: "Saroop Industries at Canada Expo"
+  },
+  {
+    id: 0,
+    title: "Canada Expo",
+    category: "Events",
+    imageUrl: "/gallery/events/canada-2.jpeg",
+    description: "Saroop Industries at Canada Expo"
+  },
   {
     id: 1,
     title: "Dubai Exhibition 2019",
