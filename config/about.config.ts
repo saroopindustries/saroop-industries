@@ -25,7 +25,7 @@ export const features = [
   { icon: Shield, title: "Corrosion Resistant", description: "Advanced surface treatment ensures protection against environmental factors and extended product life.", highlight: "Durable Design" },
   { icon: Award, title: "Quality Certified", description: "ISO 9001:2015 certified manufacturing processes guarantee consistent quality in every product.", highlight: "ISO Certified" },
   { icon: Cog, title: "Custom Solutions", description: "Tailored automotive components designed to meet your specific requirements and applications.", highlight: "Made to Order" },
-  { icon: Globe, title: "Global Reach", description: "Serving customers across 50+ countries with reliable international shipping and support.", highlight: "50+ Countries" },
+  { icon: Globe, title: "Global Reach", description: "Serving customers across 10+ countries with reliable international shipping and support.", highlight: "10+ Countries" },
   { icon: Truck, title: "Fast Delivery", description: "Efficient logistics and inventory management ensure timely delivery of all orders.", highlight: "Quick Turnaround" },
 ];
 
@@ -55,7 +55,7 @@ export const certifications = [
 export const timeline = [
   { year: "2015", title: "Company Founded", description: "Saroop Industries launched with a vision to transform automotive manufacturing", icon: Users },
   { year: "2017", title: "ISO Certified", description: "Achieved ISO 9001:2015, ISO 14001:2015, and ISO 45001:2018 certifications", icon: Shield },
-  { year: "2020", title: "Global Expansion", description: "Opened branch office in Canada, serving 50+ countries worldwide", icon: Globe },
+  { year: "2020", title: "Global Expansion", description: "Opened branch office in Canada, serving 10+ countries worldwide", icon: Globe },
   { year: "2025", title: "Industry Leader", description: "500+ products serving 3000+ happy customers with cutting-edge technology", icon: Award },
 ];
 
@@ -63,7 +63,7 @@ export const stats = [
   { icon: Clock, value: parseInt(companyInfo.experience), suffix: "+", label: "Years of Excellence", description: "Industry experience", color: "#93c967" },
   { icon: Package, value: 500, suffix: "+", label: "Products", description: "In our catalog", color: "#3b82f6" },
   { icon: Users, value: 3000, suffix: "+", label: "Happy Customers", description: "Worldwide", color: "#10b981" },
-  { icon: Globe, value: 50, suffix: "+", label: "Countries", description: "Global reach", color: "#8b5cf6" },
+  { icon: Globe, value: 10, suffix: "+", label: "Countries", description: "Global reach", color: "#8b5cf6" },
 ];
 
 export const mapMarkers = [

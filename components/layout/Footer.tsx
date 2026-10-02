@@ -125,7 +125,7 @@ export default function Footer() {
                   <div className={styles.contactIcon}>
                     <Globe className="h-4 w-4" />
                   </div>
-                  <span>Serving 50+ Countries</span>
+                  <span>Serving 10+ Countries</span>
                 </li>
               </ul>
             </div>

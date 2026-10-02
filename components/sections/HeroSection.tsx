@@ -148,7 +148,7 @@ export default function HeroSection() {
                 </div>
                 <div className={styles.trustDivider} />
                 <div className={styles.trustItem}>
-                  <span className={styles.trustNumber}>50+</span>
+                  <span className={styles.trustNumber}>10+</span>
                   <span className={styles.trustLabel}>Countries</span>
                 </div>
               </motion.div>
