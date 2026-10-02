@@ -148,70 +148,70 @@ export const galleryImages: GalleryImage[] = [
     id: 31,
     title: "ISO 9001:2015 Certificate",
     category: "Certificates",
-    imageUrl: "/gallery/certificates/certificate-07.jpg",
+    imageUrl: "/gallery/certificates/certificate-07.jpeg",
     description: "Quality Management System Certification"
   },
   {
     id: 32,
     title: "ISO 14001:2015 Certificate",
     category: "Certificates",
-    imageUrl: "/gallery/certificates/certificate-04.jpg",
+    imageUrl: "/gallery/certificates/certificate-04.jpeg",
     description: "Environmental Management System Certification"
   },
   {
     id: 33,
     title: "ISO 45001:2018 Certificate",
     category: "Certificates",
-    imageUrl: "/gallery/certificates/certificate-06.jpg",
+    imageUrl: "/gallery/certificates/certificate-06.jpeg",
     description: "Occupational Health & Safety Management Certification"
   },
   {
     id: 34,
     title: "IATF 16949:2016 Certificate",
     category: "Certificates",
-    imageUrl: "/gallery/certificates/certificate-05.jpg",
+    imageUrl: "/gallery/certificates/certificate-05.jpeg",
     description: "Automotive Quality Management System Certification"
   },
   {
     id: 35,
     title: "CE Certification",
     category: "Certificates",
-    imageUrl: "/gallery/certificates/certificate-08.jpg",
+    imageUrl: "/gallery/certificates/certificate-08.jpeg",
     description: "European Conformity Certification"
   },
   {
     id: 36,
     title: "RoHS Compliance",
     category: "Certificates",
-    imageUrl: "/gallery/certificates/certificate-09.jpg",
+    imageUrl: "/gallery/certificates/certificate-09.jpeg",
     description: "Restriction of Hazardous Substances Compliance"
   },
   {
     id: 37,
     title: "WHO-GMP Certificate",
     category: "Certificates",
-    imageUrl: "/gallery/certificates/certificate-10.jpg",
+    imageUrl: "/gallery/certificates/certificate-10.jpeg",
     description: "Good Manufacturing Practice Certification"
   },
   {
     id: 38,
     title: "Company Logo",
     category: "Certificates",
-    imageUrl: "/gallery/certificates/certificate-02.jpg",
+    imageUrl: "/gallery/certificates/certificate-02.jpeg",
     description: "Saroop Industries Official Logo"
   },
   {
     id: 39,
     title: "Quality Assurance",
     category: "Certificates",
-    imageUrl: "/gallery/certificates/certificate-03.jpg",
+    imageUrl: "/gallery/certificates/certificate-03.jpeg",
     description: "MIQA Quality Certification"
   },
   {
     id: 40,
     title: "2027 Certification",
     category: "Certificates",
-    imageUrl: "/gallery/certificates/certificate-01.jpg",
+    imageUrl: "/gallery/certificates/certificate-01.jpeg",
     description: "Latest certification credentials"
   },
 ];

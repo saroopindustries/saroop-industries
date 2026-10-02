@@ -41,15 +41,15 @@ export const aboutValues = [
 ];
 
 export const certifications = [
-  { name: "ISO 9001:2015", description: "Quality Management", logoSrc: "/about/certs/iso-9001.svg", certificateSrc: "/gallery/certificates/certificate-01.jpg" },
-  { name: "ISO 14001:2015", description: "Environmental Management", logoSrc: "/about/certs/iso-14001.svg", certificateSrc: "/gallery/certificates/certificate-02.jpg" },
-  { name: "ISO 45001:2018", description: "Health & Safety Management", logoSrc: "/about/certs/iso-45001.svg", certificateSrc: "/gallery/certificates/certificate-03.jpg" },
-  { name: "IATF 16949:2016", description: "Automotive Quality", logoSrc: "/about/certs/iatf-16949.svg", certificateSrc: "/gallery/certificates/certificate-04.jpg" },
-  { name: "CE", description: "European Conformity", logoSrc: "/about/certs/ce.svg", certificateSrc: "/gallery/certificates/certificate-05.jpg" },
-  { name: "RoHS", description: "Hazardous Substances", logoSrc: "/about/certs/rohs.svg", certificateSrc: "/gallery/certificates/certificate-06.jpg" },
-  { name: "UL", description: "Safety Certification", logoSrc: "/about/certs/ul.svg", certificateSrc: "/gallery/certificates/certificate-08.jpg" },
-  { name: "CSA", description: "Canadian Standards", logoSrc: "/about/certs/csa.svg", certificateSrc: "/gallery/certificates/certificate-09.jpg" },
-  { name: "WHO GMP", description: "Good Manufacturing Practice", logoSrc: "/about/certs/who-gmp.svg", certificateSrc: "/gallery/certificates/certificate-07.jpg" },
+  { name: "ISO 9001:2015", description: "Quality Management", logoSrc: "/about/certs/iso-9001.svg", certificateSrc: "/gallery/certificates/certificate-01.jpeg" },
+  { name: "ISO 14001:2015", description: "Environmental Management", logoSrc: "/about/certs/iso-14001.svg", certificateSrc: "/gallery/certificates/certificate-02.jpeg" },
+  { name: "ISO 45001:2018", description: "Health & Safety Management", logoSrc: "/about/certs/iso-45001.svg", certificateSrc: "/gallery/certificates/certificate-03.jpeg" },
+  { name: "IATF 16949:2016", description: "Automotive Quality", logoSrc: "/about/certs/iatf-16949.svg", certificateSrc: "/gallery/certificates/certificate-04.jpeg" },
+  { name: "CE", description: "European Conformity", logoSrc: "/about/certs/ce.svg", certificateSrc: "/gallery/certificates/certificate-05.jpeg" },
+  { name: "RoHS", description: "Hazardous Substances", logoSrc: "/about/certs/rohs.svg", certificateSrc: "/gallery/certificates/certificate-06.jpeg" },
+  { name: "UL", description: "Safety Certification", logoSrc: "/about/certs/ul.svg", certificateSrc: "/gallery/certificates/certificate-08.jpeg" },
+  { name: "CSA", description: "Canadian Standards", logoSrc: "/about/certs/csa.svg", certificateSrc: "/gallery/certificates/certificate-09.jpeg" },
+  { name: "WHO GMP", description: "Good Manufacturing Practice", logoSrc: "/about/certs/who-gmp.svg", certificateSrc: "/gallery/certificates/certificate-07.jpeg" },
 ];
 
 export const timeline = [
